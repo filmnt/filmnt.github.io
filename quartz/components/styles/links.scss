@@ -1,0 +1,16 @@
+links {
+    text-align: left;
+    margin-bottom: 4rem;
+    align-self: stretch;
+  
+    & ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      margin-top: -1rem;
+      flex-wrap: wrap;
+    }
+  }

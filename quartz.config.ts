@@ -8,23 +8,23 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "🪴 Quartz 4.0",
-    enableSPA: true,
-    enablePopovers: true,
+    pageTitle: "🪴 Filmnt",
+    enableSPA: false,
+    enablePopovers: false,
     analytics: {
-      provider: "plausible",
+      provider: "google", tagId:"G-3SCFWXJXEQ"
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "created",
+    baseUrl: "filmnt.github.io/home",
+    ignorePatterns: ["private", "templates", ".obsidian", "**/🔖 Daily Notes", "**/🔐 Private Notes", ],
+    defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Noto Sans",
+        body: "Noto Sans",
+        code: "Noto Sans",
       },
       colors: {
         lightMode: {
@@ -38,14 +38,14 @@ const config: QuartzConfig = {
           highlight: "rgba(143, 159, 169, 0.15)",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
+          light: "#0F0F0F",
+          lightgray: "#272727",
           gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          darkgray: "#F1F1F1",
+          dark: "#F1F1F1",
+          secondary: "#64B5F6",
+          tertiary: "#FFFFFF",
+          highlight: "rgba(255, 255, 255, 0.15)",
         },
       },
     },
@@ -54,8 +54,9 @@ const config: QuartzConfig = {
     transformers: [
       Plugin.FrontMatter(),
       Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "filesystem"],
+        priority: ["git", "frontmatter", "filesystem"],
       }),
+      Plugin.Latex({ renderEngine: "mathjax" }),
       Plugin.SyntaxHighlighting({
         theme: {
           light: "github-light",
@@ -68,7 +69,6 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Latex({ renderEngine: "katex" }),
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [

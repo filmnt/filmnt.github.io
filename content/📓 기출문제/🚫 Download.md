@@ -1,0 +1,451 @@
+---
+tags:
+  - 전공
+  - contents
+---
+%% jQuery script %%
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+%% Webcam script %%
+<script src="script/cam.js"></script>
+%% tts script %%
+<script src="script/tts.js"></script>
+%% discord popup %%
+<script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    new Crate({
+        server: '1231921110811934840', // Filmnt
+        channel: '1240125469853093899', // #기출문제
+        notifications: false,})
+</script>
+%% WhiteNoise Script %%
+<script type="text/javascript" src="script/WN.js"></script>
+%% progressbar script %%
+<script>
+function getCurrentProgress(){
+  const firstDateOfYear = new Date(new Date().getFullYear(), 0, 1);
+  const currentDate = new Date();
+  return ((((currentDate - firstDateOfYear) / (1000 * 60 * 60 * 24)) * 100) / 365).toFixed(1);}
+function updateUI() {const percent = getCurrentProgress();
+  const barItem = document.getElementsByClassName('bar')[0];barItem.style.width = `${percent}%`;
+  const counterItem = document.getElementsByClassName('value')[0];counterItem.textContent = `${percent}%`;}
+setInterval(function() {updateUI();return arguments.callee;}(), 1000);
+</script>
+%% Links script %%
+<script type="text/javascript">
+var url = document.getElementById( 'linkshare' );
+url.onchange = function() {window.open( this.options[ this.selectedIndex ].value, '_blank');
+$('#linkshare').prop('selectedIndex',0);};
+</script>
+%% Translator script%%
+<script>window.ResetTranslate = () => jQuery('#\\:1\\.container').contents().find('#\\:1\\.restore').click();</script>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'},'google_translate_element');}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+%% Navigation bar button %%
+<script src="script/nav-full-share.js"></script>
+%% swipe  script %%
+<script src="script/swipe.js"></script>
+
+
+
+# 수학 (A3)
+%% link button %%
+<span>
+<button id=”Link” onclick=" window.open('download/edu-prob.pdf','_blank')" >교육학 문제</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/edu-sol.pdf','_blank')" >교육학 해설</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/math-prob.pdf','_blank')" >내용학 문제</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/math-sol.pdf','_blank')" >내용학 해설</button>
+<br>
+<button id=”Link” onclick=" window.open('download/yby-prob.pdf','_blank')" >연도별 문제</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/yby-sol.pdf','_blank')" >연도별 해설</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/type-prob.pdf','_blank')" >유형화 문제</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/type-sol.pdf','_blank')" >유형화 해설</button>
+<br>
+<button id=”Link” onclick=" window.open('download/22curri.pdf','_blank')" >22교육과정</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/omr-EDU.pdf','_blank')">교육학 OMR</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/omr-A.pdf','_blank')" >전공A OMR</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/omr-B.pdf','_blank')" >전공B OMR</button>
+<span></span>
+</span>
+
+---
+# Templates (A3, 80 pages)
+%% link button %%
+<span>
+<button id=”Link” onclick=" window.open('download/note-1.pdf','_blank')" >Note 1</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/note-2.pdf','_blank')" >Note 2</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/note-3.pdf','_blank')" >Note 3</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/note-4.pdf','_blank')" >Note 4</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/note-5.pdf','_blank')" >Note 5</button>
+</span>
+<br>
+
+
+<h3>Previews</h3>
+<span>
+<button id="Link" onClick="document.getElementById('downloads').src = 'download/note-1.pdf'"> Note 1</button>
+<span></span>
+<button id="Link" onClick="document.getElementById('downloads').src = 'download/note-2.pdf'"  > Note 2</button>
+<span></span>
+<button id="Link" onClick="document.getElementById('downloads').src = 'download/note-3.pdf'"  > Note 3</button>
+<span></span>
+<button id="Link" onClick="document.getElementById('downloads').src = 'download/note-4.pdf'"  > Note 4</button>
+<span></span>
+<button id="Link" onClick="document.getElementById('downloads').src = 'download/note-5.pdf'"  > Note 5</button>
+<span></span>
+</span>
+
+> If you love `DIY`… <a href="https://incompetech.com/graphpaper/" target="_blank" >Graph Paper</a>
+
+%% note previews %%
+<div> <iframe id="downloads" src="iframe/blank.pdf" width="100%" height="1200"  frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe> </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%% Preview %%
+<dialog id="preview-dialog" style="width:380px;">
+<div id="previewdiv">
+<section>
+<form action="" method="POST" enctype="multipart/form-data">
+<div class="preview-container"><div><div class="col-md-12"><div class="form-group">
+<div class="preview-zone hidden"><div class="box box-solid"><div class="box-header with-border"><button type="button" class="remove-preview">Reset</button>
+<div><h1 style="text-align:left;margin-left:4px;margin-top:-20px;margin-bottom:-2px">Preview</h1></div><div class="box-tools pull-right"></div></div>
+<div class="box-body"></div></div></div>
+<div class="dropzone-wrapper"><div class="dropzone-desc"><h1>Drag and Drop</h1></div>
+<input type="file" name="img_logo" class="dropzone"></div></div></div></div></div></form>
+</section>
+</div>
+</dialog>
+
+<script>
+// Function to open the dialog
+function openPreview() {
+  var dialog = document.getElementById('preview-dialog');
+  dialog.showModal();
+}
+
+// Function to close the dialog with animation
+function closePreview() {
+  var dialog = document.getElementById('preview-dialog');
+  
+  // Add a class to trigger the closing animation
+  dialog.classList.add('closing');
+
+  // Listen for animation end event
+  dialog.addEventListener('animationend', function() {
+    // After animation completes, close the dialog
+    dialog.close();
+    
+    // Remove the closing class to reset for next time
+    dialog.classList.remove('closing');
+  }, { once: true }); // Use { once: true } to automatically remove the event listener after it's fired once
+}
+
+// Add event listener to the dialog's backdrop
+document.getElementById('preview-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closePreview();
+  }
+});
+</script>
+<script src="script/preview.js"></script>
+
+%% Excalidraw %%
+<dialog id="excal-dialog">
+<span><iframe src="https://excalidraw.com/" style="margin-top:-20px;top:0x; left:0; width:100%;height:100%;position:absolute;border:0;" allowfullscreen></iframe></span>
+</dialog>
+
+<script>
+// Function to open the dialog
+function openExcal() {
+  var dialog = document.getElementById('excal-dialog');
+  dialog.showModal();
+}
+
+// Function to close the dialog with animation
+function closeExcal() {
+  var dialog = document.getElementById('excal-dialog');
+  
+  // Add a class to trigger the closing animation
+  dialog.classList.add('closing');
+
+  // Listen for animation end event
+  dialog.addEventListener('animationend', function() {
+    // After animation completes, close the dialog
+    dialog.close();
+    
+    // Remove the closing class to reset for next time
+    dialog.classList.remove('closing');
+  }, { once: true }); // Use { once: true } to automatically remove the event listener after it's fired once
+}
+
+// Add event listener to the dialog's backdrop
+document.getElementById('excal-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeExcal();
+  }
+});
+</script>
+
+%% Preview %%
+<dialog id="preview-dialog" style="width:380px;">
+<div id="previewdiv">
+<section>
+<form action="" method="POST" enctype="multipart/form-data">
+<div class="preview-container"><div><div class="col-md-12"><div class="form-group">
+<div class="preview-zone hidden"><div class="box box-solid"><div class="box-header with-border"><button type="button" class="remove-preview">Reset</button>
+<div><h1 style="text-align:left;margin-left:4px;margin-top:-20px;margin-bottom:-2px">Preview</h1></div><div class="box-tools pull-right"></div></div>
+<div class="box-body"></div></div></div>
+<div class="dropzone-wrapper"><div class="dropzone-desc"><h1>Drag and Drop</h1></div>
+<input type="file" name="img_logo" class="dropzone"></div></div></div></div></div></form>
+</section>
+</div>
+</dialog>
+
+<script>
+// Function to open the dialog
+function openPreview() {
+  var dialog = document.getElementById('preview-dialog');
+  dialog.showModal();
+}
+
+// Function to close the dialog with animation
+function closePreview() {
+  var dialog = document.getElementById('preview-dialog');
+  
+  // Add a class to trigger the closing animation
+  dialog.classList.add('closing');
+
+  // Listen for animation end event
+  dialog.addEventListener('animationend', function() {
+    // After animation completes, close the dialog
+    dialog.close();
+    
+    // Remove the closing class to reset for next time
+    dialog.classList.remove('closing');
+  }, { once: true }); // Use { once: true } to automatically remove the event listener after it's fired once
+}
+
+// Add event listener to the dialog's backdrop
+document.getElementById('preview-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closePreview();
+  }
+});
+</script>
+<script src="script/preview.js"></script>
+
+%% dillinger %%
+<dialog id="dillinger-dialog">
+<span><iframe src="https://dillinger.io/" style="margin-top:-20px;top:0x; left:0; width:100%;height:100%;position:absolute;border:0;" allowfullscreen></iframe></span>
+</dialog>
+
+<script>
+// Function to open the dialog
+function openDillinger() {
+  var dialog = document.getElementById('dillinger-dialog');
+  dialog.showModal();
+}
+
+// Function to close the dialog with animation
+function closeDillinger() {
+  var dialog = document.getElementById('dillinger-dialog');
+  
+  // Add a class to trigger the closing animation
+  dialog.classList.add('closing');
+
+  // Listen for animation end event
+  dialog.addEventListener('animationend', function() {
+    // After animation completes, close the dialog
+    dialog.close();
+    
+    // Remove the closing class to reset for next time
+    dialog.classList.remove('closing');
+  }, { once: true }); // Use { once: true } to automatically remove the event listener after it's fired once
+}
+
+// Add event listener to the dialog's backdrop
+document.getElementById('dillinger-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeDillinger();
+  }
+});
+</script>
+
+%% Study Timer %%
+<dialog id="study-dialog">
+<span>
+<h1 style="margin-top:-20px;margin-bottom:-2px">Study with me</h1>
+<audio preload="auto" id="skyline" src="notifications/Skyline.mp3"></audio> 
+<audio preload="auto" id="ios" src="notifications/ios.mp3"></audio> 
+<span style="margin-bottom:0px"><p class="time js-time" style="display:inline"></p><span class="button-container">
+<button class="go-button js-go-button">Start</button>
+<button class="reset-button js-reset-button">Reset</button>
+<button class="add-lap-button js-add-lap-button">Timestamp</button>
+</span></span>
+<div class="confirmation-container js-confirmation-container"></div>
+<div class="laps-list-wrapper"><ol class="laps-list js-lap-list"></ol></div>
+</span></dialog>
+<script src="script/study.js"></script>
+
+<script>
+// Function to open the dialog
+function openStudy() {
+  var dialog = document.getElementById('study-dialog');
+  dialog.showModal();
+}
+
+// Function to close the dialog with animation
+function closeStudy() {
+  var dialog = document.getElementById('study-dialog');
+  
+  // Add a class to trigger the closing animation
+  dialog.classList.add('closing');
+
+  // Listen for animation end event
+  dialog.addEventListener('animationend', function() {
+    // After animation completes, close the dialog
+    dialog.close();
+    
+    // Remove the closing class to reset for next time
+    dialog.classList.remove('closing');
+  }, { once: true }); // Use { once: true } to automatically remove the event listener after it's fired once
+}
+
+// Add event listener to the dialog's backdrop
+document.getElementById('study-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeStudy();
+  }
+});
+</script>
+
+%% Navigation bar contents %%
+<dialog id="navbar-dialog">
+<h2 id="navclock" onload="showTime()" > </h2>
+<span><br>
+<input type="date" style="width:22px;float:left;margin-right:4px;margin-top:1px">
+<form style="float:left;"  action="https://duckduckgo.com/" method="post" target="_blank"  onsubmit="this.submit(); this.reset(); return false;" novalidate><label><input style="width:280px"  type="search" name="q" placeholder="Web Search🦆" ></label></form>
+<select id="links"  style="float:left;width:50px;margin-left:4px;margin-top:1px;">
+<option value="">Link</option>
+<option value="https://betterdiscord.app/">Better Discord</option>
+<option value="https://date.nager.at/">Worldwide Public Holiday</option>
+<option value="https://worldradiomap.com/">World Radio Map</option>
+<option value="http://szimek.github.io/signature_pad/">Signature Pad</option>
+<option value="https://silverweed.github.io/tiers/">Tierlist Maker</option>
+<option value="https://redketchup.io/color-picker">RedKetchup</option>
+<option value="https://paintmaps.com/">Paint Maps</option>
+<option value="https://www.desmos.com/calculator">Desmos</option>
+<option value="https://vscode.dev/">VS Code</option>
+<option value="https://hancomdocs.com/home">Hancom Docs (Need Sign-In)</option>
+<option value="https://r1.community.samsung.com/">Samsung Members</option>
+</select>
+<div style="float:left;margin-bottom:-3px;">
+<div id="google_translate_element" style="float:left;margin-right:4px;"></div>
+<a id="resbtn" onclick="ResetTranslate()"><button>Restore</button></a>
+<span></span>
+<button id="start" onclick="start()">White</button>
+<span></span>
+<button disabled id="stop" onclick="pause()">Noise</button>
+</div>
+<span style="float:left">
+<button onclick="openStudy()">Study with me</button>
+<span></span>
+<button class="open-excal" onclick="openExcal()">Excalidraw</button>
+<span></span>
+<button class="open-preview" onclick="openPreview()">Preview</button>
+<span></span>
+<button class="open-dillinger" onclick="openDillinger()">Dillinger</button>
+</span></span>
+</dialog>
+
+<script>
+// Function to open the dialog
+function openNavbar() {
+  var dialog = document.getElementById('navbar-dialog');
+  dialog.showModal();
+}
+
+// Function to close the dialog with animation
+function closeNavbar() {
+  var dialog = document.getElementById('navbar-dialog');
+  
+  // Add a class to trigger the closing animation
+  dialog.classList.add('closing');
+
+  // Listen for animation end event
+  dialog.addEventListener('animationend', function() {
+    // After animation completes, close the dialog
+    dialog.close();
+    
+    // Remove the closing class to reset for next time
+    dialog.classList.remove('closing');
+  }, { once: true }); // Use { once: true } to automatically remove the event listener after it's fired once
+}
+
+// Add event listener to the dialog's backdrop
+document.getElementById('navbar-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeNavbar();
+  }
+});
+
+document.getElementById('preview-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeNavbar();
+  }
+});
+
+document.getElementById('excal-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeNavbar();
+  }
+});
+
+document.getElementById('dillinger-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeNavbar();
+  }
+});
+
+document.getElementById('study-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeNavbar();
+  }
+});
+
+</script>
+<script src="script/navclock.js"></script>
+<script src="script/nav-link.js"></script> 
+
+
+
+
+

@@ -30,10 +30,6 @@ export type Analytics =
       apiKey: string
       host?: string
     }
-  | {
-      provider: "tinylytics"
-      siteId: string
-    }
 
 export interface GlobalConfiguration {
   pageTitle: string

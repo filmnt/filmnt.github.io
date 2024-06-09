@@ -83,7 +83,49 @@ export default ((userOpts?: Partial<Options>) => {
   }: QuartzComponentProps) => {
     constructFileTree(allFiles)
     return (
-      <div class={classNames(displayClass, "explorer")}>
+      <div style="margin-top:-35px;margin-left:0;margin-right:auto;" class={classNames(displayClass, "explorer")}>
+
+
+<button style="height:30px;margin-right:1px;width:35px" id="camtoggle" onclick="cameraonoff()"><i class="fa fa-video-camera" ></i></button>
+
+<div style="display:inline-block;">
+<select style="height:30px;width:130px"  id="tts-lang" >
+        <option data-lang="ko-KR" selected>Text-to-Speech</option>
+        <option data-lang="ja-JP">日本語</option>
+        <option data-lang="en-AU">AU English</option>
+        <option data-lang="en-ZA">SA English</option>
+        <option data-lang="en-GB">UK English</option>
+        <option data-lang="en-US">US English</option>
+        <option data-lang="de-DE">Deutsch</option>
+        <option data-lang="es-ES">español</option>
+        <option data-lang="fr-FR">français</option>
+        <option data-lang="hr-BA">Hrvatski jezični</option>
+        <option data-lang="hi-IN">हिन्दी Hindi</option>
+        <option data-lang="id-ID">Bahasa Indonesia</option>
+        <option data-lang="it-IT">italiano</option>
+        <option data-lang="nl-NL">Nederlands</option>
+        <option data-lang="pl-PL">polski</option>
+        <option data-lang="pt-BR">português do Brasil</option>
+        <option data-lang="ru-RU">русский</option>
+        <option data-lang="zh-CN">普通话(中国大陆)</option>
+        <option data-lang="zh-HK">​粤語(香港)</option>
+        <option data-lang="zh-TW">國語(臺灣)</option>
+        <option data-lang="sv-SE">svenska</option>
+        <option data-lang="vi-VN">Tiếng Việt</option>
+        <option data-lang="ar-EG">مَصْرِِي</option>
+        <option data-lang="hu-HU">Magyar nyelv</option>
+        <option data-lang="ro-RO">Limba română</option>
+        <option data-lang="uk-UA">українська мова</option>
+        <option data-lang="nb-NO">norsk</option>
+        <option data-lang="sk-SK">slovenčina</option>
+</select></div>
+<div style="display:inline-block;margin-left:1px;"><button style="height:30px;width:34px" id="TTS-btn"><i class="fa fa-microphone"></i>
+</button></div>
+<br></br>
+
+        <div style="margin-top:4px;"><video controls muted id="webcam" style="display:none"  autoplay></video></div>
+
+
         <button
           type="button"
           id="explorer"
@@ -114,7 +156,10 @@ export default ((userOpts?: Partial<Options>) => {
             <li id="explorer-end" />
           </ul>
         </div>
-      </div>
+    </div>
+
+
+      
     )
   }
 
