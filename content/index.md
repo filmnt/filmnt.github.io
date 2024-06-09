@@ -9,8 +9,6 @@ tags:
 <script src="script/cam.js"></script>
 %% tts script %%
 <script src="script/tts.js"></script>
-%% favicon %%
-<link rel="icon" href="favicon.gif" type="image/gif" rel="shortcut icon" >
 %% Link %%
 <style>h1{margin-top:-20px;margin-bottom:-2px}h3{margin-top:-15px}#TopBtn,#DownBtn,#threedots{display:none}</style>
 %% home navbar %%
