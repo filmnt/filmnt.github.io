@@ -83,13 +83,13 @@ $('#linkshare').prop('selectedIndex',0);};
             
 </select>
 <span></span>
-<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%93%93-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6/%E2%8C%9B-%EA%B5%90%EC%9C%A1%ED%95%99'" >⌛&nbsp;교육학</button>
+<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%93%93-Study/%E2%8C%9B-%EA%B5%90%EC%9C%A1%ED%95%99'" >⌛&nbsp;교육학</button>
 <span></span>
-<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%93%93-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6/%E2%9A%A0%EF%B8%8F-%EB%82%B4%EC%9A%A9%ED%95%99'"  >⚠️&nbsp;내용학</button>
+<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%93%93-Study/%E2%9A%A0%EF%B8%8F-%E1%84%82%E1%85%A2%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%A8'"  >⚠️&nbsp;내용학</button>
 <span></span>
-<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%93%93-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6/%F0%9F%9A%A7-%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A9%E1%84%87%E1%85%A7%E1%86%AF-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF'"  >🚧&nbsp;연도별 기출</button>
+<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%93%93-Study/%E2%9A%A0%EF%B8%8F-%E1%84%82%E1%85%A2%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%86%A8'"  >🚧&nbsp;연도별 기출</button>
 <span></span>
-<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%93%93-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6/%F0%9F%9A%AB-Download'"  >🚫&nbsp;Download</button>
+<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%93%93-Study/%F0%9F%9A%AB-Download'"  >🚫&nbsp;Download</button>
 <span></span>
 </span>
 <br>

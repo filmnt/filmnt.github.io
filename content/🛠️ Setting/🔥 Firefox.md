@@ -297,8 +297,6 @@ document.getElementById('dillinger-dialog').addEventListener('click', function(e
 <dialog id="study-dialog">
 <span>
 <h1 style="margin-top:-20px;margin-bottom:-2px">Study with me</h1>
-<audio preload="auto" id="skyline" src="notifications/Skyline.mp3"></audio> 
-<audio preload="auto" id="ios" src="notifications/ios.mp3"></audio> 
 <span style="margin-bottom:0px"><p class="time js-time" style="display:inline"></p><span class="button-container">
 <button class="go-button js-go-button">Start</button>
 <button class="reset-button js-reset-button">Reset</button>
