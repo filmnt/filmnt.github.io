@@ -86,6 +86,7 @@ $('#linkshare').prop('selectedIndex',0);};
     - `Repository Name` is important…
     - Go `GitHub-Repository Settings` - `Pages`
     - Change `Deploy from a branch` → `GitHub Actions`
+        - (Advanced) If you want to get `Short Url`, `Repository-Name` → `<Your-ID>.github.io` like `filmnt.github.io`
 1. Enter the following commands in `terminal`
 ```shell
 cd Downloads
