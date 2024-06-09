@@ -26,10 +26,10 @@ function loadComments() {
   script.type = "text/javascript"
   script.src = "https://giscus.app/client.js"
   script.async = true
-  script.setAttribute("data-repo", "filmnt/home")
-  script.setAttribute("data-repo-id", "R_kgDOMFsF7g")
+  script.setAttribute("data-repo", "filmnt/filmnt.github.io")
+  script.setAttribute("data-repo-id", "R_kgDOMG7Anw")
   script.setAttribute("data-category", "Comments")
-  script.setAttribute("data-category-id", "DIC_kwDOMFsF7s4Cf5sz")
+  script.setAttribute("data-category-id", "DIC_kwDOMG7An84Cf9lc")
   script.setAttribute("data-mapping", "title")
   script.setAttribute("data-strict", "0")
   script.setAttribute("data-reactions-enabled", "1")

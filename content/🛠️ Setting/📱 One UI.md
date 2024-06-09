@@ -97,10 +97,10 @@ $('#linkshare').prop('selectedIndex',0);};
     - Buy <a href="https://www.stacksocial.com/search?utf8=%E2%9C%93&query=adguard" target="_blank" >Here </a> (Stacksocial)
 -  Password Manager <a href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden" target="_blank" >Bitwarden</a>
 -  Cloud Storage <a href="https://play.google.com/store/apps/details?id=io.filen.app" target="_blank" >Filen</a>
-    - See <button id=”Link” onclick="window.open('https://filmnt.github.io/home/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%81-Useful-Apps','_blank' )"  >🔁&nbsp;Useful Apps</button>
+    - See <button id=”Link” onclick="window.open('https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%81-Useful-Apps','_blank' )"  >🔁&nbsp;Useful Apps</button>
 -  File Sync <a href="https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid" target="_blank" >Syncthing</a>
 -  Note-taking <a href="https://play.google.com/store/apps/details?id=md.obsidian" target="_blank" >Obsidian</a>
-    - See <button id=”Link” onclick="window.open('https://filmnt.github.io/home/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian', '_blank')" >💠&nbsp;Obsidian</button>
+    - See <button id=”Link” onclick="window.open('https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian', '_blank')" >💠&nbsp;Obsidian</button>
 - Notion Alternatives <a href="https://download.anytype.io/" target="_blank" >Anytype</a>
 -  iOS <a href="https://play.google.com/store/apps/details?id=com.inova.ios_14_iconpack" target="_blank" >Icon Pack</a>
 -  LED <a href="https://play.google.com/store/apps/details?id=com.bitdance.ledbanner.flash.ledbanner" target="_blank" >Banner</a>

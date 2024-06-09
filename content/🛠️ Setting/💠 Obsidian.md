@@ -245,7 +245,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "filmnt.github.io/home",
+    baseUrl: "filmnt.github.io/",
     ignorePatterns: ["private", "templates", ".obsidian", "**/🔖 Daily Notes", "**/🔐 Private Notes", ],
     defaultDateType: "modified",
     theme: {

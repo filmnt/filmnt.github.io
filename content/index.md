@@ -85,13 +85,13 @@ $('#linkshare').prop('selectedIndex',0);};
             
 </select>
 <span></span>
-<button id=”Link” onclick="location.href='https://filmnt.github.io/home/%F0%9F%93%93-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6/%E2%8C%9B-%EA%B5%90%EC%9C%A1%ED%95%99'" >⌛&nbsp;교육학</button>
+<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%93%93-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6/%E2%8C%9B-%EA%B5%90%EC%9C%A1%ED%95%99'" >⌛&nbsp;교육학</button>
 <span></span>
-<button id=”Link” onclick="location.href='https://filmnt.github.io/home/%F0%9F%93%93-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6/%E2%9A%A0%EF%B8%8F-%EB%82%B4%EC%9A%A9%ED%95%99'"  >⚠️&nbsp;내용학</button>
+<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%93%93-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6/%E2%9A%A0%EF%B8%8F-%EB%82%B4%EC%9A%A9%ED%95%99'"  >⚠️&nbsp;내용학</button>
 <span></span>
-<button id=”Link” onclick="location.href='https://filmnt.github.io/home/%F0%9F%93%93-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6/%F0%9F%9A%A7-%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A9%E1%84%87%E1%85%A7%E1%86%AF-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF'"  >🚧&nbsp;연도별 기출</button>
+<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%93%93-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6/%F0%9F%9A%A7-%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%83%E1%85%A9%E1%84%87%E1%85%A7%E1%86%AF-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF'"  >🚧&nbsp;연도별 기출</button>
 <span></span>
-<button id=”Link” onclick="location.href='https://filmnt.github.io/home/%F0%9F%93%93-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6/%F0%9F%9A%AB-Download'"  >🚫&nbsp;Download</button>
+<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%93%93-%E1%84%80%E1%85%B5%E1%84%8E%E1%85%AE%E1%86%AF%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6/%F0%9F%9A%AB-Download'"  >🚫&nbsp;Download</button>
 <span></span>
 </span>
 <br>
@@ -100,13 +100,13 @@ $('#linkshare').prop('selectedIndex',0);};
 <span>
 <button data-cal-link="filmnt">✉️&nbsp;Contact</button><script type="text/javascript" src="script/contact.js"></script>
 <span></span>
-<button id=”Link” onclick="location.href='https://filmnt.github.io/home/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian'" >💠&nbsp;Obsidian</button>
+<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian'" >💠&nbsp;Obsidian</button>
 <span></span>
-<button id=”Link” onclick="location.href='https://filmnt.github.io/home/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%93%B1-One-UI'"  >📱&nbsp;One&nbsp;UI</button>
+<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%93%B1-One-UI'"  >📱&nbsp;One&nbsp;UI</button>
 <span></span>
-<button id=”Link” onclick="location.href='https://filmnt.github.io/home/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%81-Useful-Apps'" >🔁&nbsp;Useful Apps</button>
+<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%81-Useful-Apps'" >🔁&nbsp;Useful Apps</button>
 <span></span>
-<button id=”Link” onclick="location.href='https://filmnt.github.io/home/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%A5-Firefox'"  >🔥&nbsp;Firefox</button>
+<button id=”Link” onclick="location.href='https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%A5-Firefox'"  >🔥&nbsp;Firefox</button>
 <span></span>
 </span>
 
