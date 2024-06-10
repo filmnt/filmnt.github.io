@@ -146,8 +146,6 @@ $('#linkshare').prop('selectedIndex',0);};
 ## [Macs Fan Control](https://crystalidea.com/macs-fan-control/download)
 -  Monitor and control fans `Not for Macbook Air`
 
-## [EasyRes](http://easyresapp.com/)
-- Screen resolution switcher 
 
 ## [Monitor Control](https://github.com/MonitorControl/MonitorControl)
 - Controls your external display brightness and volume and shows native OSD
