@@ -70,7 +70,7 @@ function formatTime(time) {
 	const h = Math.floor(m / 60);
 	m = Math.floor(m % 60);
 
-	return `${("0"+h).slice(-2)}:${("0"+m).slice(-2)}:${("0"+s).slice(-2)}`;
+	return `${addZeroBefore(h)}:${addZeroBefore(m)}:${addZeroBefore(s)}`;
 }
 
 function updateTimerElement() {
@@ -132,3 +132,8 @@ function showResetConfirmation() {
 function clearConfirmation() {
 	confirmationContainer.innerHTML = "";
 }
+
+
+function addZeroBefore(n) {
+	return (n < 10 ? '0' : '') + n;
+  }
