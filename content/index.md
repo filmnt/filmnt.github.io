@@ -368,7 +368,7 @@ document.getElementById('dillinger-dialog').addEventListener('click', function(e
 %% Study Timer %%
 <dialog id="study-dialog">
 <span>
-<h1>Study with me</h1>
+<h1>Study with me…</h1>
 <span style="margin-bottom:0px"><p class="time js-time" style="display:inline"></p><span class="button-container">
 <button class="go-button js-go-button">Start</button>
 <button class="reset-button js-reset-button">Reset</button>
@@ -440,7 +440,7 @@ document.getElementById('study-dialog').addEventListener('click', function(event
 <button disabled id="stop" onclick="pause()">Noise</button>
 </div>
 <span style="float:left">
-<button onclick="openStudy()">Study with me</button>
+<button onclick="openStudy()">Study with me…</button>
 <span></span>
 <button class="open-excal" onclick="openExcal()">Excalidraw</button>
 <span></span>
