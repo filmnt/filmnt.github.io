@@ -64,6 +64,7 @@ $('#linkshare').prop('selectedIndex',0);};
 ## Add-ons
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/" target="_blank" >Ublock-origin</a>
     - <a href="https://drive.filen.io/d/79bab8e3-3973-446c-86d1-6a0fc080713e#YOo12kRFlmxCLZ5U1xTSGseIoAAzFUaY" target="_blank" >ublock-backup</a>
+        - List-KR filter (for korean)
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/gesturefy/" target="_blank" >Gesturefy</a>
     -  <a href="https://drive.filen.io/d/53763a3e-f84d-42fa-975f-d28aba234926#QC118haumed0C3FcjgWMWSU5jwceMMXS" target="_blank" >gesturefy-backup</a> (language: korean)
     - Modify `Open custom URL`
