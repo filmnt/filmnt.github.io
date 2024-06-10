@@ -86,10 +86,11 @@ export default ((userOpts?: Partial<Options>) => {
       <div style="margin-top:-35px;margin-left:0;margin-right:auto;" class={classNames(displayClass, "explorer")}>
 
 
+
 <button style="height:30px;margin-right:1px;width:35px" id="camtoggle" onclick="cameraonoff()"><i class="fa fa-video-camera" ></i></button>
 
-<div style="display:inline-block;">
-<select style="height:30px;width:130px"  id="tts-lang" >
+<div style="display:inline-block;margin-right:1px">
+<select style="height:30px;width:145px"  id="tts-lang" >
         <option data-lang="ko-KR" selected>Text-to-Speech</option>
         <option data-lang="ja-JP">日本語</option>
         <option data-lang="en-AU">AU English</option>
@@ -119,9 +120,15 @@ export default ((userOpts?: Partial<Options>) => {
         <option data-lang="nb-NO">norsk</option>
         <option data-lang="sk-SK">slovenčina</option>
 </select></div>
-<div style="display:inline-block;margin-left:1px;"><button style="height:30px;width:34px" id="TTS-btn"><i class="fa fa-microphone"></i>
-</button></div>
+<div style="display:inline-block;">
+  <button style="height:30px;margin-right:1px;width:35px" id="tts-toggle" onclick="keyonoff()"><i class="fa-regular fa-keyboard"></i></button>  
+  <button style="height:30px;width:34px" id="TTS-btn"><i class="fa fa-microphone"></i></button>
+</div>
 <br></br>
+
+        <div id="tts-keyboard" style="display:none;  margin-top:4px">
+        <textarea id="tts-input" style="border:none;border-radius:4px;width:248px" rows="2" placeholder='Write your text here'></textarea>
+        </div>
 
         <div style="margin-top:4px;"><video controls muted id="webcam" style="display:none"  autoplay></video></div>
 

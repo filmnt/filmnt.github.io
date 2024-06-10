@@ -1,9 +1,12 @@
 const btns = document.querySelectorAll('button');
+$('#tts-lang').prop('selectedIndex',0);
 
 btns.forEach((el) => {
 el.addEventListener('click', e => {
 const msg = new SpeechSynthesisUtterance();
-const txt = window.getSelection();
+
+const txt = $("#tts-input").val() || window.getSelection();
+
 const lang = $("#tts-lang").find(':selected').attr('data-lang');     
 const langCode = lang.split('-')[0]
 
@@ -15,6 +18,7 @@ s.then((voices) => {
   msg.volume = 1;
   msg.voiceURI = "native";
   msg.rate = 0.9;
+  $("#tts-input").val("");
 
   if (window.speechSynthesis.speaking) {window.speechSynthesis.cancel();}
     else{window.speechSynthesis.speak(msg);}
@@ -33,4 +37,8 @@ function (resolve, reject) {
     }}, 10);
 })}
 
-$('#tts-lang').prop('selectedIndex',0);
+
+function keyonoff(){
+  $('#tts-keyboard').toggle();
+}
+
