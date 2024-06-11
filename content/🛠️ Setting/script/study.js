@@ -204,7 +204,8 @@ $(document).ready(function() {
   
 	function saveScreenshot(canvas) {
 	  var downloadLink = document.createElement('a');
-	  downloadLink.download = 'download.jpg';
+	  var date = new Date();
+	  downloadLink.download = `[${toJSONLocal(date)}] Study Timestamp`;
 	  canvas.toBlob(function(blob) {
 		downloadLink.href = URL.createObjectURL(blob)
 		downloadLink.click();
@@ -223,3 +224,9 @@ $(document).ready(function() {
 		});
 	});
   });
+
+  function toJSONLocal(date) {
+	var local = new Date(date);
+	local.setMinutes(date.getMinutes() - date.getTimezoneOffset());
+	return local.toJSON().slice(0, 10);
+  }
