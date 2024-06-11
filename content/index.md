@@ -367,7 +367,7 @@ document.getElementById('dillinger-dialog').addEventListener('click', function(e
 });
 </script>
 
-%% Study Timer %%
+%% Study with me %%
 <dialog id="study-dialog">
 <span><h1>Study with me…</h1>
 <span style="margin-bottom:0px"><p class="time js-time" style="display:inline"></p><span class="button-container">

@@ -562,17 +562,21 @@ document.getElementById('dillinger-dialog').addEventListener('click', function(e
 });
 </script>
 
-%% Study Timer %%
+%% Study with me %%
 <dialog id="study-dialog">
-<span>
-<h1 style="margin-top:-20px;margin-bottom:-2px">Study with me</h1>
+<span><h1>Study with me…</h1>
 <span style="margin-bottom:0px"><p class="time js-time" style="display:inline"></p><span class="button-container">
 <button class="go-button js-go-button">Start</button>
 <button class="reset-button js-reset-button">Reset</button>
 <button class="add-lap-button js-add-lap-button">Timestamp</button>
-</span></span>
-<div class="confirmation-container js-confirmation-container"></div>
-<div class="laps-list-wrapper"><ol class="laps-list js-lap-list"></ol></div>
+<div class="confirmation-container js-confirmation-container" style="float:right;margin-top:5px;position:relative;z-index:1;margin-right:5px" ></div></span></span>
+<div class="todo-container ">
+<div class="todo-app download-container"><div class="laps-list-wrapper"><ol class="laps-list js-lap-list"></ol></div>
+<ul id="list-container"></ul><div class="todo-row"></div></div>
+<div><button class="download-btn todo-btn"><i class="fa-solid fa-download"></i></button>
+<input type="text" id="input-box" placeholder=" Add your task...">
+<button onclick="addTask()" id="add" >Add</button></div>
+</div>
 </span></dialog>
 <script src="script/study.js"></script>
 
