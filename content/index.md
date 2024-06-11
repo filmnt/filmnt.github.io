@@ -3,12 +3,12 @@ title: Home
 tags:
   - contents
 ---
-%% jQuery script %%
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 %% favicon %%
 <link rel="icon" href="favicon.gif" type="image/gif"></link>
+%% jQuery script %%
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 %% html2canvas script %%
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.js"></script>
+<script src="script/html2canvas.js"></script>
 %% Webcam script %%
 <script src="script/cam.js"></script>
 %% tts script %%
