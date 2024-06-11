@@ -89,9 +89,11 @@ export default ((userOpts?: Partial<Options>) => {
 
 <button style="height:30px;margin-right:1px;width:35px" id="camtoggle" onclick="cameraonoff()"><i class="fa fa-video-camera" ></i></button>
 
+<button style="height:30px;margin-right:1px;width:35px" id="md-toggle" onclick="mdonoff()"><i class="fa-regular fa-note-sticky"></i></button> 
+
 <div style="display:inline-block;margin-right:1px">
-<select style="height:30px;width:145px"  id="tts-lang" >
-        <option data-lang="ko-KR" selected>Text-to-Speech</option>
+<select style="height:30px;width:109px;"  id="tts-lang" >
+        <option data-lang="ko-KR" selected>TTS-language</option>
         <option data-lang="ja-JP">日本語</option>
         <option data-lang="en-AU">AU English</option>
         <option data-lang="en-ZA">SA English</option>
@@ -127,11 +129,12 @@ export default ((userOpts?: Partial<Options>) => {
 <br></br>
 
         <div id="tts-keyboard" style="display:none;  margin-top:4px">
-        <textarea id="tts-input" style="border:none;border-radius:4px;width:248px" rows="2" placeholder='Write your text here'></textarea>
+        <textarea id="tts-input" style="border:none;border-radius:4px;width:248px" rows="1" placeholder='Write your text here for tts...'></textarea>
         </div>
 
         <div style="margin-top:4px;"><video controls muted id="webcam" style="display:none"  autoplay></video></div>
 
+        <div style="background-color:white;margin-top:4px;display:none" id="markdown-editor"><textarea id="mkd" ></textarea></div>
 
         <button
           type="button"
