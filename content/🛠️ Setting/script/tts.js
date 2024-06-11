@@ -1,4 +1,4 @@
-const btns = document.querySelectorAll('button');
+const btns = document.querySelectorAll('#TTS-btn');
 $('#tts-lang').prop('selectedIndex',0);
 
 btns.forEach((el) => {
