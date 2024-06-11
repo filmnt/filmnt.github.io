@@ -641,7 +641,7 @@ document.getElementById('study-dialog').addEventListener('click', function(event
 <button disabled id="stop" onclick="pause()">Noise</button>
 </div>
 <span style="float:left">
-<button onclick="openStudy()">Study with me</button>
+<button onclick="openStudy()">Study with me…</button>
 <span></span>
 <button class="open-excal" onclick="openExcal()">Excalidraw</button>
 <span></span>
