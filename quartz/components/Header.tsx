@@ -175,142 +175,6 @@ div.right.sidebar{padding:0;width:360px}
 
 
 
-
-.notes-btn {float:right;background-color: #007BFF;color: #fff;padding: 10px 20px; border: none; border-radius: 5px;cursor: pointer;transition: background-color 0.3s;}  
-.notes-btn:hover {background-color: #0056b3;}
-#addTxt:placeholder-shown{font-style:italic;}
-
-#notes-dialog{
-  --_no-shadow: 0 0 32px rgba(0, 0, 0, 0);
-  --_shadow: 0 0 60px rgba(0, 0, 0, .5);
-  width: 100%;
-  max-width: unset;
-  margin: 0 0 0 auto;
-  top: 0;
-  overflow: auto;
-  border: none;
-  box-shadow: var(--_no-shadow);
-  transition: box-shadow .2s;
-  animation-fill-mode: forwards;
-}
-
-#notes-dialog > *{
-  display: grid;
-	grid-template-rows: auto 1fr auto;
-	height: 100vh;
-}
-
-#notes-dialog::backdrop{
-    background: unset;
-}
-
-#notes-dialog:modal, 
-#notes-dialog:-internal-dialog-in-top-layer {
-  max-height: 100vh;
-}
-
-
-#notes-dialog[open] {
-  -webkit-animation: float-in-right 0.2s ease normal;
-    box-shadow: var(--_shadow);
-}
-
-#notes-dialog.closing {
-  -webkit-animation: float-out-right 0.2s ease normal;
-}
-
-/* -------- Dialog animations -------- */
-
-/* Keyframes for sliding in an element from the right */
-@keyframes float-in-right {
-  /* Start off-screen to the right */
-	from {
-		-webkit-transform: translate(100%);
-		-ms-transform: translate(100%);
-		transform: translateX(100%);
-	}
-  /* Move to the initial position (0%) */
-	to {
-		-webkit-transform: translate(0%); 
-		-ms-transform: translate(0%);
-		transform: translateX(0%);
-	}
-}
-
-/* Vendor-prefixed keyframes for sliding in an element from the right (WebKit browsers) */
-@-webkit-keyframes float-in-right {
-  /* Start from the initial position (0%) */
-	from {
-		-webkit-transform: translate(100%);
-		-ms-transform: translate(100%);
-		transform: translateX(100%);
-	}
-  /* Move off-screen to the right */
-	to {
-		-webkit-transform: translate(0%);
-		-ms-transform: translate(0%);
-		transform: translateX(0%);
-	}
-}
-
-/* Keyframes for sliding out an element to the right */
-@keyframes float-out-right {
-  /* Start from the initial position (0%) */
-	from {
-		-webkit-transform: translate(0%);
-		-ms-transform: translate(0%);
-		transform: translateX(0%);
-	}
-  /* Move off-screen to the right */
-	to {
-		-webkit-transform: translate(100%);
-		-ms-transform: translate(100%);
-		transform: translateX(100%);
-	}
-}
-
-/* Vendor-prefixed keyframes for sliding out an element to the right (WebKit browsers) */
-@-webkit-keyframes float-out-right {
-  /* Start from the initial position (0%) */
-	from {
-		-webkit-transform: translate(0%);
-		-ms-transform: translate(0%);
-		transform: translateX(0%);
-	}
-  /* Move off-screen to the right */
-	to {
-		-webkit-transform: translate(100%);
-		-ms-transform: translate(100%);
-		transform: translateX(100%);
-	}
-}
-
-/* -------- dialog inner element stling -------- */
-#notes-dialog::-webkit-scrollbar {
-	width: 0;
-}
-
-#notes-dialog::-webkit-scrollbar-track {
-	border-radius: 0;
-}
-
-#notes-dialog::-webkit-scrollbar-thumb {
-	border-radius: 0;
-}
-
-
-@media only screen and (min-width: 380px) {
-  #notes-dialog {
-    max-width: 380px;
-  }
-}
-
-
-
-
-
-
-
 .preview-container {width:100%;margin-top:20px;}.box {position: relative;width: 100%;}
 .box-header {display: block;;position: relative;border-bottom: 1px solid #646464;margin-bottom: 10px;}
 .box-tools {position: absolute;right: 0px;top: 10px;}.dropzone-wrapper {border: 1.5px dashed;position: relative;height: 150px;}
@@ -541,12 +405,12 @@ div.right.sidebar{padding:0;width:360px}
   box-shadow: var(--_no-shadow);
   transition: box-shadow .2s;
   animation-fill-mode: forwards;
+  height: auto;
 }
 
 #study-dialog > *{
   display: grid;
 	grid-template-rows: auto 1fr auto;
-	height: 160px;
 }
 
 #study-dialog::backdrop{
@@ -589,6 +453,84 @@ div.right.sidebar{padding:0;width:360px}
 }
 
 
+.todo-container {
+    width: 100%;
+    position:fixed;
+    top:70px;
+}
+
+.todo-app {
+    width: 340px;
+    padding: 10px 20px 0px 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px 5px rgba(110, 104, 104, 0.7);
+
+}
+
+.todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+#input-box {
+    height:28px;
+    margin-top:4px;
+    width:247px;
+}
+
+#add {
+    border: none;
+    outline: none;
+    height:30px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    width:80px
+}
+
+.todo-btn {
+    border: none;
+    outline: none;
+    height:30px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    width:40px
+}
+
+.todo-container ul li {
+    padding: 12px 8px 12px;
+    list-style-type: circle;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    margin-top:-15px;
+}
+
+.todo-container ul li.checked {
+    text-decoration: line-through;
+}
+
+.todo-container ul li.checked::before {
+    height: 50px;
+    width: 50px;
+    margin-top: -8px;
+    margin-left: -10px;
+}
+
+.todo-container ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+}
 
 
 

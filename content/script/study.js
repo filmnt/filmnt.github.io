@@ -91,7 +91,7 @@ function addLap() {
   
     var time =date.toTimeString().slice(0,8)+ " - " + w + ", " + month + " " + d + ", " + y ;
 
-	lapList.innerHTML = `<hr style="margin-left:-40px; margin-top:-4px"/><h3 style="margin-left:-40px;margin-top:-15px;">${time}</h3>`;
+	lapList.innerHTML = `<h3 style="margin-left:-40px;margin-top:-15px;margin-bottom:4px">${time}</h3>`;
 	lapList.innerHTML += `<cite style="margin-left:-40px" class="lap-item">StudyTime ${formatTime(timer)}</cite>`;
 }
 
@@ -110,10 +110,10 @@ function resetTimer() {
 function showResetConfirmation() {
 	confirmationContainer.innerHTML = `
 
-	<span>Are you sure?
+	<div>Are you sure?
 	<button class="yes-button js-yes-button">Yes</button>
 	<button class="no-button js-no-button">No</button>
-	</span>
+	</div>
 	`;
 
 	const noButton = document.querySelector("button.js-no-button");
@@ -123,9 +123,13 @@ function showResetConfirmation() {
 	const yesButton = document.querySelector("button.js-yes-button");
 
 	yesButton.addEventListener("click", () => {
+		const listcontainer = document.getElementById('list-container');
+		listcontainer.innerHTML='';
 		clearConfirmation();
+		savedata();
 
 		resetTimer();
+		addLap();
 	});
 }
 
@@ -137,3 +141,85 @@ function clearConfirmation() {
 function addZeroBefore(n) {
 	return (n < 10 ? '0' : '') + n;
   }
+
+addLap();
+
+
+// Timestamp
+const inputbox = document.getElementById('input-box');
+const listcontainer = document.getElementById('list-container');
+
+function addTask() {
+    if (inputbox.value === '') {
+        alert("Write something...");
+    }
+    else {
+        let li = document.createElement("li");
+        li.innerHTML = inputbox.value;
+        listcontainer.appendChild(li);
+        let span = document.createElement("span");
+        span.innerHTML = "\u00d7";
+        span.setAttribute("data-html2canvas-ignore", "true");
+        li.appendChild(span);
+    }
+    inputbox.value = "";
+    inputbox.focus();
+    savedata();
+}
+
+listcontainer.addEventListener("click", function (e) {
+    if (e.target.tagName === "LI") {
+        e.target.classList.toggle("checked");
+        savedata();
+    }
+    else if (e.target.tagName === "SPAN") {
+        e.target.parentElement.remove();
+        savedata();
+    }
+}, false);
+
+
+$("#input-box").keypress(function(e){
+	if (event.keyCode == 13){
+		addTask();
+	}
+  });
+
+
+
+function savedata() {
+    localStorage.setItem("todo-data", listcontainer.innerHTML);
+}
+
+function showlist() {
+    listcontainer.innerHTML = localStorage.getItem("todo-data");
+}
+
+showlist();
+
+
+
+// Download Timestamp
+$(document).ready(function() {
+  
+	function saveScreenshot(canvas) {
+	  var downloadLink = document.createElement('a');
+	  downloadLink.download = 'download.jpg';
+	  canvas.toBlob(function(blob) {
+		downloadLink.href = URL.createObjectURL(blob)
+		downloadLink.click();
+	  });
+	}
+  
+  
+	$(".download-btn").on("click", function(e) {
+	  e.preventDefault();
+	  html2canvas(document.querySelector(".download-container"), {
+		  backgroundColor: '#9CCEF6',
+		  scrollX: 0,
+		  scrollY: 0
+		}).then(function(canvas) {
+		  saveScreenshot(canvas);
+		});
+	});
+  });
