@@ -319,7 +319,7 @@ document.getElementById('study-dialog').addEventListener('click', function(event
 
 %% Navigation bar contents %%
 <dialog id="navbar-dialog">
-<h2 id="navclock" onload="showTime()" > </h2>
+<h2 id="navclock" onload="showTime()" style="font-size:21px"> </h2>
 <span><br>
 <input type="date" style="width:22px;float:left;margin-right:4px;height:27px">
 <form style="float:left;"  action="https://duckduckgo.com/" method="post" target="_blank"  onsubmit="this.submit(); this.reset(); return false;" novalidate><label><input style="width:280px"  type="search" name="q" placeholder="Web Search🦆" ></label></form>
