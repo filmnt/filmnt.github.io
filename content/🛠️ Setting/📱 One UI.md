@@ -528,12 +528,55 @@ document.getElementById('food-dialog').addEventListener('click', function(event)
 </script>
 <script src="script/meal.js"></script>
 
+%% Schedule %%
+<dialog id="schedule-dialog">
+<span><iframe src="https://filmnt.github.io/Scheduler/" style="margin-top:-20px;top:0x; left:0; width:100%;height:100%;position:absolute;border:0;" allowfullscreen></iframe></span>
+</dialog>
+
+<script>
+// Function to open the dialog
+function openSchedule() {
+  var dialog = document.getElementById('schedule-dialog');
+  dialog.showModal();
+}
+
+// Function to close the dialog with animation
+function closeSchedule() {
+  var dialog = document.getElementById('schedule-dialog');
+  
+  // Add a class to trigger the closing animation
+  dialog.classList.add('closing');
+
+  // Listen for animation end event
+  dialog.addEventListener('animationend', function() {
+    // After animation completes, close the dialog
+    dialog.close();
+    
+    // Remove the closing class to reset for next time
+    dialog.classList.remove('closing');
+  }, { once: true }); // Use { once: true } to automatically remove the event listener after it's fired once
+}
+
+// Add event listener to the dialog's backdrop
+document.getElementById('schedule-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeSchedule();
+  }
+});
+
+document.getElementById('schedule-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeNavbar();
+  }
+});
+</script>
+
 %% Navigation bar contents %%
 <dialog id="navbar-dialog">
 <h2 id="navclock" onload="showTime()" style="font-size:21px"> </h2>
 <span><br>
-<input type="date" style="width:22px;float:left;margin-right:4px;height:27px">
-<form style="float:left;"  action="https://duckduckgo.com/" method="post" target="_blank"  onsubmit="this.submit(); this.reset(); return false;" novalidate><label><input style="width:280px"  type="search" name="q" placeholder="Web Search🦆" ></label></form>
+<button onclick="openSchedule()" style="float:left;height:29px;margin-top:0;margin-right:4px;"><i class="fa-regular fa-calendar-check"></i> Schedule</button>
+<form style="float:left;"  action="https://duckduckgo.com/" method="post" target="_blank"  onsubmit="this.submit(); this.reset(); return false;" novalidate><label><input style="width:220px"  type="search" name="q" placeholder="Web Search🦆" ></label></form>
 <select id="links"  style="float:left;width:50px;margin-left:4px;margin-top:0px;height:29px">
 <option value="">Link</option>
 <option value="https://betterdiscord.app/">Better Discord</option>

@@ -272,65 +272,6 @@ div.right.sidebar{padding:0;width:360px}
 
 
 
-#dillinger-dialog{
-background-color:white;
-  --_no-shadow: 0 0 32px rgba(0, 0, 0, 0);
-  --_shadow: 0 0 60px rgba(0, 0, 0, .5);
-  width: 100%;
-  max-width: unset;
-  margin: 0 0 0 auto;
-  top: 0;
-  overflow: auto;
-  border: none;
-  box-shadow: var(--_no-shadow);
-  transition: box-shadow .2s;
-  animation-fill-mode: forwards;
-}
-
-#dillinger-dialog > *{
-  display: grid;
-	grid-template-rows: auto 1fr auto;
-	height: 100vh;
-}
-
-#dillinger-dialog::backdrop{
-    background: unset;
-}
-
-#dillinger-dialog:modal, 
-#dillinger-dialog:-internal-dialog-in-top-layer {
-  max-height: 100vh;
-}
-
-
-#dillinger-dialog[open] {
-  -webkit-animation: float-in-right 0.2s ease normal;
-    box-shadow: var(--_shadow);
-}
-
-#dillinger-dialog.closing {
-  -webkit-animation: float-out-right 0.2s ease normal;
-}
-
-/* -------- dialog inner element stling -------- */
-#dillinger-dialog::-webkit-scrollbar {
-	width: 0;
-}
-
-#dillinger-dialog::-webkit-scrollbar-track {
-	border-radius: 0;
-}
-
-#dillinger-dialog::-webkit-scrollbar-thumb {
-	border-radius: 0;
-}
-
-
-@media only screen and (min-width: 380px) {
-  #dillinger-dialog {
-    max-width: 380px;
-  }
-}
 
 
 
@@ -676,6 +617,75 @@ background-color:white;
 
 
 
+
+
+
+
+
+#schedule-dialog{
+  --_no-shadow: 0 0 32px rgba(0, 0, 0, 0);
+  --_shadow: 0 0 60px rgba(0, 0, 0, .5);
+  width: 100%;
+  max-width: unset;
+  margin: 0 0 0 auto;
+  top: 0;
+  overflow: auto;
+  position: fixed;
+  border: none;
+  box-shadow: var(--_no-shadow);
+  transition: box-shadow .2s;
+  animation-fill-mode: forwards;
+}
+
+#schedule-dialog > *{
+  display: grid;
+	grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+	height: 100vh;
+
+  
+}
+
+#schedule-dialog::backdrop{
+    background: unset;
+}
+
+#schedule-dialog:modal, 
+#schedule-dialog:-internal-dialog-in-top-layer {
+  max-height: 100%;
+}
+
+
+#schedule-dialog[open] {
+  -webkit-animation: float-in-right 0.2s ease normal;
+    box-shadow: var(--_shadow);
+}
+
+#schedule-dialog.closing {
+  -webkit-animation: float-out-right 0.2s ease normal;
+}
+
+
+/* -------- dialog inner element stling -------- */
+#schedule-dialog::-webkit-scrollbar {
+	width: 0;
+  display:none;
+}
+
+#schedule-dialog::-webkit-scrollbar-track {
+	border-radius: 0;
+}
+
+#schedule-dialog::-webkit-scrollbar-thumb {
+	border-radius: 0;
+}
+
+
+@media only screen and (min-width: 380px) {
+  #schedule-dialog {
+    max-width: 380px;
+  }
+}
 
 
 
