@@ -578,6 +578,48 @@ document.getElementById('study-dialog').addEventListener('click', function(event
 });
 </script>
 
+%% Food %%
+<dialog id="food-dialog">
+
+<span>
+<div id="food-container">
+<div id="meal" class="meal"></div><button class="get_meal" id="get_meal" style="float:right;">Get Meal 🍔</button></div>
+</span>
+</dialog>
+
+<script>
+// Function to open the dialog
+function openFood() {
+  var dialog = document.getElementById('food-dialog');
+  dialog.showModal();
+}
+
+// Function to close the dialog with animation
+function closeFood() {
+  var dialog = document.getElementById('food-dialog');
+  
+  // Add a class to trigger the closing animation
+  dialog.classList.add('closing');
+
+  // Listen for animation end event
+  dialog.addEventListener('animationend', function() {
+    // After animation completes, close the dialog
+    dialog.close();
+    
+    // Remove the closing class to reset for next time
+    dialog.classList.remove('closing');
+  }, { once: true }); // Use { once: true } to automatically remove the event listener after it's fired once
+}
+
+// Add event listener to the dialog's backdrop
+document.getElementById('food-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeFood();
+  }
+});
+</script>
+<script src="script/meal.js"></script>
+
 %% Navigation bar contents %%
 <dialog id="navbar-dialog">
 <h2 id="navclock" onload="showTime()" style="font-size:21px"> </h2>
@@ -609,6 +651,8 @@ document.getElementById('study-dialog').addEventListener('click', function(event
 </div>
 <span style="float:left">
 <button onclick="openStudy();">Study with me…</button>
+<span></span>
+<button onclick="openFood();">Food…?</button>
 <span></span>
 <button class="open-excal" onclick="openExcal()">Excalidraw</button>
 <span></span>
@@ -660,6 +704,12 @@ document.getElementById('excal-dialog').addEventListener('click', function(event
 });
 
 document.getElementById('study-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeNavbar();
+  }
+});
+
+document.getElementById('food-dialog').addEventListener('click', function(event) {
   if (event.target === this) {
     closeNavbar();
   }

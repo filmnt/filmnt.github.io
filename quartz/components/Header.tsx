@@ -609,10 +609,70 @@ background-color:white;
 
 
 
+#food-dialog h1 {margin-top:-20px;margin-bottom:-2px}
+#food-container {height:100%;min-height:120px}
+.get_meal {background-color: #007BFF;color: #fff;padding: 10px 20px; border: none; border-radius: 5px;cursor: pointer;transition: background-color 0.3s;height:40px}  
+.get_meal:hover {background-color: #0056b3;}.row {display: flex;}.column {flex: 50%;padding:4px;}
+
+#food-dialog{
+  --_no-shadow: 0 0 32px rgba(0, 0, 0, 0);
+  --_shadow: 0 0 60px rgba(0, 0, 0, .5);
+  width: 100%;
+  max-width: unset;
+  margin: 0 0 0 auto;
+  top: 0;
+  overflow: auto;
+  border: none;
+  box-shadow: var(--_no-shadow);
+  transition: box-shadow .2s;
+  animation-fill-mode: forwards;
+}
+
+#food-dialog > *{
+  display: grid;
+	grid-template-rows: auto 1fr auto;
+	height: 100%;
+}
+
+#food-dialog::backdrop{
+    background: unset;
+}
+
+#food-dialog:modal, 
+#food-dialog:-internal-dialog-in-top-layer {
+  max-height: 100%;
+}
 
 
+#food-dialog[open] {
+  -webkit-animation: float-in-right 0.2s ease normal;
+    box-shadow: var(--_shadow);
+}
+
+#food-dialog.closing {
+  -webkit-animation: float-out-right 0.2s ease normal;
+}
 
 
+/* -------- dialog inner element stling -------- */
+#food-dialog::-webkit-scrollbar {
+	width: 0;
+}
+
+#food-dialog::-webkit-scrollbar-track {
+	border-radius: 0;
+}
+
+#food-dialog::-webkit-scrollbar-thumb {
+	border-radius: 0;
+}
+
+
+@media only screen and (min-width: 380px) {
+  #food-dialog {
+    max-width: 380px;
+  }
+}
 
 
 

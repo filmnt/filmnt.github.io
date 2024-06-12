@@ -171,9 +171,9 @@ $(document).ready(function() {
 
         $("#browser").text(" | "+ jscd.browser  + " on "  + jscd.os) ;
 
-        // var map='';
-        // map = '<iframe src= "https://maps.google.com/maps?q='+data.loc+'&hl=en&amp;output=embed" style="width:100%; height:120px;" frameBorder="0"></iframe>';
-        // $("#mapping").append(map)
+        var map='';
+        map = '<iframe src= "https://maps.google.com/maps?q='+data.loc+'&z=14&hl=en&amp;output=embed" style="width:100%; height:450px;" frameBorder="0"></iframe>';
+        $("#mapping").append(map)
     });
 });
 

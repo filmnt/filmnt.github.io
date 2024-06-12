@@ -92,7 +92,7 @@ function addLap() {
     var time =date.toTimeString().slice(0,8)+ " - " + w + ", " + month + " " + d + ", " + y ;
 
 	lapList.innerHTML = `<h3 style="margin-left:-40px;margin-top:-15px;margin-bottom:4px">${time}</h3>`;
-	lapList.innerHTML += `<cite style="margin-left:-40px" class="lap-item">StudyTime ${formatTime(timer)}</cite>`;
+	lapList.innerHTML += `<cite style="margin-left:-40px" class="lap-item"><i class="fa-solid fa-certificate"></i> StudyTime ${formatTime(timer)}</cite>`;
 }
 
 function resetTimer() {

@@ -121,6 +121,7 @@ export default ((userOpts?: Partial<Options>) => {
         <option data-lang="uk-UA">українська мова</option>
         <option data-lang="nb-NO">norsk</option>
         <option data-lang="sk-SK">slovenčina</option>
+        <option data-lang="tr-TR">Türkçe</option>
 </select></div>
 <div style="display:inline-block;">
   <button style="height:30px;margin-right:1px;width:35px" id="tts-toggle" onclick="keyonoff()"><i class="fa-regular fa-keyboard"></i></button>  

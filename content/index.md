@@ -87,6 +87,7 @@ $('#linkshare').prop('selectedIndex',0);};
             <option value="50d4530d52/kiev/">Київ</option>
             <option value="59d9110d75/oslo/">Oslo</option>
             <option value="48d1517d11/bratislava/">Bratislava</option>    
+            <option value="37d9658d33/ashgabat/">Aşgabat</option>    
             
 </select>
 <span></span>
@@ -122,27 +123,18 @@ $('#linkshare').prop('selectedIndex',0);};
 .next {right: 0;border-radius: 3px 0 0 3px;}
 </style>
 
-
-
 <div class="slideshow-container" >
 <div class="Slides">
 <a class="weatherwidget-io" href="https://forecast7.com/en/37d57126d98/seoul/" data-label_1="서울" data-label_2="WEATHER" data-font="Noto Sans" data-icons="Climacons Animated" data-theme="weather_one" target=”_blank”> </a>
 </div>
 
-
 <div class="Slides">
-<style>#food-container {height:100%;min-height:120px}
-.get_meal {position:absolute;bottom:0;right:0;background-color: #007BFF;color: #fff;padding: 10px 20px; border: none; border-radius: 5px;cursor: pointer;transition: background-color 0.3s;}  
-.get_meal:hover {background-color: #0056b3;}.row {display: flex;}.column {flex: 50%;padding:4px;}</style>
-<div id="food-container">
-<div id="meal" class="meal"></div><button class="get_meal" id="get_meal">Get Meal 🍔</button></div></div>
-<script src="script/meal.js"></script>
-
+<div id="mapping"></div>
+</div>
 
 <div class="Slides">
 <iframe width="100%" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=default&metricTemp=default&metricWind=default&zoom=5&overlay=wind&product=ecmwf&level=surface" frameborder="0"></iframe>
 </div>
-
 
 <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-chevron-left fa-xl"></i></a>
 <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-chevron-right fa-xl"></i></a>
@@ -385,6 +377,48 @@ document.getElementById('study-dialog').addEventListener('click', function(event
 });
 </script>
 
+%% Food %%
+<dialog id="food-dialog">
+
+<span>
+<div id="food-container">
+<div id="meal" class="meal"></div><button class="get_meal" id="get_meal" style="float:right;">Get Meal 🍔</button></div>
+</span>
+</dialog>
+
+<script>
+// Function to open the dialog
+function openFood() {
+  var dialog = document.getElementById('food-dialog');
+  dialog.showModal();
+}
+
+// Function to close the dialog with animation
+function closeFood() {
+  var dialog = document.getElementById('food-dialog');
+  
+  // Add a class to trigger the closing animation
+  dialog.classList.add('closing');
+
+  // Listen for animation end event
+  dialog.addEventListener('animationend', function() {
+    // After animation completes, close the dialog
+    dialog.close();
+    
+    // Remove the closing class to reset for next time
+    dialog.classList.remove('closing');
+  }, { once: true }); // Use { once: true } to automatically remove the event listener after it's fired once
+}
+
+// Add event listener to the dialog's backdrop
+document.getElementById('food-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeFood();
+  }
+});
+</script>
+<script src="script/meal.js"></script>
+
 %% Navigation bar contents %%
 <dialog id="navbar-dialog">
 <h2 id="navclock" onload="showTime()" style="font-size:21px"> </h2>
@@ -416,6 +450,8 @@ document.getElementById('study-dialog').addEventListener('click', function(event
 </div>
 <span style="float:left">
 <button onclick="openStudy();">Study with me…</button>
+<span></span>
+<button onclick="openFood();">Food…?</button>
 <span></span>
 <button class="open-excal" onclick="openExcal()">Excalidraw</button>
 <span></span>
@@ -472,9 +508,18 @@ document.getElementById('study-dialog').addEventListener('click', function(event
   }
 });
 
+document.getElementById('food-dialog').addEventListener('click', function(event) {
+  if (event.target === this) {
+    closeNavbar();
+  }
+});
+
 </script>
 <script src="script/navclock.js"></script>
 <script src="script/nav-link.js"></script>
+
+
+
 
 
 
