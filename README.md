@@ -18,6 +18,7 @@ See 💠[Obsidian](https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F
 
 
 ## Mobile
+### *Swipe gesture is supported for Navigation bar*
 |  (Reference) TabS9 Landscape (minWidth-950)  |    Note3 (minWidth-500)    |
 | ---------| --------- | 
 | ![TabS9](<content/ReadmeImg/TabS9 Hroizontal-Width-950.png>)  | ![Note3](<content/ReadmeImg/Note3 Portrait-minwidth-500.png>)  |
