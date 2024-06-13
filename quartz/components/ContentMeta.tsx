@@ -45,11 +45,6 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
                 <div onclick="window.open('https://quickchart.io/qr?size=500&caption=🪴 Filmnt&captionFontSize=20&margin=2&text='+window.location.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=no, resizable=no, width=500px, height=500px, top=25px left=120px'); return false;" ><i class="fa-solid fa-qrcode fa-xl"></i> QR Code</div>
             </div></button>
             )
-      segments.push(
-        <button id="threedots" style="position:fixed;bottom: 130px;float:right;right: 28px;width: 40px;height:40px;opacity:0.3;z-index:1" onclick="openNavbar()"><i class="fa-solid fa-bars fa-xl"></i></button>
-            )
-
-
             segments.push(
               <button id="TopBtn" onclick="document.documentElement.scrollTop=0;" style="position:fixed;bottom: 175px;float:right;right: 28px;width: 40px;height:40px;opacity:0.3;z-index:1" ><i class="fa-solid fa-arrow-up fa-xl"></i></button>
             )

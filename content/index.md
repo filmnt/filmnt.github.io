@@ -187,4 +187,3 @@ document.getElementById( 'switchLocation' ).onchange = function() {$('#switchLoc
 
 
 
-

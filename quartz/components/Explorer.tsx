@@ -139,7 +139,6 @@ export default ((userOpts?: Partial<Options>) => {
 
 
 
-
         <dialog id="navbar-dialog" style="margin-top:-15px">
         <h2 id="navclock" onload="showTime()" style="font-size:21px;"> </h2>
         <span><br></br>
