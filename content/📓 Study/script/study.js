@@ -230,3 +230,41 @@ $(document).ready(function() {
 	local.setMinutes(date.getMinutes() - date.getTimezoneOffset());
 	return local.toJSON().slice(0, 10);
   }
+
+
+
+// Function to open the dialog
+function openStudy() {
+	var dialog = document.getElementById('study-dialog');
+	dialog.showModal();
+  }
+  
+  // Function to close the dialog with animation
+  function closeStudy() {
+	var dialog = document.getElementById('study-dialog');
+	
+	// Add a class to trigger the closing animation
+	dialog.classList.add('closing');
+  
+	// Listen for animation end event
+	dialog.addEventListener('animationend', function() {
+	  // After animation completes, close the dialog
+	  dialog.close();
+	  
+	  // Remove the closing class to reset for next time
+	  dialog.classList.remove('closing');
+	}, { once: true }); // Use { once: true } to automatically remove the event listener after it's fired once
+  }
+  
+  // Add event listener to the dialog's backdrop
+  document.getElementById('study-dialog').addEventListener('click', function(event) {
+	if (event.target === this) {
+	  closeStudy();
+	}
+  });
+  
+  document.getElementById('study-dialog').addEventListener('click', function(event) {
+	if (event.target === this) {
+	  closeNavbar();
+	}
+  });

@@ -85,15 +85,13 @@ export default ((userOpts?: Partial<Options>) => {
     return (
       <div style="margin-top:-35px;margin-left:0;margin-right:auto;" class={classNames(displayClass, "explorer")}>
 
+<button style="height:30px;margin-right:4px;width:40px" id="camtoggle" onclick="cameraonoff()"><i class="fa-solid fa-video fa-xl"></i></button>
 
+<button style="height:30px;margin-right:4px;width:40px" id="md-toggle" onclick="mdonoff()"><i class="fa-regular fa-note-sticky fa-xl"></i></button> 
 
-<button style="height:30px;margin-right:1px;width:35px" id="camtoggle" onclick="cameraonoff()"><i class="fa fa-video-camera" ></i></button>
-
-<button style="height:30px;margin-right:1px;width:35px" id="md-toggle" onclick="mdonoff()"><i class="fa-regular fa-note-sticky"></i></button> 
-
-<div style="display:inline-block;margin-right:1px">
-<select style="height:30px;width:109px;"  id="tts-lang" >
-        <option data-lang="ko-KR" selected>TTS-language</option>
+<div style="display:inline-block;margin-right:4px">
+<select style="height:30px;width:75px;"  id="tts-lang" >
+        <option data-lang="ko-KR" selected>Voices</option>
         <option data-lang="ja-JP">日本語</option>
         <option data-lang="en-AU">AU English</option>
         <option data-lang="en-ZA">SA English</option>
@@ -124,8 +122,8 @@ export default ((userOpts?: Partial<Options>) => {
         <option data-lang="tr-TR">Türkçe</option>
 </select></div>
 <div style="display:inline-block;">
-  <button style="height:30px;margin-right:1px;width:35px" id="tts-toggle" onclick="keyonoff()"><i class="fa-regular fa-keyboard"></i></button>  
-  <button style="height:30px;width:34px" id="TTS-btn"><i class="fa fa-microphone"></i></button>
+  <button style="height:30px;margin-right:4px;width:40px" id="tts-toggle" onclick="keyonoff()"><i class="fa-regular fa-keyboard fa-xl"></i></button>  
+  <button style="height:30px;width:40px" id="TTS-btn"><i class="fa-solid fa-microphone-lines fa-xl"></i></button>
 </div>
 <br></br>
 
@@ -137,6 +135,121 @@ export default ((userOpts?: Partial<Options>) => {
 
         <div style="background-color:white;margin-top:4px;display:none" id="markdown-editor"><textarea id="mkd" ></textarea></div>
 
+
+
+
+
+
+        <dialog id="navbar-dialog" style="margin-top:-15px">
+        <h2 id="navclock" onload="showTime()" style="font-size:21px;"> </h2>
+        <span><br></br>
+        <button onclick="openSchedule()" style="float:left;height:29px;margin-top:0;margin-right:4px;"><i class="fa-regular fa-calendar-check fa-xl"></i> Schedule</button>
+        <form style="float:left;"  action="https://duckduckgo.com/" method="post" target="_blank"  onsubmit="this.submit(); this.reset(); return false;" novalidate>
+        <label><input style="width:220px"  type="search" name="q" placeholder="Web Search🦆" /></label></form>
+        <select id="links" style="float:left;width:50px;margin-left:4px;margin-top:0px;height:29px">
+        <option value="" >Link</option>
+        <option value="https://filmnt.github.io/Scheduler/">Schedule</option>
+        <option value="https://betterdiscord.app/">Better Discord</option>
+        <option value="https://date.nager.at/">Worldwide Public Holiday</option>
+        <option value="https://worldradiomap.com/">World Radio Map</option>
+        <option value="http://szimek.github.io/signature_pad/">Signature Pad</option>
+        <option value="https://silverweed.github.io/tiers/">Tierlist Maker</option>
+        <option value="https://redketchup.io/color-picker">RedKetchup</option>
+        <option value="https://paintmaps.com/">Paint Maps</option>
+        <option value="https://www.desmos.com/calculator">Desmos</option>
+        <option value="https://github.com/lukas-blecher/LaTeX-OCR">LaTeX-OCR (Advanced)</option>
+        <option value="https://vscode.dev/">VS Code</option>
+        <option value="https://hancomdocs.com/home">Hancom Docs (Need Sign-In)</option>
+        <option value="https://r1.community.samsung.com/">Samsung Members</option>
+        </select>
+        <div style="float:left;margin-bottom:-3px;">
+        <div id="google_translate_element" style="float:left;margin-right:4px;"></div>
+        <a id="resbtn" onclick="ResetTranslate()" style="margin-right:4px;"><button>Restore</button></a>
+        <span></span>
+        <button id="start" onclick="start()">White</button>
+        <span></span>
+        <button disabled id="stop" onclick="pause()">Noise</button>
+        </div>
+        <span style="float:left">
+        <button onclick="openStudy();" style="margin-right:4px;">Study with me…</button>
+        <span></span>
+        <button onclick="openFood();" style="margin-right:4px;">Food…?</button>
+        <span></span>
+        <button class="open-excal" onclick="openExcal()" style="margin-right:4px;">Excalidraw</button>
+        <span></span>
+        <button class="open-preview" onclick="openPreview()">Preview</button>
+        </span></span>
+        </dialog>
+
+
+
+
+        <dialog id="schedule-dialog">
+        <span><iframe src="https://filmnt.github.io/Scheduler/" style="margin-top:-20px;top:0x; left:0; width:100%;height:100%;position:absolute;border:0;" allowfullscreen></iframe></span>
+        </dialog>
+
+        <dialog id="study-dialog">
+        <span><h1>Study with me…</h1>
+        <span style="margin-bottom:0px"><p class="time js-time" style="display:inline;font-size:20px;font-style: italic;margin-right:4px"></p><span class="button-container">
+        <button class="go-button js-go-button" style="margin-right:4px">Start</button>
+        <button class="reset-button js-reset-button" style="margin-right:4px">Reset</button>
+        <button class="add-lap-button js-add-lap-button">Timestamp</button>
+        <div class="confirmation-container js-confirmation-container" style="float:right;margin-top:-15px;position:relative;z-index:1;margin-right:5px" ></div></span></span>
+        <div class="todo-container" style="margin-top:4px;">
+        <div class="todo-app download-container"><div class="laps-list-wrapper"><ol class="laps-list js-lap-list"></ol></div>
+        <ul id="list-container"></ul><div class="todo-row"></div></div>
+        <div><button class="download-btn todo-btn" style="margin-right:4px"><i class="fa-solid fa-download"></i></button>
+        <input type="text" style="margin-right:4px" id="input-box" placeholder=" Add your task..."/>
+        <button onclick="addTask()" id="add" >Add</button></div>
+        </div>
+        </span></dialog>
+
+
+        <dialog id="food-dialog">
+        <span>
+        <div id="food-container">
+        <div id="meal" class="meal"></div><button class="get_meal" id="get_meal" style="float:right;">Get Meal 🍔</button></div>
+        </span>
+        </dialog>
+
+
+        <dialog id="excal-dialog">
+        <span><iframe src="https://excalidraw.com/" style="margin-top:-20px;top:0x; left:0; width:100%;height:100%;position:absolute;border:0;" allowfullscreen></iframe></span>
+        </dialog>
+
+
+        <dialog id="preview-dialog" style="width:380px;">
+        <div id="previewdiv">
+        <section>
+        <form action="" method="POST" enctype="multipart/form-data">
+        <div class="preview-container"><div><div class="col-md-12"><div class="form-group">
+        <div class="preview-zone hidden"><div class="box box-solid"><div class="box-header with-border"><button type="button" class="remove-preview">Reset</button>
+        <div><h1 style="text-align:left;margin-left:4px;margin-top:-20px;margin-bottom:-2px">Preview</h1></div><div class="box-tools pull-right"></div></div>
+        <div class="box-body"></div></div></div>
+        <div class="dropzone-wrapper"><div class="dropzone-desc"><h1>Drag and Drop</h1></div>
+        <input type="file" name="img_logo" class="dropzone"/></div></div></div></div></div></form>
+        </section>
+        </div>
+        </dialog>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
         <button
           type="button"
           id="explorer"
