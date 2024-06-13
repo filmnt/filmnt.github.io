@@ -61,6 +61,7 @@ $('#linkshare').prop('selectedIndex',0);};
 <script src="script/scheduler.js"></script>
 %% Navigation bar Script %%
 <script src="script/navbar.js"></script>
+<script src="script/swipe-gesture.js"></script>
 
 
 
