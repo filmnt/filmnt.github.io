@@ -11,6 +11,7 @@ var simplemde = new SimpleMDE({
 	toolbarTips: false,
     status: false,
     hideIcons: ["guide", "fullscreen", "side-by-side"],
+    spellChecker: false,
 });
 
 function mdonoff(){
