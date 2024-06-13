@@ -74,7 +74,6 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
         <select id="links" style="float:left;width:50px;margin-left:4px;margin-top:0px;height:29px">
         <option value="" >Link</option>
         <option value="https://filmnt.github.io/Scheduler/">Schedule</option>
-        <option value="https://betterdiscord.app/">Better Discord</option>
         <option value="https://date.nager.at/">Worldwide Public Holiday</option>
         <option value="https://worldradiomap.com/">World Radio Map</option>
         <option value="http://szimek.github.io/signature_pad/">Signature Pad</option>
