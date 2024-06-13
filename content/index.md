@@ -16,6 +16,18 @@ tags:
 <script src="script/md-editor.js"></script>
 %% tts script %%
 <script src="script/tts.js"></script>
+%% progressbar script %%
+<script>
+function getCurrentProgress(){
+  const firstDateOfYear = new Date(new Date().getFullYear(), 0, 1);
+  const currentDate = new Date();
+  return ((((currentDate - firstDateOfYear) / (1000 * 60 * 60 * 24)) * 100) / 365).toFixed(1);}
+function updateUI() {const percent = getCurrentProgress();
+  const barItem = document.getElementsByClassName('bar')[0];barItem.style.width = `${percent}%`;
+  const counterItem = document.getElementsByClassName('value')[0];counterItem.textContent = `${percent}%`;}
+setInterval(function() {updateUI();return arguments.callee;}(), 1000);
+</script>
+
 %% Link %%
 <style>h1{margin-top:-20px;margin-bottom:-2px}h3{margin-top:-15px}#TopBtn,#DownBtn,#threedots{display:none}</style>
 %% home navbar icon %%
@@ -171,17 +183,6 @@ document.getElementById( 'switchLocation' ).onchange = function() {$('#switchLoc
 %% discord embed %%
 > <widgetbot server="1231921110811934840" channel="1231921110811934843" width="100%" height="600" ></widgetbot> <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
 
-%% progressbar script %%
-<script>
-function getCurrentProgress(){
-  const firstDateOfYear = new Date(new Date().getFullYear(), 0, 1);
-  const currentDate = new Date();
-  return ((((currentDate - firstDateOfYear) / (1000 * 60 * 60 * 24)) * 100) / 365).toFixed(1);}
-function updateUI() {const percent = getCurrentProgress();
-  const barItem = document.getElementsByClassName('bar')[0];barItem.style.width = `${percent}%`;
-  const counterItem = document.getElementsByClassName('value')[0];counterItem.textContent = `${percent}%`;}
-setInterval(function() {updateUI();return arguments.callee;}(), 1000);
-</script>
 
 
 
