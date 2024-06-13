@@ -62,7 +62,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
 
 
 
-        <button id="threedots" style="position:fixed;bottom: 130px;float:right;right: 28px;width: 40px;height:40px;opacity:0.3;z-index:1" onclick="openNavbar()"><i class="fa-solid fa-bars fa-xl"></i></button>
+        <button id="threedots" style="position:fixed;bottom: 85px;float:right;right: 28px;width: 40px;height:40px;opacity:0.3;z-index:1" onclick="openNavbar()"><i class="fa-solid fa-bars fa-xl"></i></button>
 
 
         <dialog id="navbar-dialog" style="margin-top:-15px">
