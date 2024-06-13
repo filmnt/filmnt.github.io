@@ -100,6 +100,7 @@ $('#linkshare').prop('selectedIndex',0);};
             <option value="59d9110d75/oslo/">Oslo</option>
             <option value="48d1517d11/bratislava/">Bratislava</option>    
             <option value="37d9658d33/ashgabat/">Aşgabat</option>    
+            <option value="51d1671d47/astana/">Астана</option>    
             
 </select>
 <span></span>
