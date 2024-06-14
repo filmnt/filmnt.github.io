@@ -77,15 +77,15 @@ function openPreview() {
     }, { once: true }); // Use { once: true } to automatically remove the event listener after it's fired once
   }
   
-  // Add event listener to the dialog's backdrop
-  document.getElementById('preview-dialog').addEventListener('click', function(event) {
-    if (event.target === this) {
-      closePreview();
-    }
-  });
+  // // Add event listener to the dialog's backdrop
+  // document.getElementById('preview-dialog').addEventListener('click', function(event) {
+  //   if (event.target === this) {
+  //     closePreview();
+  //   }
+  // });
   
-  document.getElementById('preview-dialog').addEventListener('click', function(event) {
-    if (event.target === this) {
-      closeNavbar();
-    }
-  });
+  // document.getElementById('preview-dialog').addEventListener('click', function(event) {
+  //   if (event.target === this) {
+  //     closeNavbar();
+  //   }
+  // });

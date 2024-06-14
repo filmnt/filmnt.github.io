@@ -21,15 +21,15 @@ function openExcal() {
     }, { once: true }); // Use { once: true } to automatically remove the event listener after it's fired once
   }
   
-  // Add event listener to the dialog's backdrop
-  document.getElementById('excal-dialog').addEventListener('click', function(event) {
-    if (event.target === this) {
-      closeExcal();
-    }
-  });
+  // // Add event listener to the dialog's backdrop
+  // document.getElementById('excal-dialog').addEventListener('click', function(event) {
+  //   if (event.target === this) {
+  //     closeExcal();
+  //   }
+  // });
   
-  document.getElementById('excal-dialog').addEventListener('click', function(event) {
-    if (event.target === this) {
-      closeNavbar();
-    }
-  });
+  // document.getElementById('excal-dialog').addEventListener('click', function(event) {
+  //   if (event.target === this) {
+  //     closeNavbar();
+  //   }
+  // });

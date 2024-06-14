@@ -138,12 +138,12 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
 
 
         <dialog id="excal-dialog">
-        <span><iframe src="https://excalidraw.com/" style="margin-top:-20px;top:0x; left:0; width:100%;height:100%;position:absolute;border:0;" allowfullscreen></iframe></span>
+        <span><button onclick="closeExcal();closeNavbar()" style="position:fixed;top:10px;right:420px;width:40px;height:40px;opacity:0.3;z-index:1"><i class="fa-solid fa-xmark fa-xl"></i></button><iframe src="https://excalidraw.com/" style="margin-top:-20px;top:0x; left:0; width:100%;height:100%;position:absolute;border:0;" allowfullscreen></iframe></span>
         </dialog>
 
 
         <dialog id="preview-dialog" style="width:380px;">
-        <div id="previewdiv">
+        <div id="previewdiv"><button onclick="closePreview();closeNavbar()" style="position:fixed;top:10px;right:420px;width:40px;height:40px;opacity:0.3;z-index:1"><i class="fa-solid fa-xmark fa-xl"></i></button>
         <section>
         <form action="" method="POST" enctype="multipart/form-data">
         <div class="preview-container"><div><div class="col-md-12"><div class="form-group">
