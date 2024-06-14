@@ -67,14 +67,6 @@ $('#linkshare').prop('selectedIndex',0);};
 
 
 
-## Broswsers based on Firefox 
-- <a href="https://mullvad.net/en/download/browser/windows" target="_blank" >Mullvad Browser</a> [^1] 
-- <a href="https://librewolf.net/" target="_blank" >Librewolf</a> [^1]
-- <a href="https://www.waterfox.net/" target="_blank" >Waterfox</a>
-
-
----
-
 ## Add-ons
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/" target="_blank" >Ublock-origin</a>
     - <a href="https://drive.filen.io/d/79bab8e3-3973-446c-86d1-6a0fc080713e#YOo12kRFlmxCLZ5U1xTSGseIoAAzFUaY" target="_blank" >ublock-backup</a>
