@@ -104,7 +104,7 @@ $('#linkshare').prop('selectedIndex',0);};
 - Select a profile according to the purpose of use in `about:profiles`
 - (Advanced) Download `user.js` and move to `new profile-Root Directory`
     -  <a href="https://github.com/yokoffing/BetterFox" target="_blank" >BetterFox</a>
-        -  `user.js` (this includes others) [^2]
+        -  `user.js` (this includes others) [^1]
         - `Fastfox.js`
         - `Securefox.js`
         - `Peskyfox.js`
@@ -143,5 +143,4 @@ $('#linkshare').prop('selectedIndex',0);};
 
 
 
-[^1]: Need additional setting in `about:config` (<font color="#ff0000">Do It Yourself…</font>) regarding fingerprinting
-[^2]: See `Common Overrides`and Use `VS Code`
+[^1]: See `Common Overrides`and Use `VS Code`
