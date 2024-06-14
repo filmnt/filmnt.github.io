@@ -68,7 +68,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
         <dialog id="navbar-dialog" style="margin-top:-15px">
         <h2 id="navclock" onload="showTime()" style="font-size:21px;"> </h2>
         <span><br></br>
-        <button onclick="openSchedule()" style="float:left;height:29px;margin-top:0;margin-right:4px;"><i class="fa-regular fa-calendar-check fa-xl"></i> Schedule</button>
+        <button onclick="openSchedule()" style="float:left;height:29px;margin-top:0;margin-right:4px;"><i class="fa-regular fa-calendar-check"></i> Schedule</button>
         <form style="float:left;"  action="https://duckduckgo.com/" method="post" target="_blank"  onsubmit="this.submit(); this.reset(); return false;" novalidate>
         <label><input style="width:220px"  type="search" name="q" placeholder="Web Search🦆" /></label></form>
         <select id="links" style="float:left;width:50px;margin-left:4px;margin-top:0px;height:29px">
