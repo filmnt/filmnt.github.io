@@ -116,9 +116,11 @@ function openNavbar() {
   };
   
   $(window).scroll(function(){
+      $('widgetbot-crate').fadeOut();
       $('.needfade').fadeOut();
   });
   
   $(window).scrollEnd(function(){
+      $('widgetbot-crate').fadeIn();
       $('.needfade').fadeIn();
   }, 1000);
