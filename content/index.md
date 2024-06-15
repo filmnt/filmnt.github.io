@@ -3,8 +3,6 @@ title: Home
 tags:
   - contents
 ---
-%% favicon %%
-<link rel="icon" href="favicon.gif" type="image/gif"></link>
 %% jQuery script %%
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 %% html2canvas script %%
