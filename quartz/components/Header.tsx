@@ -732,7 +732,7 @@ transition: box-shadow .2s;animation-fill-mode: forwards;}
 
 
 
-button:hover{font-size:101%}
+button:hover{font-size:101%;cursor:pointer}
 
 
 
