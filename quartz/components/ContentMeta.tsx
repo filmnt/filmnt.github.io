@@ -46,10 +46,10 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
             </div></button>
             )
             segments.push(
-              <button id="TopBtn" onclick="document.documentElement.scrollTop=0;" style="position:fixed;bottom:175px;left:calc(100% - 68px);width: 40px;height:40px;opacity:0.3;z-index:1" ><i class="fa-solid fa-arrow-up fa-xl"></i></button>
+              <button class="needfade" id="TopBtn" onclick="document.documentElement.scrollTop=0;" style="position:fixed;bottom:175px;left:calc(100% - 68px);width: 40px;height:40px;opacity:0.3;z-index:1" ><i class="fa-solid fa-arrow-up fa-xl"></i></button>
             )
             segments.push(
-              <button id="DownBtn" onclick="window.scrollTo(0, document.body.scrollHeight);" style="position: fixed;bottom: 130px;left:calc(100% - 68px);;width: 40px;height:40px;opacity:0.3;z-index:1" ><i class="fa-solid fa-arrow-down fa-xl"></i></button>
+              <button class="needfade" id="DownBtn" onclick="window.scrollTo(0, document.body.scrollHeight);" style="position: fixed;bottom: 130px;left:calc(100% - 68px);;width: 40px;height:40px;opacity:0.3;z-index:1" ><i class="fa-solid fa-arrow-down fa-xl"></i></button>
             )
 
       const segmentsElements = segments.map((segment) => <span>{segment}</span>)
