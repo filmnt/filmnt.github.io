@@ -29,7 +29,7 @@ setInterval(function() {updateUI();return arguments.callee;}(), 1000);
 %% Link %%
 <style>h1{margin-top:-20px;margin-bottom:-2px}h3{margin-top:-15px}#TopBtn,#DownBtn,#threedots{display:none}</style>
 %% home navbar icon %%
-<button id="navbar" style="position:fixed;bottom: 30px;float:right;right: 28px;width: 40px;height:40px;opacity:0.3;z-index:1" onclick="openNavbar()"><i class="fa-solid fa-bars fa-xl"></i></button>
+<button title="Navigation" id="navbar" style="position:fixed;bottom: 30px;float:right;right: 28px;width: 40px;height:40px;opacity:0.3;z-index:1" onclick="openNavbar()"><i class="fa-solid fa-bars fa-xl"></i></button>
 %% Links script %%
 <script type="text/javascript">
 var url = document.getElementById( 'linkshare' );
@@ -182,7 +182,4 @@ document.getElementById( 'switchLocation' ).onchange = function() {$('#switchLoc
 
 %% discord embed %%
 > <widgetbot server="1231921110811934840" channel="1231921110811934843" width="100%" height="600" ></widgetbot> <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-
-
-
 

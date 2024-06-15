@@ -85,9 +85,9 @@ export default ((userOpts?: Partial<Options>) => {
     return (
       <div style="margin-top:-35px;margin-left:0;margin-right:auto;" class={classNames(displayClass, "explorer")}>
 
-<button style="height:30px;margin-right:4px;width:40px" id="camtoggle" onclick="cameraonoff()"><i class="fa-solid fa-video fa-xl"></i></button>
+<button title="Webcam" style="height:30px;margin-right:4px;width:40px" id="camtoggle" onclick="cameraonoff()"><i class="fa-solid fa-video fa-xl"></i></button>
 
-<button style="height:30px;margin-right:4px;width:40px" id="md-toggle" onclick="mdonoff()"><i class="fa-regular fa-note-sticky fa-xl"></i></button> 
+<button title="Notes" style="height:30px;margin-right:4px;width:40px" id="md-toggle" onclick="mdonoff()"><i class="fa-regular fa-note-sticky fa-xl"></i></button> 
 
 <div style="display:inline-block;margin-right:4px">
 <select style="height:30px;width:75px;"  id="tts-lang" >
@@ -122,8 +122,8 @@ export default ((userOpts?: Partial<Options>) => {
         <option data-lang="tr-TR">Türkçe</option>
 </select></div>
 <div style="display:inline-block;">
-  <button style="height:30px;margin-right:4px;width:40px" id="tts-toggle" onclick="keyonoff()"><i class="fa-regular fa-keyboard fa-xl"></i></button>  
-  <button style="height:30px;width:40px" id="TTS-btn"><i class="fa-solid fa-microphone-lines fa-xl"></i></button>
+  <button title="Text-to-Speech Keyboard" style="height:30px;margin-right:4px;width:40px" id="tts-toggle" onclick="keyonoff()"><i class="fa-regular fa-keyboard fa-xl"></i></button>  
+  <button title="Text-to-Speech Speak" style="height:30px;width:40px" id="TTS-btn"><i class="fa-solid fa-microphone-lines fa-xl"></i></button>
 </div>
 <br></br>
 

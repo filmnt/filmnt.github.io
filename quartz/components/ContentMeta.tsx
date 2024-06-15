@@ -36,10 +36,10 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
 
       segments.push(         
-        <button onclick="toggleFullScreen();" style="background-color:transparent;margin-right:10px;float:right;margin-right:-4px;z-index:1;position:relative"><i class="fa-solid fa-expand fa-xl"></i></button>
+        <button title="Fullscreen" onclick="toggleFullScreen();" style="background-color:transparent;margin-right:10px;float:right;margin-right:-4px;z-index:1;position:relative"><i class="fa-solid fa-expand fa-xl"></i></button>
               )
       segments.push(
-            <button class="dropdown" style="background-color:transparent;margin-right:10px;float:right;"><i onclick="sharebtn()" class="dropbtn fa-solid fa-share-nodes fa-xl"></i>
+            <button title="Share" class="dropdown" style="background-color:transparent;margin-right:10px;float:right;"><i onclick="sharebtn()" class="dropbtn fa-solid fa-share-nodes fa-xl"></i>
               <div id="myDropdown" class="dropdown-content" style="position:absolute;margin-top:10px;float:top;text-align:left;background-color:#54A9EB;color:white;padding:4px;border-radius:4px;z-index:1">
                 <div onclick="navigator.clipboard.writeText(window.location.href); return false;" style="margin-bottom:10px"><i class="fa-regular fa-copy fa-xl"></i> Copy Link</div>
                 <div onclick="window.open('https://quickchart.io/qr?size=500&caption=🪴 Filmnt&captionFontSize=20&margin=2&text='+window.location.href,'targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=no, resizable=no, width=500px, height=500px, top=25px left=120px'); return false;" ><i class="fa-solid fa-qrcode fa-xl"></i> QR Code</div>

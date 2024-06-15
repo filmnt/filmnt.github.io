@@ -51,7 +51,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
 
 
                 <div style="display:inline-block;margin-left:1px;float:right">
-                <div class="progress-container"><div class="progress"><div class="bar"></div></div><div class="value"></div></div>
+                <div title="Year Progress" class="progress-container"><div class="progress"><div class="bar"></div></div><div class="value"></div></div>
                 </div>             
                    
 
@@ -62,7 +62,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
 
 
 
-        <button class="needfade" id="threedots" style="position:fixed;bottom: 85px;left:calc(100% - 68px);width: 40px;height:40px;opacity:0.3;z-index:1" onclick="openNavbar()"><i class="fa-solid fa-bars fa-xl"></i></button>
+        <button title="Navigation" class="needfade" id="threedots" style="position:fixed;bottom: 85px;left:calc(100% - 68px);width: 40px;height:40px;opacity:0.3;z-index:1" onclick="openNavbar()"><i class="fa-solid fa-bars fa-xl"></i></button>
 
 
         <dialog id="navbar-dialog" style="margin-top:-15px">
