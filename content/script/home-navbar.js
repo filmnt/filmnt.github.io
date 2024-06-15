@@ -104,23 +104,3 @@ function openNavbar() {
       xDown = null;
       yDown = null;                                             
   };
-
-  $.fn.scrollEnd = function(callback, timeout) {          
-    $(this).scroll(function(){
-      var $this = $(this);
-      if ($this.data('scrollTimeout')) {
-        clearTimeout($this.data('scrollTimeout'));
-      }
-      $this.data('scrollTimeout', setTimeout(callback,timeout));
-    });
-  };
-  
-  $(window).scroll(function(){
-      $('widgetbot-crate').fadeOut();
-      $('.needfade').fadeOut();
-  });
-  
-  $(window).scrollEnd(function(){
-      $('widgetbot-crate').fadeIn();
-      $('.needfade').fadeIn();
-  }, 1000);
