@@ -58,7 +58,7 @@ $('#linkshare').prop('selectedIndex',0);};
 %% Schedule Script %%
 <script src="script/scheduler.js"></script>
 %% Navigation bar Script %%
-<script src="script/navbar.js"></script>
+<script src="script/home-navbar.js"></script>
 
 
 
