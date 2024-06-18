@@ -10,7 +10,7 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "🪴 Filmnt",
     enableSPA: false,
-    enablePopovers: false,
+    enablePopovers: true,
     analytics: {
       provider: "google", tagId:"G-3SCFWXJXEQ"
     },
