@@ -182,7 +182,7 @@ jobs:
         uses: actions/deploy-pages@v2
 ```
 7. Use `GitHub Desktop` for `Publish`
-    - Open `qurtz folder` in `GitHub Desktop` and Click `Commit to v4` + `Push origin`
+    - Open `quartz folder` in `GitHub Desktop` and Click `Commit to v4` + `Push origin`
         - Sometimes You will click `Fetch origin…`
             - And.. You might be `angry…`
             - Backup your notes…
