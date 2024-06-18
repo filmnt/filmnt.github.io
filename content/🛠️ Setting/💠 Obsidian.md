@@ -183,9 +183,6 @@ jobs:
 ```
 7. Use `GitHub Desktop` for `Publish`
     - Open `quartz folder` in `GitHub Desktop` and Click `Commit to v4` + `Push origin`
-        - Sometimes You will click `Fetch origin…`
-            - And.. You might be `angry…`
-            - Backup your notes…
     - Whenever you want to publish `your notes`, `commit` and `push`
     - ⚠️ Use carefully with your `Private Notes`
 8. Your content will be published within minutes.
