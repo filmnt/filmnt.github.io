@@ -102,18 +102,6 @@ $('#linkshare').prop('selectedIndex',0);};
 - `Set as default profile` and Restart browser
     - (Optional) Delete bookmarks and History in New profile (Cookies, Caches, Logins, etc)
 - Select a profile according to the purpose of use in `about:profiles`
-- (Advanced) Download `user.js` and move to `new profile-Root Directory`
-    -  <a href="https://github.com/yokoffing/BetterFox" target="_blank" >BetterFox</a>
-        -  `user.js` (this includes others) [^1]
-        - `Fastfox.js`
-        - `Securefox.js`
-        - `Peskyfox.js`
-        - `Smoothfox.js`
-        - For more privacy, security and anti-tracking…
-            - <a href="https://github.com/arkenfox/user.js/" target="_blank" >ArkenFox (user.js)</a>
-><font color="#ff0000"> If you're annoyed, just use `Mullvad browser`  or `Librewolf`</font>
-- (<font color="#ff0000">Caution</font>) Deleting `user.js` does not initialize `about:config` setting
-    - You can customize `about:config`
 
 ---
 
@@ -140,7 +128,3 @@ $('#linkshare').prop('selectedIndex',0);};
 
 
 
-
-
-
-[^1]: See `Common Overrides`and Use `VS Code`

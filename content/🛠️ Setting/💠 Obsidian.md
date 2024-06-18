@@ -340,7 +340,6 @@ export default config
 
 ### `quartz.layout.ts`
 - `Github`, `Discord Community`(Footer contents), you can add additional links
-    - quartz is not optimized on `mobile layout`…
 ```shell
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
