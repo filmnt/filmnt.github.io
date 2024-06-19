@@ -3,6 +3,8 @@ See 💠[Obsidian](https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F
 > [Join the Discord Community](https://discord.gg/sHJxUDqbAE) 
 
 # Previews on Firefox
+Mirror: https://filmnt-github-io.pages.dev/
+
 ## Desktop
 | 4K-100%   | 
 | --------- | 
@@ -21,7 +23,7 @@ See 💠[Obsidian](https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F
 ### *Swipe gesture is supported for Navigation bar*
 |  (Reference) TabS9 Landscape (minWidth-950)  |    Note3 (minWidth-500)    |
 | ---------| --------- | 
-| ![TabS9](<content/ReadmeImg/TabS9 Hroizontal-Width-950.png>)  | ![Note3](<content/ReadmeImg/Note3 Portrait-minwidth-500.png>)  |
+| ![TabS9](<content/ReadmeImg/TabS9 Horizontal-Width-950.png>)  | ![Note3](<content/ReadmeImg/Note3 Portrait-minwidth-500.png>)  |
 
 
 | Fold5 Main Display (minWidth-450)   |   Fold5 Cover Display (minWidth-450)   |
