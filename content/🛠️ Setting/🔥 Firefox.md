@@ -53,6 +53,8 @@ $('#linkshare').prop('selectedIndex',0);};
 <script src="script/preview.js"></script>
 %% Excalidraw Script %%
 <script src="script/excalidraw.js"></script>
+%% Excalidraw Script %%
+<script src="script/graph.js"></script>
 %% Study with me Script %%
 <script src="script/study.js"></script>
 %% Food Script %%

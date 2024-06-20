@@ -93,15 +93,17 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
         <button id="start" onclick="start()">White</button>
         <span></span>
         <button disabled id="stop" onclick="pause()">Noise</button>
+        <span></span>
+        <button onclick="openFood();" style="margin-left:4px;">Food…?</button>
         </div>
         <span style="float:left">
         <button onclick="openStudy();" style="margin-right:4px;">Study with me…</button>
         <span></span>
-        <button onclick="openFood();" style="margin-right:4px;">Food…?</button>
-        <span></span>
         <button class="open-excal" onclick="openExcal()" style="margin-right:4px;">Excalidraw</button>
         <span></span>
-        <button class="open-preview" onclick="openPreview()">Preview</button>
+        <button class="open-preview" onclick="openPreview()" style="margin-right:4px;">Preview</button>
+        <span></span>
+        <button class="open-graph" onclick="openGraph()" >Graph</button>
         </span></span>
         </dialog>
 
@@ -139,6 +141,10 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
 
         <dialog id="excal-dialog">
         <span><button onclick="closeExcal();closeNavbar()" style="position:fixed;top:10px;right:420px;width:40px;height:40px;opacity:0.3;z-index:1"><i class="fa-solid fa-xmark fa-xl"></i></button><iframe src="https://excalidraw.com/" style="margin-top:-20px;top:0x; left:0; width:100%;height:100%;position:absolute;border:0;" allowfullscreen></iframe></span>
+        </dialog>
+
+        <dialog id="graph-dialog">
+        <span><button onclick="closeGraph();closeNavbar()" style="position:fixed;top:10px;right:420px;width:40px;height:40px;opacity:0.3;z-index:1"><i class="fa-solid fa-xmark fa-xl"></i></button><iframe src="https://filmnt.github.io/SimpleGraph/" style="margin-top:-20px;top:0x; left:0; width:100%;height:100%;position:absolute;border:0;" allowfullscreen></iframe></span>
         </dialog>
 
 

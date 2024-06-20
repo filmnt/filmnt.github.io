@@ -229,46 +229,7 @@ div.right.sidebar{padding:0;width:360px}
 
 
 
-/* -------- dialog inner element stling -------- */
-#excal-dialog::-webkit-scrollbar {
-	width: 0;
-}
 
-#excal-dialog::-webkit-scrollbar-track {
-	border-radius: 0;
-}
-
-#excal-dialog::-webkit-scrollbar-thumb {
-	border-radius: 0;
-}
-
-
-@media only screen and (min-width: 380px) {
-  #excal-dialog {
-    max-width: 380px;
-  }
-}
-
-
-/* -------- dialog inner element stling -------- */
-#excal-dialog::-webkit-scrollbar {
-	width: 0;
-}
-
-#excal-dialog::-webkit-scrollbar-track {
-	border-radius: 0;
-}
-
-#excal-dialog::-webkit-scrollbar-thumb {
-	border-radius: 0;
-}
-
-
-@media only screen and (min-width: 380px) {
-  #excal-dialog {
-    max-width: 380px;
-  }
-}
 
 
 
@@ -686,6 +647,81 @@ div.right.sidebar{padding:0;width:360px}
     max-width: 380px;
   }
 }
+
+
+
+
+
+
+#graph-dialog{
+  --_no-shadow: 0 0 32px rgba(0, 0, 0, 0);
+  --_shadow: 0 0 60px rgba(0, 0, 0, .5);
+  width: 100%;
+  max-width: unset;
+  margin: 0 0 0 auto;
+  top: 0;
+  overflow: auto;
+  border: none;
+  box-shadow: var(--_no-shadow);
+  transition: box-shadow .2s;
+  animation-fill-mode: forwards;
+}
+
+#graph-dialog > *{
+  display: grid;
+	grid-template-rows: auto 1fr auto;
+	height: 100vh;
+}
+
+#graph-dialog::backdrop{
+    background: unset;
+}
+
+#graph-dialog:modal, 
+#graph-dialog:-internal-dialog-in-top-layer {
+  max-height: 100vh;
+}
+
+
+#graph-dialog[open] {
+  -webkit-animation: float-in-right 0.2s ease normal;
+    box-shadow: var(--_shadow);
+}
+
+#graph-dialog.closing {
+  -webkit-animation: float-out-right 0.2s ease normal;
+}
+
+
+
+/* -------- dialog inner element stling -------- */
+#graph-dialog::-webkit-scrollbar {
+	width: 0;
+}
+
+#graph-dialog::-webkit-scrollbar-track {
+	border-radius: 0;
+}
+
+#graph-dialog::-webkit-scrollbar-thumb {
+	border-radius: 0;
+}
+
+
+@media only screen and (min-width: 380px) {
+  #graph-dialog {
+    max-width: 380px;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 

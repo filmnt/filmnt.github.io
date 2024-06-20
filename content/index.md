@@ -48,6 +48,8 @@ $('#linkshare').prop('selectedIndex',0);};
 <script src="script/full-share.js"></script>
 %% WhiteNoise Script %%
 <script type="text/javascript" src="script/WN.js"></script>
+%% Graph Script %%
+<script src="script/graph.js"></script>
 %% Preview Script %%
 <script src="script/preview.js"></script>
 %% Excalidraw Script %%
