@@ -229,7 +229,7 @@ $('#linkshare').prop('selectedIndex',0);};
 > [!NOTE] S Pen Compatibility
 > - You can use `S Pen Button` as `Right-Click`
 > - Use `S Pen Button` with `Gesturefy` on Firefox
->     - See <button id=”Link” onclick="location.href='https://filmnt.github.io/home/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%A5-Firefox'"  >🔥&nbsp;Firefox</button>  Add-ons
+>     - See <button id=”Link” onclick="location.href='https://filmnt.github.io//%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%A5-Firefox'"  >🔥&nbsp;Firefox</button>  Add-ons
 > - Disable `Air command` using `Modes and Routines`
 
 
