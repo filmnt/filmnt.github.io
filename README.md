@@ -3,7 +3,7 @@ See 💠[Obsidian](https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F
 > [Join the Discord Community](https://discord.gg/sHJxUDqbAE) 
 
 # Previews on Firefox
-Mirror: https://filmnt-github-io.pages.dev/
+Mirror: https://filmnt.github.io/share/2
 
 ## Desktop
 | 4K-100%   | 
