@@ -98,7 +98,7 @@ $('#linkshare').prop('selectedIndex',0);};
 
 ---
 
-## Multi-Profiles for privacy (Firefox or Waterfox)
+## Multi-Profiles for privacy 
 - Create New profile in `about:profiles`
     - (Optional) Open `Root Directory` and copy&paste used files to new profile folder 
 - `Set as default profile` and Restart browser
