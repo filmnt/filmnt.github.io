@@ -83,6 +83,8 @@ $('#linkshare').prop('selectedIndex',0);};
 - Revanced <a href="https://github.com/revanced-apks/build-apps/releases" target="_blank" >Releases</a>
     - See `Assets`
     - Use <a href="https://github.com/ReVanced/GmsCore/releases" target="_blank" >MicroG</a> for `YouTube` and `Music`
+-  Keep Display On <a href="https://github.com/abdalmoniem/Caffeinate/releases" target="_blank" >Caffeinate</a>
+    - Use Carefully…
 -  Calendar Alternative <a href="https://github.com/mhss1/MyBrain/releases" target="_blank" >My Brain</a>
 - Gallery <a href="https://f-droid.org/packages/deckers.thibault.aves.libre/" target="_blank" >Aves Libre</a>
 - 2FA <a href="https://f-droid.org/en/packages/com.beemdevelopment.aegis/" target="_blank" >Aegis Authenticator</a>
