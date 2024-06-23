@@ -103,6 +103,7 @@ $('#linkshare').prop('selectedIndex',0);};
     - Add-ons
         - <a href="https://addons.mozilla.org/en-US/android/addon/ublock-origin/" target="_blank" >uBlock Origin</a>
         - <a href="https://addons.mozilla.org/en-US/android/addon/video-background-play-fix/" target="_blank" >Video Background Play Fix</a>
+        - <a href="https://addons.mozilla.org/android/addon/uaswitcher" target="_blank" >User-Agent Switcher</a>
 -  Headphone specific EQ <a href="https://play.google.com/store/apps/details?id=com.pittvandewitt.wavelet" target="_blank" >Wavelet</a>
     - Disable `Dolby Atmos` and `Equailzer` → `Normal` in `Settings`
     - Enable `Legacy mode` 

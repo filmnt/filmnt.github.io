@@ -78,6 +78,7 @@ $('#linkshare').prop('selectedIndex',0);};
     - Modify `Open custom URL`
 - <a href="https://addons.mozilla.org/firefox/addon/youtube-nonstop/" target="_blank" >YouTube NonStop</a>
 - <a href="https://addons.mozilla.org/firefox/addon/fireshot/" target="_blank" >FireShot</a>
+- <a href="https://addons.mozilla.org/firefox/addon/user-agent-string-switcher/" target="_blank" >User-Agent Switcher and Manager</a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/open-bookmarks-in-a-new-tab/" target="_blank" >Open bookmarks in a new tab</a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/" target="_blank" >Duckduckgo</a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/" target="_blank" >Bitwarden</a>
