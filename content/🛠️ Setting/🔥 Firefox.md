@@ -76,6 +76,7 @@ $('#linkshare').prop('selectedIndex',0);};
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/gesturefy/" target="_blank" >Gesturefy</a>
     -  <a href="https://drive.filen.io/d/53763a3e-f84d-42fa-975f-d28aba234926#QC118haumed0C3FcjgWMWSU5jwceMMXS" target="_blank" >gesturefy-backup</a> (language: korean)
     - Modify `Open custom URL`
+- <a href="https://addons.mozilla.org/firefox/addon/youtube-nonstop/" target="_blank" >YouTube NonStop</a>
 - <a href="https://addons.mozilla.org/firefox/addon/fireshot/" target="_blank" >FireShot</a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/open-bookmarks-in-a-new-tab/" target="_blank" >Open bookmarks in a new tab</a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/" target="_blank" >Duckduckgo</a>
