@@ -156,8 +156,6 @@ $('#linkshare').prop('selectedIndex',0);};
         - 12.4’’ or 14.6’’ → `1200dp`
         - `Fold` → `450dp`
         - `Restore`: `Settings` → `Display` → `Screen zoom`
-    - (Optional) Enable `Stay awake`
-        - Screen will never sleep while charging
 
 
 ---
