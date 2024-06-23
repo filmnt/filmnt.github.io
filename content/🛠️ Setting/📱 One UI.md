@@ -193,8 +193,8 @@ $('#linkshare').prop('selectedIndex',0);};
         - `adb shell settings put global settings_enable_monitor_phantom_procs false`
 > - If You want to reinstall, `Termux` → `App info` → `Storage` → `Clear data` and <font color="#ff0000">Wait</font> for a while
  >   - No need to repeat the above process
-- Install <a href="https://f-droid.org/packages/com.termux/" target="_blank" >Termux</a> (Ver 0.118.0)
-    - Click `Download APK (97Mib)`
+- Install <a href="https://f-droid.org/packages/com.termux/" target="_blank" >Termux</a> (Ver 0.119.0-beta.1)
+    - Click `Download APK (102Mib)`
     - Allow permissions as following
             ![[TM-1.png]]
             ![[TM-2.png]]
