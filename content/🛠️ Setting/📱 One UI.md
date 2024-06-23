@@ -220,7 +220,7 @@ $('#linkshare').prop('selectedIndex',0);};
          ![[defaultpa-1.png]]
      - Click `Exit Button` and Restart `Termux - start`
      - Sometimes the sound won't work
-         - `Termux` - `App info` - `Force stop` and `Storage` - `Clear cache` (<font color="#ff0000">Do Not Clear data</font>)
+         - `Termux` - `App info` - `Force stop` 
  - You can customize `Panel`, `Screensaver`, `Mouse` and `startup`
      - Try to disable `conky` in `Session and Startup`
 - (Optional) Keyboard for Korean
