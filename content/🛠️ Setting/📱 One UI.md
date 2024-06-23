@@ -140,7 +140,7 @@ $('#linkshare').prop('selectedIndex',0);};
         - Default Notification Sound: `Spaceline`
 - Connections (DNS-over-HTTPS)
     - `Settings`→ `Connections`→ `More connection settings`→ `Private DNS` → `Private DNS provider hostname`
-        - Set `dns.mullvad.net` (Recommend)
+        - Set `dns.adguard-dns.com` (Recommend)
         - There are many DNS providers…
             - <a href="https://adguard-dns.io/kb/general/dns-providers/" target="_blank" >Known DNS Providers</a>
 - `Developer options`
