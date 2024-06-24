@@ -83,8 +83,6 @@ $('#linkshare').prop('selectedIndex',0);};
 - Revanced <a href="https://github.com/revanced-apks/build-apps/releases" target="_blank" >Releases</a>
     - See `Assets`
     - Use <a href="https://github.com/ReVanced/GmsCore/releases" target="_blank" >MicroG</a> for `YouTube` and `Music`
--  Keep Display On <a href="https://github.com/abdalmoniem/Caffeinate/releases" target="_blank" >Caffeinate</a>
-    - Use Carefully…
 - White <a href="https://f-droid.org/packages/com.github.ashutoshgngwr.noice/" target="_blank" >Noice</a>
 -  Calendar Alternative <a href="https://github.com/mhss1/MyBrain/releases" target="_blank" >My Brain</a>
 - Gallery <a href="https://f-droid.org/packages/deckers.thibault.aves.libre/" target="_blank" >Aves Libre</a>
@@ -160,6 +158,8 @@ $('#linkshare').prop('selectedIndex',0);};
         - 12.4’’ or 14.6’’ → `1200dp`
         - `Fold` → `450dp`
         - `Restore`: `Settings` → `Display` → `Screen zoom`
+    - (Optional) Enable Stay awake
+        - Screen will never sleep while charging
 
 
 ---
