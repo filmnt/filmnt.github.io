@@ -83,6 +83,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
         <option value="https://www.desmos.com/calculator">Desmos</option>
         <option value="https://github.com/lukas-blecher/LaTeX-OCR">LaTeX-OCR (Advanced)</option>
         <option value="https://vscode.dev/">VS Code</option>
+        <option value="https://pastebin.com/">PasteBin</option>
         <option value="https://hancomdocs.com/home">Hancom Docs (Need Sign-In)</option>
         <option value="https://r1.community.samsung.com/">Samsung Members</option>
         </select>
