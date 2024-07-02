@@ -84,6 +84,7 @@ $('#linkshare').prop('selectedIndex',0);};
     - See `Assets`
     - Use <a href="https://github.com/ReVanced/GmsCore/releases" target="_blank" >MicroG</a> for `YouTube` and `Music`
 - White <a href="https://f-droid.org/packages/com.github.ashutoshgngwr.noice/" target="_blank" >Noice</a>
+    - Coffe Shop (Recommend)
 -  Calendar Alternative <a href="https://github.com/mhss1/MyBrain/releases" target="_blank" >My Brain</a>
 - Gallery <a href="https://f-droid.org/packages/deckers.thibault.aves.libre/" target="_blank" >Aves Libre</a>
 - 2FA <a href="https://f-droid.org/en/packages/com.beemdevelopment.aegis/" target="_blank" >Aegis Authenticator</a>
@@ -129,6 +130,7 @@ $('#linkshare').prop('selectedIndex',0);};
 -  LED <a href="https://play.google.com/store/apps/details?id=com.bitdance.ledbanner.flash.ledbanner" target="_blank" >Banner</a>
 -  For `Widgets pop-up` <a href="https://play.google.com/store/apps/details?id=com.stock.widget" target="_blank" >Stock Widget</a>
     - See `One Hand Operation +`
+- VPN Alternatives <a href="https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone" target="_blank" >1.1.1.1</a>
 
 > Use `Secure Folder`(Samsung App) for Privacy.
 
