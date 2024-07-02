@@ -131,7 +131,6 @@ $('#linkshare').prop('selectedIndex',0);};
 -  LED <a href="https://play.google.com/store/apps/details?id=com.bitdance.ledbanner.flash.ledbanner" target="_blank" >Banner</a>
 -  For `Widgets pop-up` <a href="https://play.google.com/store/apps/details?id=com.stock.widget" target="_blank" >Stock Widget</a>
     - See `One Hand Operation +`
-- VPN Alternatives <a href="https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone" target="_blank" >1.1.1.1</a>
 
 > Use `Secure Folder`(Samsung App) for Privacy.
 
