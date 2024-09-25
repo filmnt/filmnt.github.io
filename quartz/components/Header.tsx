@@ -298,6 +298,7 @@ div.right.sidebar{padding:0;width:360px}
 
 
 #study-dialog h1 {margin-top:-15px;margin-bottom:-2px}
+#study-dialog h3 {font-size:16px}
 #study-dialog{
   --_no-shadow: 0 0 32px rgba(0, 0, 0, 0);
   --_shadow: 0 0 60px rgba(0, 0, 0, .5);
