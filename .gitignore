@@ -4,8 +4,30 @@ node_modules
 public
 prof
 tsconfig.tsbuildinfo
-.obsidian
 .quartz-cache
 private/
 .replit
 replit.nix
+.stignore
+ 
+# Personal Setting
+.filen.trash.local
+content/🔖 Daily Notes/
+content/🔐 Private Notes/
+.trash
+.obsidian
+.makemd
+.space
+.stfolder
+ 
+# Media
+*.mp4
+*.webm
+*.qt
+*.wmv
+*.avi
+*.mkv
+*.xspf
+*.dpl
+*.mp3
+*.aiff

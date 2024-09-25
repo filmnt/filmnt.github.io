@@ -44,9 +44,12 @@ export default ((userOpts?: Partial<Options>) => {
   // memoized
   let fileTree: FileNode
   let jsonTree: string
-  let lastBuildId: string = ""
 
   function constructFileTree(allFiles: QuartzPluginData[]) {
+    if (fileTree) {
+      return
+    }
+
     // Construct tree from allFiles
     fileTree = new FileNode("")
     allFiles.forEach((file) => fileTree.add(file))
@@ -73,19 +76,65 @@ export default ((userOpts?: Partial<Options>) => {
   }
 
   const Explorer: QuartzComponent = ({
-    ctx,
     cfg,
     allFiles,
     displayClass,
     fileData,
   }: QuartzComponentProps) => {
-    if (ctx.buildId !== lastBuildId) {
-      lastBuildId = ctx.buildId
-      constructFileTree(allFiles)
-    }
-
+    constructFileTree(allFiles)
     return (
-      <div class={classNames(displayClass, "explorer")}>
+      <div style="margin-top:-35px;margin-left:0;margin-right:auto;" class={classNames(displayClass, "explorer")}>
+
+<button title="Webcam" style="height:30px;margin-right:4px;width:40px" id="camtoggle" onclick="cameraonoff()"><i class="fa-solid fa-video fa-xl"></i></button>
+
+<button title="Notes" style="height:30px;margin-right:4px;width:40px" id="md-toggle" onclick="mdonoff()"><i class="fa-regular fa-note-sticky fa-xl"></i></button> 
+
+<div style="display:inline-block;margin-right:4px">
+<select style="height:30px;width:75px;"  id="tts-lang" >
+        <option data-lang="ko-KR" selected>Voices</option>
+        <option data-lang="ja-JP">日本語</option>
+        <option data-lang="en-AU">AU English</option>
+        <option data-lang="en-ZA">SA English</option>
+        <option data-lang="en-GB">UK English</option>
+        <option data-lang="en-US">US English</option>
+        <option data-lang="de-DE">Deutsch</option>
+        <option data-lang="es-ES">español</option>
+        <option data-lang="fr-FR">français</option>
+        <option data-lang="hr-BA">Hrvatski jezični</option>
+        <option data-lang="hi-IN">हिन्दी Hindi</option>
+        <option data-lang="id-ID">Bahasa Indonesia</option>
+        <option data-lang="it-IT">italiano</option>
+        <option data-lang="nl-NL">Nederlands</option>
+        <option data-lang="pl-PL">polski</option>
+        <option data-lang="pt-BR">português do Brasil</option>
+        <option data-lang="ru-RU">русский</option>
+        <option data-lang="zh-CN">普通话(中国大陆)</option>
+        <option data-lang="zh-HK">​粤語(香港)</option>
+        <option data-lang="zh-TW">國語(臺灣)</option>
+        <option data-lang="sv-SE">svenska</option>
+        <option data-lang="vi-VN">Tiếng Việt</option>
+        <option data-lang="ar-EG">مَصْرِِي</option>
+        <option data-lang="hu-HU">Magyar nyelv</option>
+        <option data-lang="ro-RO">Limba română</option>
+        <option data-lang="uk-UA">українська мова</option>
+        <option data-lang="nb-NO">norsk</option>
+        <option data-lang="sk-SK">slovenčina</option>
+        <option data-lang="tr-TR">Türkçe</option>
+</select></div>
+<div style="display:inline-block;">
+  <button title="Text-to-Speech Keyboard" style="height:30px;margin-right:4px;width:40px" id="tts-toggle" onclick="keyonoff()"><i class="fa-regular fa-keyboard fa-xl"></i></button>  
+  <button title="Text-to-Speech Speak" style="height:30px;width:40px" id="TTS-btn"><i class="fa-solid fa-microphone-lines fa-xl"></i></button>
+</div>
+<br></br>
+
+        <div id="tts-keyboard" style="display:none;  margin-top:4px">
+        <textarea id="tts-input" style="border:none;border-radius:4px;width:248px" rows="1" placeholder='Write your text here for tts...'></textarea>
+        </div>
+
+        <div style="margin-top:4px;"><video controls muted id="webcam" style="display:none"  autoplay></video></div>
+
+        <div style="background-color:white;margin-top:4px;display:none" id="markdown-editor"><textarea id="mkd" ></textarea></div>
+      
         <button
           type="button"
           id="explorer"
@@ -93,10 +142,8 @@ export default ((userOpts?: Partial<Options>) => {
           data-collapsed={opts.folderDefaultState}
           data-savestate={opts.useSavedState}
           data-tree={jsonTree}
-          aria-controls="explorer-content"
-          aria-expanded={opts.folderDefaultState === "open"}
         >
-          <h2>{opts.title ?? i18n(cfg.locale).components.explorer.title}</h2>
+          <h1>{opts.title ?? i18n(cfg.locale).components.explorer.title}</h1>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="14"
@@ -118,7 +165,10 @@ export default ((userOpts?: Partial<Options>) => {
             <li id="explorer-end" />
           </ul>
         </div>
-      </div>
+    </div>
+
+
+      
     )
   }
 
