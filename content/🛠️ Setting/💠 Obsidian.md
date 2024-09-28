@@ -88,7 +88,7 @@ $('#linkshare').prop('selectedIndex',0);};
 >> - Android (2 devices)
 >>     - Phone
 >>     - Tablet
->> - Windows (<a href="https://www.parallels.com/products/desktop/" target="_blank" >Paralles Desktop 19</a>)
+>> - Windows (<a href="https://www.parallels.com/products/desktop/" target="_blank" >Paralles Desktop</a>)
 >- Folders
 >> 1. Share Folder [^1]
 >> 2. Pictures (`DCIM`) [^2]
