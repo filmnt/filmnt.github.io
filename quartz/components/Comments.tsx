@@ -15,9 +15,9 @@ export default ((opts?: Options) => {
         </span>
 
         <div style="margin-top:2px;opacity: 0.7;">
-        <span><a href="https://github.com/filmnt/filmnt.github.io/discussions" target="_blank" >Comments</a></span>
-        <span><a href="https://discord.gg/sHJxUDqbAE" target="_blank" >Discord</a></span>
-        <span><a href="https://github.com/filmnt/filmnt.github.io" target="_blank" >GitHub</a></span>
+        <span><a href="https://filmnt.github.io/share/2" target="_blank" >Comments</a></span>
+        <span><a href="https://filmnt.github.io/share/3" target="_blank" >Discord</a></span>
+        <span><a href="https://filmnt.github.io/share/4" target="_blank" >GitHub</a></span>
         </div>
 
       </footer>
