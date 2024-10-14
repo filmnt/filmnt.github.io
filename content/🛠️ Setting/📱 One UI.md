@@ -175,19 +175,21 @@ $('#linkshare').prop('selectedIndex',0);};
 - (<font color="#ff0000">Not Optional</font>) `Error Solutions`:  Process completed (signal 9) - press Enter
     - Install `LADB` from <a href="https://github.com/hyperio546/ladb-builds/releases" target="_blank" >Here</a> (`app-debug.apk`)  
         - There are many ADB tools…
-    - Disable `AdGuard`(adblocker) and `VPN`
     - Connect `Wifi` and Enable `Wireless debugging` in `Developer options` 
         - (Developer options) `Settings` → `About tablet` → `Software information` → Tap `Build number` several times→ Back to `Settings` 
     - Get `port number`+`pairing code` and Enter both those values into `LADB`
         - Use multitasking options (`Split screen view` or `Pop-up view`)
-        - Confirmation of connection: `adb devices`
         - <a href="https://youtu.be/6UO5tb_eKxY?feature=shared&t=194" target="_blank" >YouTube Guide</a>
             - See 3:14-5:40
-    - Run the following commands on `LADB`
+    - Confirm connection
+        - `adb devices`
+    - Run the following commands
         - `adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"`
         - `adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"`
         - `adb shell settings put global settings_enable_monitor_phantom_procs false`
     - Exit `LADB` and Disable `Wireless debugging`
+     - You may need this…
+        - `...` → `More` → `Restart` 
 > - If You want to reinstall, `Termux` → `App info` → `Storage` → `Clear data` and <font color="#ff0000">Wait</font> for a while
  >   - No need to repeat the above process
 - Install <a href="https://f-droid.org/packages/com.termux/" target="_blank" >Termux</a> (Ver 0.119.0-beta.1)
