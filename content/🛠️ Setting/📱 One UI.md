@@ -168,38 +168,26 @@ $('#linkshare').prop('selectedIndex',0);};
 
 
 ---
-# Hide Status & Navigation bar (Swipe Gesture)
-- Install `LADB` from `PlayStore` or <a href="https://github.com/hyperio546/ladb-builds/releases" target="_blank" >Here</a> (`app-debug.apk`)
-    - There are many ADB tools…
-- Disable `AdGuard`(adblocker) and `VPN`
-- Connect `Wifi` and Enable `Wireless debugging` in `Developer options` 
-    - (Developer options) `Settings` → `About tablet` → `Software information` → Tap `Build number` several times→ Back to `Settings` 
-- Get `port number`+`pairing code` and Enter both those values into `LADB`
-    - Use multitasking options (`Split screen view` or `Pop-up view`)
-    - Confirmation of connection: `adb devices`
-    - <a href="https://youtu.be/6UO5tb_eKxY?feature=shared&t=194" target="_blank" >YouTube Guide</a>
-        - See 3:14-5:40
-- Choose the options you want from the following on `LADB`
-    - Hide status bar: `adb shell settings put global policy_control immersive.status=* `
-    - Hide navigation bar: `adb shell settings put global policy_control immersive.navigation=* `
-    - Hide Both: `adb shell settings put global policy_control immersive.full=*`
-    - Restore: `adb shell settings put global policy_control null*`
-- Exit `LADB` and Disable `Wireless debugging`
-> [!NOTE] 
-> - If you are using `Taskbar` or `Button-Navigation bar`, this option may not work well…
-> - I'm not a sadist, I don't want to hurt you…
-
----
 
 # Termux (Linux on Galaxy)
 ![[Linux.png]]
 - <a href="https://drive.filen.io/d/5433cbfe-15b1-4d96-8b9d-df6a3d5131e2#aTjjmgGLn3krSzAdakLyblMHTjWWLttr" target="_blank" >Wallpaper</a>
 - (<font color="#ff0000">Not Optional</font>) `Error Solutions`:  Process completed (signal 9) - press Enter
-    - See `Hide Status & Navigation bar` (ToC)
+    - Install `LADB` from <a href="https://github.com/hyperio546/ladb-builds/releases" target="_blank" >Here</a> (`app-debug.apk`)  
+        - There are many ADB tools…
+    - Disable `AdGuard`(adblocker) and `VPN`
+    - Connect `Wifi` and Enable `Wireless debugging` in `Developer options` 
+        - (Developer options) `Settings` → `About tablet` → `Software information` → Tap `Build number` several times→ Back to `Settings` 
+    - Get `port number`+`pairing code` and Enter both those values into `LADB`
+        - Use multitasking options (`Split screen view` or `Pop-up view`)
+        - Confirmation of connection: `adb devices`
+        - <a href="https://youtu.be/6UO5tb_eKxY?feature=shared&t=194" target="_blank" >YouTube Guide</a>
+            - See 3:14-5:40
     - Run the following commands on `LADB`
         - `adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"`
         - `adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"`
         - `adb shell settings put global settings_enable_monitor_phantom_procs false`
+    - Exit `LADB` and Disable `Wireless debugging`
 > - If You want to reinstall, `Termux` → `App info` → `Storage` → `Clear data` and <font color="#ff0000">Wait</font> for a while
  >   - No need to repeat the above process
 - Install <a href="https://f-droid.org/packages/com.termux/" target="_blank" >Termux</a> (Ver 0.119.0-beta.1)
@@ -207,6 +195,8 @@ $('#linkshare').prop('selectedIndex',0);};
     - Allow permissions as following
             ![[TM-1.png]]
             ![[TM-2.png]]
+- Install <a href="https://github.com/termux/termux-x11/releases/tag/nightly" target="_blank" >X-11</a> 
+    - Click ` app-arm64-v8a-debug.apk`
 - Open `Termux` and Run the commands
     ```shell
     curl -sL https://raw.githubusercontent.com/phoenixbyrd/Termux_XFCE/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
