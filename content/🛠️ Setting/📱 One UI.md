@@ -229,7 +229,6 @@ $('#linkshare').prop('selectedIndex',0);};
      - Modify `Trigger Input Method` in `Global Options` tab
          - For Chinese or Japanese… See <a href="https://github.com/termux/termux-packages/issues/19788" target="_blank" > This </a> 
              - I don't know if it's going to work…
-
 > [!NOTE] S Pen Compatibility
 > - You can use `S Pen Button` as `Right-Click`
 > - Use `S Pen Button` with `Gesturefy` on Firefox
