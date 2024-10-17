@@ -87,10 +87,8 @@ $('#linkshare').prop('selectedIndex',0);};
 - Remote Desktop <a href="https://github.com/rustdesk/rustdesk/releases" target="_blank" >Rustdesk</a>
 - Chrome Alternatives <a href="https://thorium.rocks/" target="_blank" >Thorium</a>
 - Calendar Alternatives <a href="https://github.com/mhss1/MyBrain/releases" target="_blank" >My Brain</a>
-- Gallery <a href="https://f-droid.org/packages/deckers.thibault.aves.libre/" target="_blank" >Aves Libre</a>
 - 2FA <a href="https://f-droid.org/en/packages/com.beemdevelopment.aegis/" target="_blank" >Aegis Authenticator</a>
 - Twitch Player <a href="https://f-droid.org/en/packages/com.github.andreyasadchy.xtra/" target="_blank" >Xtra</a>
-- Proton <a href="https://f-droid.org/en/packages/ch.protonvpn.android/" target="_blank" >VPN</a>
 
 ## Play Store
 
@@ -103,18 +101,6 @@ $('#linkshare').prop('selectedIndex',0);};
         - <a href="https://addons.mozilla.org/android/addon/uaswitcher" target="_blank" >User-Agent Switcher</a> (Desktop UI on Websites)
             - Linux / Firefox (Recommend)
             - Use carefully on `Phone`
--  Headphone specific EQ <a href="https://play.google.com/store/apps/details?id=com.pittvandewitt.wavelet" target="_blank" >Wavelet</a>
-    - Disable `Dolby Atmos` and `Equailzer` → `Normal` in `Settings`
-    - Enable `Legacy mode` 
-    - `Limiter` 
-        - `Threshold` → `-10dB` 
-        - Disable `Automatic post-gain`
-        - `Post-gain` → `1.0dB`
-    - Connect `External Headphone` (e.g. `Buds`)
-        - `AutoEq` → Search and Select
-        - <a href="https://autoeq.app/" target="_blank" >AutoEq</a> 
-    - Use `your favorite EQ` in `Graphic equalizer` or `Galaxy Wearable`
-    - Over-ear & In-ear Headphones <a href="https://github.com/jaakkopasanen/AutoEq/blob/master/results/RANKING.md" target="_blank" >Ranking</a>
 -  Samsung <a href="https://play.google.com/store/apps/details?id=com.samsung.android.tvplus" target="_blank" >TV Plus</a>
 -  Identify Music <a href="https://play.google.com/store/apps/details?id=com.shazam.android" target="_blank" >Shazam</a>
     - Add to `Quick Panel`
