@@ -86,6 +86,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
         <option value="https://github.com/lukas-blecher/LaTeX-OCR">LaTeX-OCR (Advanced)</option>
         <option value="https://vscode.dev/">VS Code</option>
         <option value="https://pastebin.com/">PasteBin</option>
+        <option value="https://arxiv.org/">arXiv</option>
         <option value="https://filmnt.github.io/share/5">S-Pen Tip/Nip Replacement (For Korean)</option>
         <option value="https://smartthingsfind.samsung.com/">SmartThings Find (Need Sign-In)</option>
         <option value="https://samsungtvplus.com/">Samsung TV Plus (Need Sign-In)</option>
