@@ -153,78 +153,6 @@ $('#linkshare').prop('selectedIndex',0);};
 
 ---
 
-# Termux (Linux on Galaxy)
-![[Linux.png]]
-- <a href="https://drive.filen.io/d/5433cbfe-15b1-4d96-8b9d-df6a3d5131e2#aTjjmgGLn3krSzAdakLyblMHTjWWLttr" target="_blank" >Wallpaper</a>
-- (<font color="#ff0000">Not Optional</font>) `Error Solutions`:  Process completed (signal 9) - press Enter
-    - Install `LADB` from <a href="https://github.com/hyperio546/ladb-builds/releases" target="_blank" >Here</a> (`app-debug.apk`)  
-        - There are many ADB tools…
-    - Connect `Wifi` and Enable `Wireless debugging` in `Developer options` 
-        - (Developer options) `Settings` → `About tablet` → `Software information` → Tap `Build number` several times→ Back to `Settings` 
-    - Get `port number`+`pairing code` and Enter both those values into `LADB`
-        - Use multitasking options (`Split screen view` or `Pop-up view`)
-        - <a href="https://youtu.be/6UO5tb_eKxY?feature=shared&t=194" target="_blank" >YouTube Guide</a>
-            - See 3:14-5:40
-    - Confirm connection
-        - `adb devices`
-    - Run the following commands
-        - `adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"`
-        - `adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"`
-        - `adb shell settings put global settings_enable_monitor_phantom_procs false`
-    - Exit `LADB` and Disable `Wireless debugging`
-     - You may need this…
-        - `...` → `More` → `Restart` 
-> - If You want to reinstall, `Termux` → `App info` → `Storage` → `Clear data` and <font color="#ff0000">Wait</font> for a while
- >   - No need to repeat the above process
-- Install <a href="https://f-droid.org/packages/com.termux/" target="_blank" >Termux</a> (Ver 0.119.0-beta.1)
-    - Click `Download APK (102Mib)`
-    - Allow permissions as following
-            ![[TM-1.png]]
-            ![[TM-2.png]]
-- Install <a href="https://github.com/termux/termux-x11/releases/tag/nightly" target="_blank" >X-11</a> 
-    - Click ` app-arm64-v8a-debug.apk`
-- Open `Termux` and Run the commands
-    ```shell
-    curl -sL https://raw.githubusercontent.com/phoenixbyrd/Termux_XFCE/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
-    ```
-- (Optional) Sometimes You may need this command…
-    ```shell
-    termux-change-repo
-    ```
-- Pick your `username` and Follow the prompts (It takes 10-20 minutes)
-    - After Installation, Enter `exit` and Open `Termux:X11` - `Preferences` (Not `Termux`)
-        ![[X11-1.png]]
-        ![[X11-2.png]]
-![[X11-3.png]]
-
-- `Sound Output`
-    - Open `Termux` and Enter `start`
-    - Open `File Explorer` and set location `/data/data/com.termux/`
-    - Search `default.pa`(Use `Back-gesture` to use keyboard) and open `default.pa`
-    - At the bottom of `default.pa`, Modify and Save as following
-         ![[defaultpa-1.png]]
-     - Click `Exit Button` and Restart `Termux - start`
-     - Sometimes the sound won't work
-         - `Termux` - `App info` - `Force stop` 
- - You can customize `Panel`, `Screensaver`, `Mouse` and `startup`
-     - Try to disable `conky` in `Session and Startup`
-- (Optional) Keyboard for Korean
-    - Works on `Firefox`
-     - Run the command `pkg install libuv` and `pkg install fcitx5*` before `start`
-     - `start` and `Settings` - `Fcitx 5 Configuration` - Add `Hangul` to the left
-     - Modify `Trigger Input Method` in `Global Options` tab
-         - For Chinese or Japanese… See <a href="https://github.com/termux/termux-packages/issues/19788" target="_blank" > This </a> 
-             - I don't know if it's going to work…
-> [!NOTE] S Pen Compatibility
-> - You can use `S Pen Button` as `Right-Click`
-> - Use `S Pen Button` with `Gesturefy` on Firefox
->     - See <button id="Link" onclick="window.open('https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%A5-Firefox','_blank')"   >🔥&nbsp;Firefox</button>  Add-ons
-> - Disable `Air command` using `Modes and Routines`
-
-
-> <font color="#ff0000">`Live-streaming` or `Termux on DeX` can consume battery even when using a high-power charger</font>
----
-
 # Good Guardians
 - Install from `Store`
 ## Galaxy App Booster
@@ -300,7 +228,78 @@ $('#linkshare').prop('selectedIndex',0);};
 
 
 
+---
 
+# Termux (Linux on Galaxy)
+![[Linux.png]]
+- <a href="https://drive.filen.io/d/5433cbfe-15b1-4d96-8b9d-df6a3d5131e2#aTjjmgGLn3krSzAdakLyblMHTjWWLttr" target="_blank" >Wallpaper</a>
+- (<font color="#ff0000">Not Optional</font>) `Error Solutions`:  Process completed (signal 9) - press Enter
+    - Install `LADB` from <a href="https://github.com/hyperio546/ladb-builds/releases" target="_blank" >Here</a> (`app-debug.apk`)  
+        - There are many ADB tools…
+    - Connect `Wifi` and Enable `Wireless debugging` in `Developer options` 
+        - (Developer options) `Settings` → `About tablet` → `Software information` → Tap `Build number` several times→ Back to `Settings` 
+    - Get `port number`+`pairing code` and Enter both those values into `LADB`
+        - Use multitasking options (`Split screen view` or `Pop-up view`)
+        - <a href="https://youtu.be/6UO5tb_eKxY?feature=shared&t=194" target="_blank" >YouTube Guide</a>
+            - See 3:14-5:40
+    - Confirm connection
+        - `adb devices`
+    - Run the following commands
+        - `adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"`
+        - `adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"`
+        - `adb shell settings put global settings_enable_monitor_phantom_procs false`
+    - Exit `LADB` and Disable `Wireless debugging`
+     - You may need this…
+        - `...` → `More` → `Restart` 
+> - If You want to reinstall, `Termux` → `App info` → `Storage` → `Clear data` and <font color="#ff0000">Wait</font> for a while
+ >   - No need to repeat the above process
+- Install <a href="https://f-droid.org/packages/com.termux/" target="_blank" >Termux</a> (Ver 0.119.0-beta.1)
+    - Click `Download APK (102Mib)`
+    - Allow permissions as following
+            ![[TM-1.png]]
+            ![[TM-2.png]]
+- Install <a href="https://github.com/termux/termux-x11/releases/tag/nightly" target="_blank" >X-11</a> 
+    - Click ` app-arm64-v8a-debug.apk`
+- Open `Termux` and Run the commands
+    ```shell
+    curl -sL https://raw.githubusercontent.com/phoenixbyrd/Termux_XFCE/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
+    ```
+- (Optional) Sometimes You may need this command…
+    ```shell
+    termux-change-repo
+    ```
+- Pick your `username` and Follow the prompts (It takes 10-20 minutes)
+    - After Installation, Enter `exit` and Open `Termux:X11` - `Preferences` (Not `Termux`)
+        ![[X11-1.png]]
+        ![[X11-2.png]]
+![[X11-3.png]]
+
+- `Sound Output`
+    - Open `Termux` and Enter `start`
+    - Open `File Explorer` and set location `/data/data/com.termux/`
+    - Search `default.pa`(Use `Back-gesture` to use keyboard) and open `default.pa`
+    - At the bottom of `default.pa`, Modify and Save as following
+         ![[defaultpa-1.png]]
+     - Click `Exit Button` and Restart `Termux - start`
+     - Sometimes the sound won't work
+         - `Termux` - `App info` - `Force stop` 
+ - You can customize `Panel`, `Screensaver`, `Mouse` and `startup`
+     - Try to disable `conky` in `Session and Startup`
+- (Optional) Keyboard for Korean
+    - Works on `Firefox`
+     - Run the command `pkg install libuv` and `pkg install fcitx5*` before `start`
+     - `start` and `Settings` - `Fcitx 5 Configuration` - Add `Hangul` to the left
+     - Modify `Trigger Input Method` in `Global Options` tab
+         - For Chinese or Japanese… See <a href="https://github.com/termux/termux-packages/issues/19788" target="_blank" > This </a> 
+             - I don't know if it's going to work…
+> [!NOTE] S Pen Compatibility
+> - You can use `S Pen Button` as `Right-Click`
+> - Use `S Pen Button` with `Gesturefy` on Firefox
+>     - See <button id="Link" onclick="window.open('https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%A5-Firefox','_blank')"   >🔥&nbsp;Firefox</button>  Add-ons
+> - Disable `Air command` using `Modes and Routines`
+
+
+> <font color="#ff0000">`Live-streaming` or `Termux on DeX` can consume battery even when using a high-power charger</font>
 
 
 
