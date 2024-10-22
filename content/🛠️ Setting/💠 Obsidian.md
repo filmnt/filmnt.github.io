@@ -70,7 +70,7 @@ $('#linkshare').prop('selectedIndex',0);};
 
 ## Theme, Plugin (Starter Pack)
 
-> [!NOTE]  <a href="https://drive.filen.io/d/9ae5ac16-a990-4703-a384-d85b439d957a#J1gOsVjTBGieIA1MOGFJN2m5Tu6iJwlx" target="_blank" >Backup file link(11mb)</a>
+> [!NOTE]  <a href="https://drive.filen.io/d/9ae5ac16-a990-4703-a384-d85b439d957a#J1gOsVjTBGieIA1MOGFJN2m5Tu6iJwlx" target="_blank" >Backup file link(12mb)</a>
 >> `.makemd`
 >> `.obsidian`
 >> `.space`
