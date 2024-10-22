@@ -105,6 +105,7 @@ $('#linkshare').prop('selectedIndex',0);};
 - Remote Desktop <a href="https://github.com/rustdesk/rustdesk/releases" target="_blank" >Rustdesk</a>
 - Chrome Alternatives <a href="https://thorium.rocks/" target="_blank" >Thorium</a>
 - Calendar Alternatives <a href="https://github.com/mhss1/MyBrain/releases" target="_blank" >My Brain</a>
+- Encrypted Calendar <a href="https://github.com/tutao/tutanota/releases" target="_blank" >Tuta Calendar</a>
 - 2FA <a href="https://github.com/beemdevelopment/Aegis/releases" target="_blank" >Aegis Authenticator</a>
 - Twitch Player <a href="https://github.com/crackededed/Xtra/releases" target="_blank" >Xtra</a>
 - Get Updates from Github <a href="https://github.com/ImranR98/Obtainium/releases" target="_blank" >Obtainium</a>
