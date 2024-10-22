@@ -76,9 +76,18 @@ $('#linkshare').prop('selectedIndex',0);};
 ---
 
 # Apps
-## F-Droid or Github
+## Github or Website
 
-- Just… <a href="https://f-droid.org/en/packages/com.polar.mirror/" target="_blank" >Mirror</a>
+- Just… <a href="https://github.com/0xf104a/Mirror/releases" target="_blank" >Mirror</a>
+-  Web Browser <a href="https://www.waterfox.net/" target="_blank" >Waterfox</a>
+    - Add-ons
+        - <a href="https://addons.mozilla.org/en-US/android/addon/ublock-origin/" target="_blank" >uBlock Origin</a> (Ad-Block)
+            - <a href="https://drive.filen.io/d/79bab8e3-3973-446c-86d1-6a0fc080713e#YOo12kRFlmxCLZ5U1xTSGseIoAAzFUaY" target="_blank" >ublock-backup</a>
+                - List-KR filter (for korean)
+        - <a href="https://addons.mozilla.org/en-US/android/addon/video-background-play-fix/" target="_blank" >Video Background Play Fix</a> (Background Play)
+        - <a href="https://addons.mozilla.org/android/addon/uaswitcher" target="_blank" >User-Agent Switcher</a> (Desktop UI on Websites)
+            - Linux / Firefox (Recommend)
+            - Use carefully on `Phone`
 - Revanced <a href="https://github.com/revanced-apks/build-apps/releases" target="_blank" >Releases</a>
     - See `Assets`
     - Use <a href="https://github.com/ReVanced/GmsCore/releases" target="_blank" >MicroG</a> for `YouTube` and `Music`
@@ -91,25 +100,16 @@ $('#linkshare').prop('selectedIndex',0);};
 -  AdBlocker <a href="https://github.com/AdguardTeam/AdguardForAndroid/releases" target="_blank" >Adguard</a>
     - Buy <a href="https://www.stacksocial.com/search?utf8=%E2%9C%93&query=adguard" target="_blank" >Here </a> (Stacksocial)
 -  Password Manager <a href="https://github.com/bitwarden/android/releases" target="_blank" >Bitwarden</a>
-- White <a href="https://f-droid.org/packages/com.github.ashutoshgngwr.noice/" target="_blank" >Noice</a>
+- White <a href="https://github.com/trynoice/android-app/releases" target="_blank" >Noice</a>
     - Coffee Shop (Recommend)
 - Remote Desktop <a href="https://github.com/rustdesk/rustdesk/releases" target="_blank" >Rustdesk</a>
 - Chrome Alternatives <a href="https://thorium.rocks/" target="_blank" >Thorium</a>
 - Calendar Alternatives <a href="https://github.com/mhss1/MyBrain/releases" target="_blank" >My Brain</a>
-- 2FA <a href="https://f-droid.org/en/packages/com.beemdevelopment.aegis/" target="_blank" >Aegis Authenticator</a>
-- Twitch Player <a href="https://f-droid.org/en/packages/com.github.andreyasadchy.xtra/" target="_blank" >Xtra</a>
-
+- 2FA <a href="https://github.com/beemdevelopment/Aegis/releases" target="_blank" >Aegis Authenticator</a>
+- Twitch Player <a href="https://github.com/crackededed/Xtra/releases" target="_blank" >Xtra</a>
+- Get Updates from Github <a href="https://github.com/ImranR98/Obtainium/releases" target="_blank" >Obtainium</a>
 ## Play Store
 
--  Web Browser <a href="https://play.google.com/store/apps/details?id=net.waterfox.android.release" target="_blank" >Waterfox</a>
-    - Add-ons
-        - <a href="https://addons.mozilla.org/en-US/android/addon/ublock-origin/" target="_blank" >uBlock Origin</a> (Ad-Block)
-            - <a href="https://drive.filen.io/d/79bab8e3-3973-446c-86d1-6a0fc080713e#YOo12kRFlmxCLZ5U1xTSGseIoAAzFUaY" target="_blank" >ublock-backup</a>
-                - List-KR filter (for korean)
-        - <a href="https://addons.mozilla.org/en-US/android/addon/video-background-play-fix/" target="_blank" >Video Background Play Fix</a> (Background Play)
-        - <a href="https://addons.mozilla.org/android/addon/uaswitcher" target="_blank" >User-Agent Switcher</a> (Desktop UI on Websites)
-            - Linux / Firefox (Recommend)
-            - Use carefully on `Phone`
 -  Samsung <a href="https://play.google.com/store/apps/details?id=com.samsung.android.tvplus" target="_blank" >TV Plus</a>
 -  PDF Editor <a href="https://play.google.com/store/apps/details?id=com.xodo.pdf.reader" target="_blank" >Xodo</a>
 -  Microsoft <a href="https://play.google.com/store/apps/details?id=com.microsoft.translator" target="_blank" >Translator</a>
