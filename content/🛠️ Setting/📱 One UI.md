@@ -82,6 +82,15 @@ $('#linkshare').prop('selectedIndex',0);};
 - Revanced <a href="https://github.com/revanced-apks/build-apps/releases" target="_blank" >Releases</a>
     - See `Assets`
     - Use <a href="https://github.com/ReVanced/GmsCore/releases" target="_blank" >MicroG</a> for `YouTube` and `Music`
+-  File Sync <a href="https://github.com/syncthing/syncthing-android/releases" target="_blank" >Syncthing</a>
+-  Note-taking <a href="https://github.com/obsidianmd/obsidian-releases/releases" target="_blank" >Obsidian</a>
+    - See <button id=”Link” onclick="window.open('https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian', '_blank')" >💠&nbsp;Obsidian</button>
+- Notion Alternatives <a href="https://github.com/anyproto/anytype-kotlin/releases" target="_blank" >Anytype</a>
+-  Cloud Storage <a href="https://github.com/FilenCloudDienste/filen-mobile/releases" target="_blank" >Filen</a>
+    - See <button id=”Link” onclick="window.open('https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%81-Useful-Apps','_blank' )"  >🔁&nbsp;Useful Apps</button>
+-  AdBlocker <a href="https://github.com/AdguardTeam/AdguardForAndroid/releases" target="_blank" >Adguard</a>
+    - Buy <a href="https://www.stacksocial.com/search?utf8=%E2%9C%93&query=adguard" target="_blank" >Here </a> (Stacksocial)
+-  Password Manager <a href="https://github.com/bitwarden/android/releases" target="_blank" >Bitwarden</a>
 - White <a href="https://f-droid.org/packages/com.github.ashutoshgngwr.noice/" target="_blank" >Noice</a>
     - Coffee Shop (Recommend)
 - Remote Desktop <a href="https://github.com/rustdesk/rustdesk/releases" target="_blank" >Rustdesk</a>
@@ -104,15 +113,6 @@ $('#linkshare').prop('selectedIndex',0);};
 -  Samsung <a href="https://play.google.com/store/apps/details?id=com.samsung.android.tvplus" target="_blank" >TV Plus</a>
 -  PDF Editor <a href="https://play.google.com/store/apps/details?id=com.xodo.pdf.reader" target="_blank" >Xodo</a>
 -  Microsoft <a href="https://play.google.com/store/apps/details?id=com.microsoft.translator" target="_blank" >Translator</a>
--  AdBlocker <a href="https://play.google.com/store/apps/details?id=com.adguard.android.contentblocker" target="_blank" >Adguard</a>
-    - Buy <a href="https://www.stacksocial.com/search?utf8=%E2%9C%93&query=adguard" target="_blank" >Here </a> (Stacksocial)
--  Password Manager <a href="https://play.google.com/store/apps/details?id=com.x8bit.bitwarden" target="_blank" >Bitwarden</a>
--  Cloud Storage <a href="https://play.google.com/store/apps/details?id=io.filen.app" target="_blank" >Filen</a>
-    - See <button id=”Link” onclick="window.open('https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%81-Useful-Apps','_blank' )"  >🔁&nbsp;Useful Apps</button>
--  File Sync <a href="https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid" target="_blank" >Syncthing</a>
--  Note-taking <a href="https://play.google.com/store/apps/details?id=md.obsidian" target="_blank" >Obsidian</a>
-    - See <button id=”Link” onclick="window.open('https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian', '_blank')" >💠&nbsp;Obsidian</button>
-- Notion Alternatives <a href="https://download.anytype.io/" target="_blank" >Anytype</a>
 -  iOS <a href="https://play.google.com/store/apps/details?id=com.inova.ios_14_iconpack" target="_blank" >Icon Pack</a>
 -  LED <a href="https://play.google.com/store/apps/details?id=com.bitdance.ledbanner.flash.ledbanner" target="_blank" >Banner</a>
 -  For `Widgets pop-up` <a href="https://play.google.com/store/apps/details?id=com.stock.widget" target="_blank" >Stock Widget</a>
