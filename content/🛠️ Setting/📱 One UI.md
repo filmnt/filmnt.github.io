@@ -91,7 +91,7 @@ $('#linkshare').prop('selectedIndex',0);};
 - Revanced <a href="https://github.com/revanced-apks/build-apps/releases" target="_blank" >Releases</a>
     - See `Assets`
     - Use <a href="https://github.com/ReVanced/GmsCore/releases" target="_blank" >MicroG</a> for `YouTube` and `Music`
--  File Sync <a href="https://github.com/syncthing/syncthing-android/releases" target="_blank" >Syncthing</a>
+-  File Sync <a href="https://github.com/Catfriend1/syncthing-android/releases" target="_blank" >Syncthing (Fork)</a>
 -  Note-taking <a href="https://github.com/obsidianmd/obsidian-releases/releases" target="_blank" >Obsidian</a>
     - See <button id=”Link” onclick="window.open('https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian', '_blank')" >💠&nbsp;Obsidian</button>
 - Notion Alternatives <a href="https://github.com/anyproto/anytype-kotlin/releases" target="_blank" >Anytype</a>
