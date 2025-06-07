@@ -27,7 +27,7 @@ export default ((opts?: Options) => {
               <a target="_blank" href={link}>{text}</a>
             </li>
           ))}
-        <span style="margin-top:2px">filmnt@duck.com</span></ul>
+        <span style="margin-top:2px;margin-left:-10px">| filmnt@duck.com</span></ul>
       </footer>
     )
   }
