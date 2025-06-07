@@ -130,7 +130,7 @@ $('#linkshare').prop('selectedIndex',0);};
     <span></span>
     <br>
     <button class="quick-button" onclick="window.open('https://github.com/filmnt', '_blank')">
-      <i class="fab fa-github"></i> Github
+      <i class="fab fa-github"></i> GitHub
     </button>
     <span></span>
     <button class="quick-button" onclick="location.href='./📓-Study/⌛-교육학'">⌛ 교육학</button>
