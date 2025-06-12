@@ -19,7 +19,6 @@ function showTime() {
 
 function toggleNavbar() {
   const modal = document.getElementById('navbar-dialog');
-  const closeBtn = document.querySelector('button[onclick="closeNavbar()"]');
   const dialogs = [
     'schedule-dialog',
     'study-dialog',
@@ -34,14 +33,9 @@ function toggleNavbar() {
     console.error('navbar-dialog not found');
     return;
   }
-  if (!closeBtn) {
-    console.error('closeNavbar button not found');
-    return;
-  }
 
   if (modal.style.display === 'block') {
     modal.style.display = 'none';
-    closeBtn.style.display = 'none';
     openDialogs = [];
     dialogs.forEach(id => {
       const dialog = document.getElementById(id);
@@ -56,7 +50,6 @@ function toggleNavbar() {
     console.log('navbar-dialog closed, openDialogs:', openDialogs);
   } else {
     modal.style.display = 'block';
-    closeBtn.style.display = 'block';
     openDialogs.forEach(id => {
       const dialog = document.getElementById(id);
       const dialogCloseBtn = dialog ? dialog.previousElementSibling : null;
@@ -65,35 +58,8 @@ function toggleNavbar() {
         dialogCloseBtn.style.display = 'block';
       }
     });
-    console.log('navbar-dialog opened, closeBtn display:', closeBtn.style.display, 'openDialogs:', openDialogs);
+    console.log('navbar-dialog opened, openDialogs:', openDialogs);
   }
-}
-
-function closeNavbar() {
-  const modal = document.getElementById('navbar-dialog');
-  const closeBtn = document.querySelector('button[onclick="closeNavbar()"]');
-  const dialogs = [
-    'schedule-dialog',
-    'study-dialog',
-    'food-dialog',
-    'excal-dialog',
-    'graph-dialog',
-    'preview-dialog'
-  ];
-
-  if (modal) modal.style.display = 'none';
-  if (closeBtn) closeBtn.style.display = 'none';
-
-  dialogs.forEach(id => {
-    const dialog = document.getElementById(id);
-    const dialogCloseBtn = dialog ? dialog.previousElementSibling : null;
-    if (dialog && dialog.style.display === 'block') {
-      dialog.style.display = 'none';
-      if (dialogCloseBtn) dialogCloseBtn.style.display = 'none';
-    }
-  });
-  localStorage.setItem('openDialogs', JSON.stringify([]));
-  console.log('closeNavbar called, all dialogs closed');
 }
 
 document.getElementById('links').addEventListener('change', function() {

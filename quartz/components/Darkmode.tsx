@@ -47,8 +47,6 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
       </button>
 <button class="needfade" id="TopBtn" onclick="document.documentElement.scrollTop=0;" style="position:fixed;bottom:130px;left:calc(100% - 68px);width: 40px;height:40px;opacity:0.3;z-index:1" ><i class="fa-solid fa-arrow-up fa-xl"></i></button>
 <button class="needfade" id="DownBtn" onclick="window.scrollTo(0, document.body.scrollHeight);" style="position: fixed;bottom: 85px;left:calc(100% - 68px);;width: 40px;height:40px;opacity:0.3;z-index:1" ><i class="fa-solid fa-arrow-down fa-xl"></i></button>
-
-<button onclick="closeNavbar()" style="display:none;position:fixed;bottom:40px;left:calc(100% - 120px);width:40px;height:40px;opacity:0.3;z-index:20001"><i class="fa-solid fa-xmark fa-xl"></i></button>
 <div id="navbar-dialog" style="display:none;position:fixed;top:0;right:0;width:100%;max-width:380px;height:100vh;flex-direction:column;background-color:var(--background);z-index:20000;overflow:hidden;">
     <h2 id="navclock" onload="showTime()" style="font-size:18px;margin:0;padding-bottom:4px;"> </h2>
     <span>
