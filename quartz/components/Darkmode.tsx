@@ -10,8 +10,8 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
       <div style="display:inline-block;margin-left:1px;float:right">
         <div title="Year Progress" class="progress-container"><div class="progress"><div class="bar"></div></div><div class="value"></div></div>
       </div>      
-      <div style="display:inline-block; margin-top:4px; float:right">
-        <iframe width="30" height="25" src="https://www.youtube.com/embed/jfKfPfyJRdk" frameborder="0" allowfullscreen></iframe>
+      <div style="display:inline-block; margin-top:4px;float:right">
+       <i id="toggleContainer" class="fa-regular fa-note-sticky fa-xl" style="margin-right:5px;margin-top:12px;"></i>
       </div>
       <button class={classNames(displayClass, "darkmode")} id="darkmode" style="float:right;height:35px;margin-right:8px">
         <svg

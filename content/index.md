@@ -64,6 +64,8 @@ $('#linkshare').prop('selectedIndex',0);};
 <script src="script/home-stock.js"></script>
 %% Stikcy Notes Script %%
 <script src="script/sticky-script.js"></script>
+%% Calculator Script %%
+<script src="script/calc.js"></script>
 
 %% ip address & city %%
 <h3 id="greeting" style="white-space: nowrap !important; display: inline-block; line-height: 1.2 !important; max-width: 100%; margin: -19px 0 4px 0 !important;"><span id="hello" style="margin: 0 !important; padding: 0 !important; white-space: nowrap; font-size: inherit; display: inline-block;"></span><span id="browser" style="white-space: nowrap; font-size: inherit; display: inline-block;">Loading greetings... ⏳</span></h3>

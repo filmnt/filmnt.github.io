@@ -90,7 +90,8 @@ export default ((userOpts?: Partial<Options>) => {
 <div style="margin-left:0;margin-right:auto;display:inline;">
 <button title="Webcam" style="height:30px;margin-right:4px;width:40px;" id="camtoggle" onclick="cameraonoff()"><i class="fa-solid fa-video fa-xl"></i></button>
 
-<button style="height:30px;margin-right:4px;width:40px;" id="toggleContainer"><i class="fa-regular fa-note-sticky fa-xl"></i></button> 
+<div id="calcContainer" style="margin-left:0;margin-right:auto;display:inline;"></div>
+<button style="height:30px;margin-right:4px;width:40px;" id="toggleCalc"><i class="fa-solid fa-calculator fa-xl" ></i></button> 
 
 <div style="display:inline-block;margin-right:4px">
 <select style="height:30px;width:80px;"  id="tts-lang">

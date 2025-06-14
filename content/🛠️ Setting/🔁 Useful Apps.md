@@ -58,7 +58,8 @@ $('#linkshare').prop('selectedIndex',0);};
 <script src="script/resize-dialog.js"></script>
 %% Stikcy Notes Script %%
 <script src="script/sticky-script.js"></script>
-
+%% Calculator Script %%
+<script src="script/calc.js"></script>
 
 
 
