@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggleButton = document.getElementById('toggleCalc');
   const calcContainer = document.getElementById('calcContainer');
 
-  if (!toggleButton || !calcContainer) return;
+  if (!toggleButton || !calcContainer) {
+    return;
+  }
 
   calcContainer.style.display = 'none';
 
@@ -65,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
           font-size: 14px;
           border-radius: 4px;
           cursor: pointer;
-          transition: background-color 0.2s, opacity 0.2s;
         }
         button:hover {
           background-color: #5a5a5a;
@@ -105,8 +106,65 @@ document.addEventListener('DOMContentLoaded', () => {
         .gray:active {
           background-color: #6c7a7b;
         }
+        .calculator[data-theme="light"] {
+          background-color: #e8e8e8;
+        }
+        .calculator[data-theme="light"] .display {
+          background-color: #f5f5f5;
+        }
+        .calculator[data-theme="light"] .display input {
+          color: #2b2b2b;
+        }
+        .calculator[data-theme="light"] .display .result {
+          color: #2b2b2b;
+        }
+        .calculator[data-theme="light"] button {
+          background-color: #b8b8b8;
+          color: #2b2b2b;
+        }
+        .calculator[data-theme="light"] button:hover {
+          background-color: #c8c8c8;
+        }
+        .calculator[data-theme="light"] button:active {
+          background-color: #a8a8a8;
+        }
+        .calculator[data-theme="light"] button:disabled {
+          background-color: #e5e5e5;
+          opacity: 0.5;
+          cursor: not-allowed;
+        }
+        .calculator[data-theme="light"] .blue {
+          background-color: #4a7390;
+          color: #ffffff;
+        }
+        .calculator[data-theme="light"] .blue:hover {
+          background-color: #5c85a2;
+        }
+        .calculator[data-theme="light"] .blue:active {
+          background-color: #3c6380;
+        }
+        .calculator[data-theme="light"] .orange {
+          background-color: #e67e22;
+          color: #ffffff;
+        }
+        .calculator[data-theme="light"] .orange:hover {
+          background-color: #f2994a;
+        }
+        .calculator[data-theme="light"] .orange:active {
+          background-color: #cc6b11;
+        }
+        .calculator[data-theme="light"] .gray {
+          background-color: #a0c2ba;
+          color: #2b2b2b;
+        }
+        .calculator[data-theme="light"] .gray:hover {
+          background-color: #b0d2ca;
+        }
+        .calculator[data-theme="light"] .gray:active {
+          background-color: #90b2aa;
+        }
       </style>
-      <div class="calculator">
+      <div class="calculator" data-theme="dark">
         <div class="display">
           <input type="text" class="input">
           <div class="result">0</div>
@@ -410,6 +468,21 @@ document.addEventListener('DOMContentLoaded', () => {
     inputElement.addEventListener('keydown', handleKeydown);
     buttons.forEach(button => button.addEventListener('click', () => handleButton(button.getAttribute('data-value'))));
 
+    function updateTheme() {
+      const savedTheme = document.documentElement.getAttribute('saved-theme') || localStorage.getItem('theme') || 'dark';
+      const theme = savedTheme === 'light' ? 'light' : 'dark';
+      const calculator = shadow.querySelector('.calculator');
+      if (calculator) {
+        calculator.setAttribute('data-theme', theme);
+      }
+    }
+
+    document.addEventListener('themechange', () => {
+      updateTheme();
+    });
+
+    updateTheme();
+
     calculatorInitialized = true;
   }
 
@@ -418,8 +491,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const parent = toggleButton.parentElement;
     const parentRect = parent.getBoundingClientRect();
     calcContainer.style.position = 'absolute';
-    calcContainer.style.top = `250px`;
-    calcContainer.style.left = `30px`;
+    calcContainer.style.top = '250px';
+    calcContainer.style.left = '30px';
     calcContainer.style.zIndex = '10000';
     calcContainer.style.background = 'transparent';
     calcContainer.style.border = 'none';
