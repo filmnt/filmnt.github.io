@@ -2,7 +2,7 @@ const dialogIds = ['schedule-dialog', 'excal-dialog', 'graph-dialog', 'preview-d
 const MIN_WIDTH = 412;
 const DEFAULT_WIDTH = 412;
 const MAX_WIDTH = 850;
-const RESIZE_HANDLE_WIDTH = 30;
+const RESIZE_HANDLE_WIDTH = 50;
 
 dialogIds.forEach(dialogId => {
   const dialog = document.getElementById(dialogId);
@@ -57,8 +57,8 @@ dialogIds.forEach(dialogId => {
   };
 
   const moveResize = (x) => {
+    const rect = dialog.getBoundingClientRect();
     if (!isResizing) {
-      const rect = dialog.getBoundingClientRect();
       if (dialog.style.display !== 'none' && 
           x >= rect.left - RESIZE_HANDLE_WIDTH && 
           x <= rect.left + 10) {
@@ -164,5 +164,4 @@ dialogIds.forEach(dialogId => {
     contentDiv.style.zIndex = '20004';
     contentDiv.style.height = '100%';
   }
-
 });
