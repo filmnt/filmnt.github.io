@@ -165,17 +165,4 @@ dialogIds.forEach(dialogId => {
     contentDiv.style.height = '100%';
   }
 
-  dialog.addEventListener('touchstart', () => {
-    iframes.forEach(iframe => {
-      iframe.style.pointerEvents = 'auto';
-    });
-  });
-
-  dialog.addEventListener('touchend', () => {
-    if (!isResizing) {
-      iframes.forEach(iframe => {
-        iframe.style.pointerEvents = 'auto';
-      });
-    }
-  });
 });
