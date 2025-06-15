@@ -47,12 +47,27 @@ dialogIds.forEach(dialogId => {
   let isResizing = false;
   let startX, startWidth;
 
+  const iframes = dialog.querySelectorAll('iframe');
+
+  const disableIframeEvents = () => {
+    iframes.forEach(iframe => {
+      iframe.style.pointerEvents = 'none';
+    });
+  };
+
+  const enableIframeEvents = () => {
+    iframes.forEach(iframe => {
+      iframe.style.pointerEvents = 'auto';
+    });
+  };
+
   const startResize = (x) => {
     const rect = dialog.getBoundingClientRect();
     if (x >= rect.left - RESIZE_HANDLE_WIDTH && x <= rect.left + 10) {
       isResizing = true;
       startX = x;
       startWidth = rect.width;
+      disableIframeEvents();
     }
   };
 
@@ -83,6 +98,7 @@ dialogIds.forEach(dialogId => {
     if (isResizing) {
       isResizing = false;
       dialog.style.cursor = 'default';
+      enableIframeEvents();
     }
   };
 
@@ -146,7 +162,6 @@ dialogIds.forEach(dialogId => {
   });
   observer.observe(dialog, { attributes: true, attributeFilter: ['style'] });
 
-  const iframes = dialog.querySelectorAll('iframe');
   iframes.forEach(iframe => {
     iframe.style.pointerEvents = 'auto';
     iframe.style.position = 'absolute';
