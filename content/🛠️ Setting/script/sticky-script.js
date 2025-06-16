@@ -724,8 +724,6 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.addEventListener("click", (event) => {
         event.preventDefault();
         event.stopPropagation();
-        console.log("Toggle clicked, current display:", container.style.display);
         container.style.display = container.style.display === "none" ? "block" : "none";
-        console.log("New display:", container.style.display);
     });
 });

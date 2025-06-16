@@ -22,7 +22,7 @@ function generateQRCode() {
         },
         function (error) {
             if (error) {
-                alert('QR 코드 생성 중 오류가 발생했습니다.');
+                alert('An error occurred while generating the QR code.');
                 return;
             }
             const imgData = canvas.toDataURL('image/png');

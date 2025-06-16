@@ -47,7 +47,6 @@ function toggleNavbar() {
       }
     });
     localStorage.setItem('openDialogs', JSON.stringify(openDialogs));
-    console.log('navbar-dialog closed, openDialogs:', openDialogs);
   } else {
     modal.style.display = 'block';
     openDialogs.forEach(id => {
@@ -58,8 +57,7 @@ function toggleNavbar() {
         dialogCloseBtn.style.display = 'block';
       }
     });
-    console.log('navbar-dialog opened, openDialogs:', openDialogs);
-  }
+ }
 }
 
 document.getElementById('links').addEventListener('change', function() {
