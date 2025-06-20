@@ -179,7 +179,7 @@ $('#linkshare').prop('selectedIndex',0);};
     - For More Information, <a href="https://github.com/sabamdarif/termux-desktop" target="_blank" >Termux-Desktop</a>
       -  `[1] Generic Recommend With Hardware Accleration`
       -  `[1] XFCE`
-      -  `[2] Minimalist Setup 1` or `[0] Stock` 
+      -  `[2] Minimalist Setup 1`
       - `Username`
     - It takes 10-30 minutes…
     ```shell
