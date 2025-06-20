@@ -145,9 +145,9 @@ $('#linkshare').prop('selectedIndex',0);};
 ![[Linux.png]]
 - Could be needed later...
     - <a href="https://mega.nz/file/2clmGSgC#WERW4d4P5eeMGa7RD9BVeKTHC5ap_9YEJNHJzI4zXDk" target="_blank" >Wallpapers</a> (9.2mb)
-    - <a href="https://www.xfce-look.org/s/XFCE/p/1403328/" target="_blank" >WhiteSur-Dark.tar.xz</a> (0.18mb)
+    - <a href="https://www.xfce-look.org/s/XFCE/p/1403328/" target="_blank" >WhiteSur-Dark.tar.xz</a> (0.20mb)
     - <a href="https://www.xfce-look.org/p/1648124" target="_blank" >macOS-Monterey.tar.gz</a> (3.94mb)
-    - <a href="https://www.xfce-look.org/p/1400021/" target="_blank" >Mkos-Big-Sur.tar.xz</a> (20.86mb)
+    - <a href="https://www.xfce-look.org/p/1400021/" target="_blank" >Mkos-Big-Sur.tar.xz</a> (20.96mb)
 > `Dimensity` or `Exynos` could leave you in trouble…
 - (<font color="#ff0000">Not Optional</font>) `Error Solutions`:  Process completed (signal 9) - press Enter
     - Install `LADB` from <a href="https://github.com/hyperio546/ladb-builds/releases" target="_blank" >Here</a> (`app-debug.apk`)  
