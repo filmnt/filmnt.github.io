@@ -68,7 +68,7 @@ $('#linkshare').prop('selectedIndex',0);};
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/" target="_blank" >Ublock-origin</a>
     - <a href="https://mega.nz/file/mRcFSSLD#d3ZcJKC7ecockyAUTsrs3i3c65lPMGw2RoJ6FDRKv7Q" target="_blank" >ublock-backup</a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/gesturefy/" target="_blank" >Gesturefy</a>
-    -  <a href="https://mega.nz/file/eZdmSJaL#47SP05Cs5ihQvZCk6rL1FfJij-9PskmYkBlyedQ0fYQ" target="_blank" >gesturefy-backup</a> (language: korean)
+    -  <a href="https://mega.nz/file/eZdmSJaL#47SP05Cs5ihQvZCk6rL1FfJij-9PskmYkBlyedQ0fYQ" target="_blank" >gesturefy-backup</a> 
     - Modify `Open custom URL`
 - <a href="https://addons.mozilla.org/firefox/addon/bonjourr-startpage/" target="_blank" >Bonjourr</a>
 - <a href="https://addons.mozilla.org/firefox/addon/pwas-for-firefox/" target="_blank" >PWAs</a>

@@ -143,7 +143,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch all history for git info
+          fetch-depth: 0 
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -177,7 +177,8 @@ jobs:
     - You Can Rename `quartz` and Move it to where you want.
 3. If You have `Private Notes`, <font color="#ff0000">DON’T USE</font> `npx quartz sync` in quartz folder
 
-(Optional) You can connect `http://localhost:8080` 
+### Local-Host (optional)
+- You can connect `http://localhost:8080` 
 ```shell
 # Go to quartz folder
 cd quartz
@@ -186,11 +187,11 @@ cd quartz
 npx quartz build --serve
 ```
 - If You know <a href="https://tailscale.com/download" target="_blank" >Tailscale</a>, You can connect `Tailscale-IP:8080` on other devices.
-- You can also host on `Linux on Galaxy`
+- You can also host on `Linux on Android`
     - Go to `quartz` Folder on `Desktop` 
     - Run `npx quartz build --serve` 
     - `Sync` or `Copy` `public Folder` to the location you want
-    - Run the command on `Galaxy`
+    - Run the command on `Termux`
         ```shell
             pkg install nodejs
             npm install -g http-server
@@ -203,28 +204,60 @@ npx quartz build --serve
 ### `.gitignore`
 - Below `Personal Setting`
 ```Shell
+# macOS
 .DS_Store
+
+# Git
 .gitignore
-node_modules
-public
-prof
-tsconfig.tsbuildinfo
+
+# Node.js and Dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build and Output Directories
+public/
+dist/
+build/
 .quartz-cache
-private/
+.cache/
+
+# TypeScript and Build Info
+tsconfig.tsbuildinfo
+
+# Development and Profiling
+prof/
 .replit
 replit.nix
+.stignore
+.last_build_state
 
-# Personal Setting
+# Personal Settings
 .filen.trash.local
-content/🔖 Daily Notes/
-content/🔐 Private Notes/
 .trash
 .obsidian
 .makemd
 .space
 .stfolder
 
-# Media
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+*.log
+
+# Temporary Files
+*.swp
+*.swo
+
+# Test Coverage
+coverage/
+
+# Media Files
 *.mp4
 *.webm
 *.qt
@@ -235,20 +268,18 @@ content/🔐 Private Notes/
 *.dpl
 *.mp3
 *.aiff
+
+# Private Directories
+private/
 ```
 
 
 ### `quartz.config.ts`
-- `pageTitle`, `baseUrl`, `ignorePatterns`, `header/body/code`(optional), `lightMode/darkMode colors`(optional)
+- Modify `pageTitle`, `baseUrl`
 ```shell
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-/**
- * Quartz 4.0 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
- */
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "🪴 Title",
@@ -256,41 +287,29 @@ const config: QuartzConfig = {
     enableSPA: false,
     enablePopovers: true,
     analytics: {
-      provider: "plausible"
+      provider: ""
       },
     locale: "en-US",
-    baseUrl: "filmnt.github.io/",
+    baseUrl: "Your-Github-Pages-Url",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     generateSocialImages: false,
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
-      typography: {
-        header: "Noto Sans",
-        body: "Noto Sans",
-        code: "Noto Sans",
-      },
+      typography: { header: "Noto Sans", body: "Noto Sans", code: "Noto Sans" },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          light: "#faf8f8", lightgray: "#e5e5e5", gray: "#b8b8b8",
+          darkgray: "#4e4e4e", dark: "#2b2b2b",
+          secondary: "#284b63", tertiary: "#84a59d",
+          highlight: "rgba(143, 159, 169, 0.15)"
         },
         darkMode: {
-          light: "#0F0F0F",
-          lightgray: "#272727",
-          gray: "#646464",
-          darkgray: "#F1F1F1",
-          dark: "#F1F1F1",
-          secondary: "#64B5F6",
-          tertiary: "#FFFFFF",
-          highlight: "rgba(255, 255, 255, 0.15)",
+          light: "#0F0F0F", lightgray: "#272727", gray: "#646464",
+          darkgray: "#F1F1F1", dark: "#F1F1F1",
+          secondary: "#64B5F6", tertiary: "#FFFFFF",
+          highlight: "rgba(255, 255, 255, 0.15)"
         },
       },
     },
@@ -298,16 +317,8 @@ const config: QuartzConfig = {
   plugins: {
     transformers: [
       Plugin.FrontMatter(),
-      Plugin.CreatedModifiedDate({
-        priority: ["git", "frontmatter", "filesystem"],
-      }),
-      Plugin.SyntaxHighlighting({
-        theme: {
-          light: "github-light",
-          dark: "github-dark",
-        },
-        keepBackground: false,
-      }),
+      Plugin.CreatedModifiedDate({ priority: ["git", "frontmatter", "filesystem"] }),
+      Plugin.SyntaxHighlighting({ theme: { light: "github-light", dark: "github-dark" }, keepBackground: false }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
@@ -322,18 +333,13 @@ const config: QuartzConfig = {
       Plugin.ContentPage(),
       Plugin.FolderPage(),
       Plugin.TagPage(),
-      Plugin.ContentIndex({
-        enableSiteMap: true,
-        enableRSS: true,
-      }),
+      Plugin.ContentIndex({ enableSiteMap: true, enableRSS: true }),
       Plugin.Assets(),
       Plugin.Static(),
       Plugin.NotFoundPage(),
     ],
   },
 }
-
-export default config
 
 
 ```
@@ -344,52 +350,47 @@ export default config
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
-// components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
+  afterBody: [],
   footer: Component.Footer({
-      links: {},
+    links: { "Links": "https://" },
   }),
 }
 
-// components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.Breadcrumbs(),
     Component.ArticleTitle(),
     Component.ContentMeta(),
-    ],
-    
-    left: [
-    Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.DesktopOnly(Component.Search()),
-    Component.Darkmode(),    
-    Component.DesktopOnly(Component.Explorer()),
-    Component.DesktopOnly(Component.RecentNotes({ limit: 4, showTags:false })),
-
-    ],
-    
-    right: [
-    Component.DesktopOnly(Component.Graph()),
-    Component.DesktopOnly(Component.TableOfContents()),
-    ],
-    }
-
-// components for pages that display lists of pages  (e.g. tags or folders)
-export const defaultListPageLayout: PageLayout = {
-  beforeBody: [    Component.Breadcrumbs(),Component.ArticleTitle(), Component.ContentMeta()],
+  ],
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    ],
+    Component.DesktopOnly(Component.Search()),
+    Component.Darkmode(),
+    Component.DesktopOnly(Component.Explorer()),
+    Component.DesktopOnly(Component.RecentNotes({ limit: 4, showTags: false })),
+  ],
   right: [
-
-
+    Component.DesktopOnly(Component.Graph()),
+    Component.DesktopOnly(Component.TableOfContents()),
   ],
 }
 
+export const defaultListPageLayout: PageLayout = {
+  beforeBody: [
+    Component.Breadcrumbs(),
+    Component.ArticleTitle(),
+    Component.ContentMeta(),
+  ],
+  left: [
+    Component.PageTitle(),
+    Component.MobileOnly(Component.Spacer()),
+  ],
+  right: [],
+}
 ```
 
 
