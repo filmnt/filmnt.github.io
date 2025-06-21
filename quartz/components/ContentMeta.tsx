@@ -43,18 +43,11 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
         <button title="Navigation" class="needfade" id="threedots" style="display:block;position:fixed;bottom:40px;left:calc(100% - 68px);width:40px;height:40px;opacity:0.3;z-index:2" onclick="toggleNavbar()"><i class="fa-solid fa-bars fa-xl"></i></button>
         )
       segments.push(
-        <button
-          data-title="Share"
-          class="dropdown"
-          style="background-color:transparent;margin-right:10px;float:right;margin-top:-2px"
-        >
+        <button data-title="Share" class="dropdown" style="background-color:transparent;margin-right:10px;float:right;margin-top:-2px">
           <i class="dropbtn fa-solid fa-share-nodes fa-xl" onclick="sharebtn()"></i>
           <div id="myDropdown" class="dropdown-content">
-            <div
-              class="dropdown-item"
-              onclick="navigator.clipboard.writeText(window.location.href); return false;"
-            >
-              <i class="fa-regular fa-copy fa-xl"></i> Copy Link
+            <div class="dropdown-item" onclick="navigator.clipboard.writeText(window.location.href); return false;">
+              <i class="fa-regular fa-copy fa-xl"></i> Copy URL
             </div>
             <div class="dropdown-item" onclick="generateQRCode()">
               <i class="fa-solid fa-qrcode fa-xl"></i> QR Code
