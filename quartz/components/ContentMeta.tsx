@@ -31,13 +31,8 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       }
 
       segments.push(
-        <button
-          data-title="Fullscreen"
-          onclick="toggleFullScreen();"
-          style="background-color:transparent;margin-right:10px;float:right;margin-right:-4px;position:relative;margin-top:-2px"
-        >
-          <i class="fa-solid fa-expand fa-xl"></i>
-        </button>
+        <button data-title="Fullscreen" onclick="toggleFullScreen();" style="background-color:transparent;margin-right:10px;float:right;margin-right:-4px;position:relative;margin-top:-2px"><i class="fa-solid fa-expand fa-xl"></i></button>
+
       )
       segments.push(
         <button title="Navigation" class="needfade" id="threedots" style="display:block;position:fixed;bottom:40px;left:calc(100% - 68px);width:40px;height:40px;opacity:0.3;z-index:2" onclick="toggleNavbar()"><i class="fa-solid fa-bars fa-xl"></i></button>
