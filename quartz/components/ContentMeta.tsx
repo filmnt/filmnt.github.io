@@ -35,7 +35,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
 
       )
       segments.push(
-        <button title="Navigation" class="needfade" id="threedots" style="display:block;position:fixed;bottom:40px;left:calc(100% - 68px);width:40px;height:40px;opacity:0.3;z-index:2" onclick="toggleNavbar()"><i class="fa-solid fa-bars fa-xl"></i></button>
+        <button title="Navigation" class="needfade" id="threedots" style="display:block;position:fixed;bottom:40px;left:calc(100% - 68px);width:40px;height:40px;opacity:0.3;z-index:2" onclick="toggleNavbar()"><i class="fa-solid fa-layer-group fa-xl"></i></button>
         )
       segments.push(
         <button data-title="Share" class="dropdown" style="background-color:transparent;margin-right:10px;float:right;margin-top:-2px">
