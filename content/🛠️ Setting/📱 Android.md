@@ -176,38 +176,37 @@ $('#linkshare').prop('selectedIndex',0);};
 - Install <a href="https://github.com/termux/termux-x11/releases" target="_blank" >X-11</a> 
     - Click `app-arm64-v8a-debug.apk`
 - Open `Termux` and Run the commands
-    - For More Information, <a href="https://github.com/sabamdarif/termux-desktop" target="_blank" >Termux-Desktop</a>
-      -  `[1] Generic Recommend With Hardware Accleration`
-      -  `[1] XFCE`
-      -  `[2] Minimalist Setup 1`
-      - `Username`
-    - It takes 10-30 minutes…
+  - It takes 10-30 minutes…
+  - For More Information, <a href="https://github.com/sabamdarif/termux-desktop" target="_blank" >Termux-Desktop</a>
     ```shell
-    curl -Lf https://raw.githubusercontent.com/sabamdarif/termux-desktop/main/setup-termux-desktop -o setup-termux-desktop && chmod +x setup-termux-desktop && ./setup-termux-desktop && pkg install -y fcitx5*
+    curl -Lf https://raw.githubusercontent.com/sabamdarif/termux-desktop/main/setup-termux-desktop -o setup-termux-desktop && chmod +x setup-termux-desktop && ./setup-termux-desktop && pkg install -y fcitx5* && appstore --install v0.5.4
     ```
-> After Installation, Enter `exit` and Open `Termux:X11` - `Preferences` (Not `Termux`)
+  -  `[1] Generic Recommend With Hardware Accleration`
+  -  `[1] XFCE`
+  -  `[0] Stock`
+  -  `[3] Wine Hangover`
+  -  `Do you want to Configure Hardware Acceleration` -> `n`
+  -  `[3] Zsh + zinit`
+  - `Username`
+
+> After Installation, Enter `exit` and Open `Termux:X11` - `Preferences` (Not `Termux`)
         ![[X11-1.png]]
         ![[X11-2.png]]
 ![[X11-3.png]]
 `Clipboard sharing` can cause problem on `LibreOffice`
 ![[X11-4.png]]
-- Just `tx11start`
-    - `Back` Key = `Keyboard`, `Ctrl + C` = `Cancel`, `exit` = exit
-    - (Recommend) Fix Sound Error
-        - Open `com.termux/files/usr/etc/pulse/default.pa` and Modify `Last Line` as below
+ - `Back` Key = `Keyboard`, `Ctrl + C` = `Cancel`, `exit` = exit
+- (Recommend) Fix Sound Error
+    - Open `com.termux/files/usr/etc/pulse/default.pa` and Modify `Last Line` as below
     ```shell
     load-module module-aaudio-sink
     ```
-    - Get latest update
-    ```shell
-    setup-termux-desktop --update && cd .. && cd usr/bin && ./setup-termux-desktop
-    ```
-    - (Optional) For Korean…
-        - Keyboard 
-            - `tx11start` - `Settings` - `Fcitx 5 Configuration` → Add `Hangul` to the left
-             - Modify `Trigger Input Method` in `Global Options` tab
-         - Fonts
-             - `Terminal` → `debian` → `sudo apt install fonts-nanum fonts-noto fonts-roboto -y` → `exit`
+- (Optional) For Korean…
+    - Keyboard 
+        - `Settings` - `Fcitx 5 Configuration` → Add `Hangul` to the left
+         - Modify `Trigger Input Method` in `Global Options` tab
+     - Fonts
+         - `Terminal` → `debian` → `sudo apt install fonts-nanum fonts-noto fonts-roboto -y` → `exit`
 > [!NOTE] S Pen Compatibility
 > - You can use `S Pen Button` as `Right-Click`
 > - Use `S Pen Button` with `Gesturefy` on Firefox
