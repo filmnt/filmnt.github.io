@@ -92,6 +92,7 @@ $('#linkshare').prop('selectedIndex',0);};
 - Twitch Player <a href="https://github.com/crackededed/Xtra/releases" target="_blank" >Xtra</a>
 - Fake <a href="https://f-droid.org/packages/cl.coders.faketraveler/" target="_blank" >Traveler</a>
 - Mesh Network for SMB or Share <a href="https://tailscale.com/download/android" target="_blank" >Tailscale</a>
+- Revanced <a href="https://github.com/ReVanced/revanced-manager/releases/" target="_blank" >Manager</a>  
 - Libre <a href="https://github.com/proninyaroslav/libretorrent/releases" target="_blank" >Torrent</a>
 - VNC Client <a href="https://github.com/gujjwal00/avnc/releases" target="_blank" >AVNC</a>
 - FOSS <a href="https://github.com/f-droid/fdroidclient/releases" target="_blank" >F-Droid</a>
