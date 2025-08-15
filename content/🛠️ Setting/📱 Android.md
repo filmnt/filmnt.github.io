@@ -185,9 +185,6 @@ $('#linkshare').prop('selectedIndex',0);};
   -  `[1] Generic Recommend With Hardware Accleration`
   -  `[1] XFCE`
   -  `[0] Stock`
-  -  `[3] Wine Hangover`
-  -  `Do you want to Configure Hardware Acceleration` -> `n`
-  -  `[3] Zsh + zinit`
   - `Username`
 
 > After Installation, Enter `exit` and Open `Termux:X11` - `Preferences` (Not `Termux`)
