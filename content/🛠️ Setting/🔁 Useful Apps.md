@@ -113,6 +113,9 @@ $('#linkshare').prop('selectedIndex',0);};
 ## [Amphetamine](https://apps.apple.com/app/amphetamine/id937984704)
 - Keep-awake Utility
 
+## [Blackmagic Disk Speed Test](https://apps.apple.com/us/app/blackmagic-disk-speed-test/id425264550)
+- Diskmark
+
 ## [NeoHtop](https://github.com/Abdenasser/neohtop/releases)
 - System monitoring on steroids
 
@@ -125,7 +128,7 @@ $('#linkshare').prop('selectedIndex',0);};
 
 ## [Krabiner](https://karabiner-elements.pqrs.org/)
 - A powerful and stable keyboard customizer
-    - For `Paralles` and `VNC` language switcher
+    - For `Paralles` and `VNC` language switcher
     - source: <a href="https://blog.naver.com/hankboy/221200885234" target="_blank" >blog.naver.com/hankboy/221200885234</a>
         - <a href="https://archive.is/yxigT" target="_blank" >mirror </a> (archive) 
 
