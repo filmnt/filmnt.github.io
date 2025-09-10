@@ -114,7 +114,7 @@ $('#linkshare').prop('selectedIndex',0);};
 
 # Settings 
 - Notifications & Ringtones
-    - <a href="https://mega.nz/file/idl2BBiI#nSnusIT2W4KINC2B_pmhRvGNyB1BMEGa9Dt-z3XTQMI" target="_blank" >Notifications</a> (162kb)
+    - <a href="https://mega.nz/file/TMN1AbbZ#ZovEH311g5Hd_6N3Z0uUshKooMy71_Kior10O8eCLMU" target="_blank" >Notifications</a> (162kb)
     - <a href="https://mega.nz/file/GRtAGCrD#rrLpNI7pmk-uYPe5DTmHcD_bQGGVS3TvGYbwdhEZJu8" target="_blank" >Ringtones</a> (2.3mb)
     - <a href="https://mega.nz/file/2clmGSgC#WERW4d4P5eeMGa7RD9BVeKTHC5ap_9YEJNHJzI4zXDk" target="_blank" >Wallpapers</a> (9.2mb)
     - Move to `Notifications` & `Ringtones` Folder
