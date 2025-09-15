@@ -70,19 +70,20 @@ $('#linkshare').prop('selectedIndex',0);};
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/gesturefy/" target="_blank" >Gesturefy</a>
     -  <a href="https://mega.nz/file/eZdmSJaL#47SP05Cs5ihQvZCk6rL1FfJij-9PskmYkBlyedQ0fYQ" target="_blank" >gesturefy-backup</a> 
     - Modify `Open custom URL`
-- <a href="https://addons.mozilla.org/firefox/addon/pwas-for-firefox/" target="_blank" >PWAs</a>
+- <a href="https://addons.mozilla.org/en-US/firefox/addon/search_by_image" target="_blank" >Search by Image</a>
 - <a href="https://addons.mozilla.org/firefox/addon/web-marker-draw-on-websites/" target="_blank" >Web Marker</a>
 - <a href="https://addons.mozilla.org/firefox/addon/youtube-nonstop/" target="_blank" >YouTube NonStop</a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/open-bookmarks-in-a-new-tab/" target="_blank" >Open bookmarks in a new tab</a>
   - Or... `about:config` -> `browser.tabs.loadBookmarksInTabs` -> `true`
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/" target="_blank" >Duckduckgo</a>
-- <a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/" target="_blank" >Bitwarden</a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/" target="_blank" >TWP</a> 
     - <a href="https://mega.nz/file/SAEC2LCZ#zg6nFKiRhs8Hn2NWCMcp58mlaoQHTZLFLmHbcHYNaRQ" target="_blank" >twp-backup</a> (language: korean)
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/simple-translate/" target="_blank" >Simple translate</a> 
     - <a href="https://mega.nz/file/KFkCUYgR#mMEvBiSCrjXbm5xhH-l5ZFxKPtEQqMfBgCCdYYlRBjU" target="_blank" >simpletranslate-backup</a> (language: korean)
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/previews-for-ttv/" target="_blank" >Previews TTV</a> 
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/" target="_blank" >Video Download Helper</a> 
+- <a href="https://addons.mozilla.org/firefox/addon/pwas-for-firefox/" target="_blank" >PWAs</a>
+- <a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/" target="_blank" >Bitwarden</a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/dcrefresher-reborn/" target="_blank" >DCRefresher Reborn</a>(For Korean)
 
 
