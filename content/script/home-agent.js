@@ -3,15 +3,15 @@
   let browser = unknown, version = unknown, os = unknown, osVersion = unknown, device = unknown;
   const ua = navigator.userAgent || '';
   const platform = navigator.platform || '';
-  const isSamsung = /SM-[A-Z][0-9]{3}[A-Z0-9]*|SC-[A-Z0-9]+|SGH-[A-Z0-9]+|GT-[A-Z0-9]+|SCH-[A-Z0-9]+|SamsungBrowser|[A-Z](?=\))/i.test(ua);
+  const isSamsung = /SM-[A-Z][0-9]{3}[A-Z0-9]*|SC-[A-Z0-9]+|SGH-[A-Z0-9]+|GT-[A-Z0-9]+|SCH-[A-Z0-9]+|SamsungBrowser|SAMSUNG|Galaxy/i.test(ua);
   const isMobile = /Mobile|Tablet/.test(ua) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0) || typeof window.orientation !== 'undefined';
   let isSamsungFromUAData = false;
   if (navigator.userAgentData && navigator.userAgentData.brands) {
-    isSamsungFromUAData = navigator.userAgentData.brands.some(brand => /Samsung/i.test(brand.brand));
+    isSamsungFromUAData = navigator.userAgentData.brands.some(brand => /Samsung|Galaxy/i.test(brand.brand));
   }
   if (/Android/.test(ua)) {
     osVersion = ua.match(/Android\s([\d.]+)/)?.[1] || unknown;
-    if (isSamsung || isSamsungFromUAData) {
+    if (isSamsung || isSamsungFromUAData || /SamsungBrowser|EdgA?|Chrome/.test(ua)) {
       os = 'Galaxy';
       device = 'Galaxy';
     } else if (/Android TV/.test(ua)) {
@@ -21,9 +21,9 @@
       os = 'Android';
       device = 'Android';
     }
-  } else if (isMobile && (/Firefox\/([\d.]+)/.test(ua) || /EdgA?\/([\d.]+)/.test(ua))) {
-    os = 'Android';
-    device = 'Android';
+  } else if (isMobile && (/Firefox\/([\d.]+)/.test(ua) || /EdgA?\/([\d.]+)/.test(ua) || /SamsungBrowser\/([\d.]+)/.test(ua) || /Chrome\/([\d.]+)/.test(ua))) {
+    os = (isSamsung || isSamsungFromUAData || /EdgA?/.test(ua)) ? 'Galaxy' : 'Android';
+    device = (isSamsung || isSamsungFromUAData || /EdgA?/.test(ua)) ? 'Galaxy' : 'Android';
     osVersion = ua.match(/Android\s([\d.]+)/)?.[1] || unknown;
   } else if (/AppleTV/.test(ua)) {
     os = 'tvOS';
