@@ -4,12 +4,12 @@
   const ua = navigator.userAgent || '';
   const platform = navigator.platform || '';
   const isSamsung = /SM-[A-Z][0-9]{3}[A-Z0-9]*|SC-[A-Z0-9]+|SGH-[A-Z0-9]+|GT-[A-Z0-9]+|SCH-[A-Z0-9]+|SamsungBrowser|[A-Z](?=\))/i.test(ua);
-  const isMobile = /Mobile|Tablet/.test(ua) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0) || window.innerWidth < 1200 || typeof window.orientation !== 'undefined';
+  const isMobile = /Mobile|Tablet/.test(ua) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0) || typeof window.orientation !== 'undefined';
   let isSamsungFromUAData = false;
   if (navigator.userAgentData && navigator.userAgentData.brands) {
     isSamsungFromUAData = navigator.userAgentData.brands.some(brand => /Samsung/i.test(brand.brand));
   }
-  if (/Android/.test(ua) || (isMobile && (/Firefox\/([\d.]+)/.test(ua) || /EdgA?\/([\d.]+)/.test(ua)))) {
+  if (/Android/.test(ua)) {
     osVersion = ua.match(/Android\s([\d.]+)/)?.[1] || unknown;
     if (isSamsung || isSamsungFromUAData) {
       os = 'Galaxy';
@@ -21,6 +21,10 @@
       os = 'Android';
       device = 'Android';
     }
+  } else if (isMobile && (/Firefox\/([\d.]+)/.test(ua) || /EdgA?\/([\d.]+)/.test(ua))) {
+    os = 'Android';
+    device = 'Android';
+    osVersion = ua.match(/Android\s([\d.]+)/)?.[1] || unknown;
   } else if (/AppleTV/.test(ua)) {
     os = 'tvOS';
     device = 'Apple TV';
@@ -129,7 +133,6 @@
   }
   window.jscd = {browser, version, os, osVersion, device};
   const weatherMap = {'ko-KR':'날씨','ja-JP':'天気','en-US':'Weather','en-GB':'Weather','en-AU':'Weather','en-ZA':'Weather','zh-CN':'天气','zh-HK':'天氣','zh-TW':'天氣','es-ES':'Tiempo','hi-IN':'मौसम','ar-EG':'الطقس','ar-SA':'الطقس','pt-BR':'Tempo','fr-FR':'Météo','de-DE':'Wetter','ru-RU':'Погода','vi-VN':'Thời tiết','it-IT':'Meteo','pl-PL':'Pogoda','nl-NL':'Weer','tr-TR':'Hava','th-TH':'สภาพอากาศ','fr-CA':'Météo','hu-HU':'Időjárás','ro-RO':'Vreme','uk-UA':'Погода','sv-SE':'Väder','hr-BA':'Vrijeme','sk-SK':'Počasie','id-ID':'Cuaca','nb-NO':'Vær','da-DK':'Vejr','fi-FI':'Sää','el-GR':'Καιρός','ca-ES':'Temps','sl-SI':'Vreme'};
-
   if (typeof $ !== 'undefined') {
     $(document).ready(function () {
       $.getJSON('https://ipinfo.io/json', function (data) {
