@@ -81,7 +81,6 @@ $('#linkshare').prop('selectedIndex',0);};
 -  File Sync <a href="https://github.com/Catfriend1/syncthing-android/releases" target="_blank" >Syncthing (Fork)</a>
 -  Note-taking <a href="https://github.com/obsidianmd/obsidian-releases/releases" target="_blank" >Obsidian</a>
     - See <button id=”Link” onclick="window.open('/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian', '_blank')" >💠&nbsp;Obsidian</button>
-- Simulated Cursor <a href="https://github.com/jojczak/PenMouseS/releases" target="_blank" >PenMouseS</a>
 - Notion Alternatives <a href="https://github.com/anyproto/anytype-kotlin/releases" target="_blank" >Anytype</a>
 -  Password Manager <a href="https://github.com/bitwarden/android/releases" target="_blank" >Bitwarden</a>
 - White <a href="https://github.com/trynoice/android-app/releases" target="_blank" >Noice</a>
@@ -93,7 +92,6 @@ $('#linkshare').prop('selectedIndex',0);};
 - Fake <a href="https://f-droid.org/packages/cl.coders.faketraveler/" target="_blank" >Traveler</a>
 - Mesh Network for SMB or Share <a href="https://tailscale.com/download/android" target="_blank" >Tailscale</a>
 - Revanced <a href="https://github.com/ReVanced/revanced-manager/releases/" target="_blank" >Manager</a>  
-- Libre <a href="https://github.com/proninyaroslav/libretorrent/releases" target="_blank" >Torrent</a>
 - VNC Client <a href="https://github.com/gujjwal00/avnc/releases" target="_blank" >AVNC</a>
 - FOSS <a href="https://github.com/f-droid/fdroidclient/releases" target="_blank" >F-Droid</a>
 - Get Updates from Website <a href="https://github.com/ImranR98/Obtainium/releases" target="_blank" >Obtainium</a>
@@ -102,8 +100,6 @@ $('#linkshare').prop('selectedIndex',0);};
 -  PDF Annotation <a href="https://play.google.com/store/apps/details?id=com.orion.notein.global" target="_blank" >Notein</a>
 -  PDF Viewer <a href="https://play.google.com/store/apps/details?id=com.xodo.pdf.reader" target="_blank" >Xodo</a>
 - odt Viewer <a href="https://play.google.com/store/apps/details?id=com.collabora.libreoffice" target="_blank" >Collabora Office</a>
--  EQ <a href="https://play.google.com/store/apps/details?id=com.pittvandewitt.wavelet" target="_blank" >Wavelet</a>
-   -  <a href="https://www.autoeq.app/" target="_blank" >autoeq</a>
 -  Stock <a href="https://play.google.com/store/apps/details?id=app.stockevents.android" target="_blank" >Widget</a>
 -  iOS <a href="https://play.google.com/store/apps/details?id=com.inova.ios_14_iconpack" target="_blank" >Icon Pack</a>
 -  File <a href="https://play.google.com/store/apps/details?id=com.alphainventor.filemanager" target="_blank" >Manager</a>
@@ -165,6 +161,7 @@ $('#linkshare').prop('selectedIndex',0);};
         - `adb shell "/system/bin/device_config set_sync_disabled_for_tests persistent"`
         - `adb shell "/system/bin/device_config put activity_manager max_phantom_processes 2147483647"`
         - `adb shell settings put global settings_enable_monitor_phantom_procs false`
+        - `adb shell pm grant com.termux.x11 android.permission.WRITE_SECURE_SETTINGS`
     - Exit `LADB` and Disable `Wireless debugging`
      - You may need this…
         - `...` → `More` → `Restart` 
@@ -192,7 +189,8 @@ $('#linkshare').prop('selectedIndex',0);};
 ![[X11-3.png]]
 `Clipboard sharing` can cause problem on `LibreOffice`
 ![[X11-4.png]]
- - `Back` Key = `Keyboard`, `Ctrl + C` = `Cancel`, `exit` = exit
+![[X11-5.png]]
+- `Back` Key = `Keyboard`, `Ctrl + C` = `Cancel`, `exit` = exit
 - (Recommend) Fix Sound Error
     - Open `/data/data/com.termux/files/usr/etc/pulse/default.pa` and Modify `Last Line` as below
     ```shell
