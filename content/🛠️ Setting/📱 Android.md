@@ -194,7 +194,7 @@ $('#linkshare').prop('selectedIndex',0);};
 ![[X11-4.png]]
  - `Back` Key = `Keyboard`, `Ctrl + C` = `Cancel`, `exit` = exit
 - (Recommend) Fix Sound Error
-    - Open `com.termux/files/usr/etc/pulse/default.pa` and Modify `Last Line` as below
+    - Open `/data/data/com.termux/files/usr/etc/pulse/default.pa` and Modify `Last Line` as below
     ```shell
     load-module module-aaudio-sink
     ```
