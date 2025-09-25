@@ -76,7 +76,7 @@ $('#linkshare').prop('selectedIndex',0);};
 -  Web Browser <a href="https://www.mozilla.org/en-US/firefox/all/mobile-release/" target="_blank" >Firefox</a>
     - Add-ons
         - <a href="https://addons.mozilla.org/en-US/android/addon/ublock-origin/" target="_blank" >uBlock Origin</a> (Ad-Block)
-            - <a href="https://mega.nz/file/mRcFSSLD#d3ZcJKC7ecockyAUTsrs3i3c65lPMGw2RoJ6FDRKv7Q" target="_blank" >ublock-backup</a>
+            - <a href="https://mega.nz/file/nJ8CSKBJ#hlmq-LlgwAKosmM5k0iWO2zWPQW7bIqi5E7w3H7zQ9U" target="_blank" >ublock-backup</a>
         - <a href="https://addons.mozilla.org/en-US/android/addon/video-background-play-fix/" target="_blank" >Video Background Play Fix</a> (Background Play)
 -  File Sync <a href="https://github.com/Catfriend1/syncthing-android/releases" target="_blank" >Syncthing (Fork)</a>
 -  Note-taking <a href="https://github.com/obsidianmd/obsidian-releases/releases" target="_blank" >Obsidian</a>
