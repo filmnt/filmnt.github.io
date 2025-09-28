@@ -4,7 +4,7 @@
   const ua = navigator.userAgent || '';
   const platform = navigator.platform || '';
   const isSamsung = /SM-[A-Z][0-9]{3}[A-Z0-9]*|SC-[A-Z0-9]+|SGH-[A-Z0-9]+|GT-[A-Z0-9]+|SCH-[A-Z0-9]+|SamsungBrowser|SAMSUNG|Galaxy/i.test(ua);
-  const isMobile = /Android|iPhone|iPad|Mobile|Tablet/.test(ua);
+  const isMobile = /Mobile|Tablet/.test(ua) || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0) || typeof window.orientation !== 'undefined';
   let isSamsungFromUAData = false;
   if (navigator.userAgentData && navigator.userAgentData.brands) {
     isSamsungFromUAData = navigator.userAgentData.brands.some(brand => /Samsung|Galaxy/i.test(brand.brand));
