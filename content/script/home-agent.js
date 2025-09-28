@@ -4,20 +4,14 @@
   const ua = navigator.userAgent || '';
   const platform = navigator.platform || '';
   const isSamsung = /SM-[A-Z][0-9]{3}[A-Z0-9]*|SC-[A-Z0-9]+|SGH-[A-Z0-9]+|GT-[A-Z0-9]+|SCH-[A-Z0-9]+|SamsungBrowser|SAMSUNG|Galaxy/i.test(ua);
-  let isMobileFromUA = /Android|iPhone|iPad|Mobile|Tablet/.test(ua);
-  let isMobile = isMobileFromUA;
-  if (/X11|Windows NT|Macintosh/i.test(ua)) {
-    isMobile = false;
-  } else {
-    isMobile = isMobile || (navigator.maxTouchPoints && navigator.maxTouchPoints > 0) || typeof window.orientation !== 'undefined';
-  }
+  const isMobile = /Android|iPhone|iPad|Mobile|Tablet/.test(ua);
   let isSamsungFromUAData = false;
   if (navigator.userAgentData && navigator.userAgentData.brands) {
     isSamsungFromUAData = navigator.userAgentData.brands.some(brand => /Samsung|Galaxy/i.test(brand.brand));
   }
   if (/Android/.test(ua)) {
-    osVersion = ua.match(/Android\s*([\d.]+)/)?.[1] || unknown;
-    if (isSamsung || isSamsungFromUAData) {
+    osVersion = ua.match(/Android\s([\d.]+)/)?.[1] || unknown;
+    if (isSamsung || isSamsungFromUAData || /SamsungBrowser|EdgA?|Chrome/.test(ua)) {
       os = 'Galaxy';
       device = 'Galaxy';
     } else if (/Android TV/.test(ua)) {
@@ -28,9 +22,9 @@
       device = 'Android';
     }
   } else if (isMobile && (/Firefox\/([\d.]+)/.test(ua) || /EdgA?\/([\d.]+)/.test(ua) || /SamsungBrowser\/([\d.]+)/.test(ua) || /Chrome\/([\d.]+)/.test(ua))) {
-    os = (isSamsung || isSamsungFromUAData) ? 'Galaxy' : 'Android';
-    device = (isSamsung || isSamsungFromUAData) ? 'Galaxy' : 'Android';
-    osVersion = ua.match(/Android\s*([\d.]+)/)?.[1] || unknown;
+    os = (isSamsung || isSamsungFromUAData || /EdgA?/.test(ua)) ? 'Galaxy' : 'Android';
+    device = (isSamsung || isSamsungFromUAData || /EdgA?/.test(ua)) ? 'Galaxy' : 'Android';
+    osVersion = ua.match(/Android\s([\d.]+)/)?.[1] || unknown;
   } else if (/AppleTV/.test(ua)) {
     os = 'tvOS';
     device = 'Apple TV';
