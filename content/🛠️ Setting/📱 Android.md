@@ -174,7 +174,7 @@ $('#linkshare').prop('selectedIndex',0);};
     curl -Lf https://raw.githubusercontent.com/sabamdarif/termux-desktop/main/setup-termux-desktop -o setup-termux-desktop && chmod +x setup-termux-desktop && ./setup-termux-desktop && pkg install -y fcitx5* && appstore --install v0.5.4
     ```
   -  `Generic Recommend With Hardware Accleration`
-  -  `XFCE`
+  -  `XFCE` - `Stock`
   - `Username`
 
 > After Installation, Enter `exit` and Open `Termux:X11` - `Preferences` (Not `Termux`)
