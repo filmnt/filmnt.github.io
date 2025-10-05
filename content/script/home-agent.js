@@ -13,9 +13,9 @@
     os = 'Windows';
     device = 'Windows';
     osVersion = ua.match(/Windows NT ([\d.]+)/)?.[1] || unknown;
-  } else if (/Android/.test(ua)) {
+  } else if (/Android/.test(ua) || isSamsung || isSamsungFromUAData || /EdgA?|Whale\/([\d.]+)/.test(ua)) {
     osVersion = ua.match(/Android\s([\d.]+)/)?.[1] || unknown;
-    if (isSamsung || isSamsungFromUAData || /SamsungBrowser|EdgA?|Chrome/.test(ua)) {
+    if (isSamsung || isSamsungFromUAData || /SamsungBrowser|EdgA?|Whale\/([\d.]+)/.test(ua)) {
       os = 'Galaxy';
       device = 'Galaxy';
     } else if (/Android TV/.test(ua)) {
@@ -63,7 +63,7 @@
   } else if (/Web0S/.test(ua) || /webOS/i.test(ua)) {
     os = 'WebOS';
     device = 'LG Smart TV';
-  } else if (/Linux/.test(ua) && !/Android/.test(ua) && !isMobile) {
+  } else if (/Linux/.test(ua) && !/Android/.test(ua) && !isMobile && !isSamsung && !isSamsungFromUAData) {
     if (/Ubuntu/.test(ua)) {
       os = 'Ubuntu';
     } else if (/Fedora/.test(ua)) {
@@ -83,9 +83,13 @@
     }
     device = 'Linux';
     osVersion = unknown;
-  } else if (isMobile && (/Firefox\/([\d.]+)/.test(ua) || /EdgA?\/([\d.]+)/.test(ua) || /SamsungBrowser\/([\d.]+)/.test(ua) || /Chrome\/([\d.]+)/.test(ua))) {
-    os = (isSamsung || isSamsungFromUAData || /EdgA?/.test(ua)) ? 'Galaxy' : 'Android';
-    device = (isSamsung || isSamsungFromUAData || /EdgA?/.test(ua)) ? 'Galaxy' : 'Android';
+  } else if (isMobile && /Firefox\/([\d.]+)/.test(ua)) {
+    osVersion = ua.match(/Android\s([\d.]+)/)?.[1] || unknown;
+    os = (isSamsung || isSamsungFromUAData) ? 'Galaxy' : 'Android';
+    device = (isSamsung || isSamsungFromUAData) ? 'Galaxy' : 'Android';
+  } else if (isMobile && /Chrome\/([\d.]+)/.test(ua)) {
+    os = (isSamsung || isSamsungFromUAData) ? 'Galaxy' : 'Android';
+    device = (isSamsung || isSamsungFromUAData) ? 'Galaxy' : 'Android';
     osVersion = ua.match(/Android\s([\d.]+)/)?.[1] || unknown;
   } else {
     os = unknown;
