@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <button class="gray" data-value="cosh">cosh</button>
           <button class="gray" data-value="tanh">tanh</button>
           <button class="gray" data-value="nrt">n√</button>
-          <button class="gray" data-value="false">x!</button>
+          <button class="gray" data-value="fact">x!</button>
           <button class="gray" data-value="sqrt">√</button>
           <button class="gray" data-value="abs">|x|</button>
           <button class="gray" data-value="floor">[x]</button>
@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleInput(value) {
       if (!isStoMode && !isRclMode) {
-        const validPattern = /^[0-9+\-*/().^sincostanloglneπsqrthabsfloorp]+$/;
+        const validPattern = /^[0-9+\-*/().^sincostanloglneπsqrthabsfloornrt,]+$/;
         if (validPattern.test(value) || value === '') {
           input = value;
           displayInput = input;
@@ -439,15 +439,12 @@ document.addEventListener('DOMContentLoaded', () => {
         displayInput = input;
         isSecond = false;
       } else {
-        const funcs = ['sqrt', 'sin', 'cos', 'tan', 'log', 'ln', 'sinh', 'cosh', 'tanh', 'abs', 'floor'];
+        const funcs = ['sqrt', 'sin', 'cos', 'tan', 'log', 'ln', 'sinh', 'cosh', 'tanh', 'abs', 'floor', 'nrt'];
         if (funcs.includes(value)) {
           input = input === '0' || input === '' ? `${value}(` : lastResult && !isNaN(parseFloat(lastResult)) ? `${lastResult}*${value}(` : input + `${value}(`;
           lastResult = null;
         } else if (value === 'fact') {
           input = input === '0' || input === '' ? 'fact(' : lastResult && !isNaN(parseFloat(lastResult)) ? `${lastResult}*fact(` : input + 'fact(';
-          lastResult = null;
-        } else if (value === 'nrt') {
-          input = input === '0' || input === '' ? 'nrt(n,x)' : lastResult && !isNaN(parseFloat(lastResult)) ? `${lastResult}*nrt(n,x)` : input + 'nrt(n,x)';
           lastResult = null;
         } else if (['pi', 'e'].includes(value)) {
           input = input === '0' || input === '' ? value : lastResult && !isNaN(parseFloat(lastResult)) ? `${lastResult}*${value}` : input + value;
