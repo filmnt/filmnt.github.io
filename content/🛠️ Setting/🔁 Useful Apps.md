@@ -93,10 +93,6 @@ $('#linkshare').prop('selectedIndex',0);};
 ## [Launchie](https://github.com/nick-friedrich/launchie-launchpad-replacement-mac-os/releases)
 - The Launchpad Replacement macOS 26 Deserves 
 
-## [NearDrop](https://github.com/grishka/NearDrop/releases)
-- An unofficial Google Nearby Share app for macOS
-    - `Android` → `Mac` (Only)
-
 ## [Paralles Desktop](https://www.parallels.com/products/desktop/)
 - Run Windows on Mac
     - Expensive but high performance
