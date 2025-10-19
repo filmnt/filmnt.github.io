@@ -73,16 +73,16 @@ $('#linkshare').prop('selectedIndex',0);};
 ## Github or Website
 
 - Just… <a href="https://github.com/0xf104a/Mirror/releases" target="_blank" >Mirror</a>
--  Web Browser <a href="https://www.mozilla.org/en-US/firefox/all/mobile-release/" target="_blank" >Firefox</a>
+- Web Browser <a href="https://www.mozilla.org/en-US/firefox/all/mobile-release/" target="_blank" >Firefox</a>
     - Add-ons
         - <a href="https://addons.mozilla.org/en-US/android/addon/ublock-origin/" target="_blank" >uBlock Origin</a> (Ad-Block)
             - <a href="https://mega.nz/file/nJ8CSKBJ#hlmq-LlgwAKosmM5k0iWO2zWPQW7bIqi5E7w3H7zQ9U" target="_blank" >ublock-backup</a>
         - <a href="https://addons.mozilla.org/en-US/android/addon/video-background-play-fix/" target="_blank" >Video Background Play Fix</a> (Background Play)
--  File Sync <a href="https://github.com/Catfriend1/syncthing-android/releases" target="_blank" >Syncthing (Fork)</a>
--  Note-taking <a href="https://github.com/obsidianmd/obsidian-releases/releases" target="_blank" >Obsidian</a>
+- File Sync <a href="https://github.com/Catfriend1/syncthing-android/releases" target="_blank" >Syncthing (Fork)</a>
+- Note-taking <a href="https://github.com/obsidianmd/obsidian-releases/releases" target="_blank" >Obsidian</a>
     - See <button id=”Link” onclick="window.open('/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian', '_blank')" >💠&nbsp;Obsidian</button>
 - Notion Alternatives <a href="https://github.com/anyproto/anytype-kotlin/releases" target="_blank" >Anytype</a>
--  Password Manager <a href="https://github.com/bitwarden/android/releases" target="_blank" >Bitwarden</a>
+- YouTube music player & downloader <a href="https://github.com/crackededed/Xtra/releases" target="_blank" >YMusic</a>
 - Chrome Alternatives <a href="https://thorium.rocks/" target="_blank" >Thorium</a>
 - Firefox Alternatives <a href="https://f-droid.org/packages/org.mozilla.fennec_fdroid/" target="_blank" >Fennec</a>
 - 2FA <a href="https://github.com/beemdevelopment/Aegis/releases" target="_blank" >Aegis Authenticator</a>
@@ -94,15 +94,13 @@ $('#linkshare').prop('selectedIndex',0);};
 - FOSS <a href="https://github.com/f-droid/fdroidclient/releases" target="_blank" >F-Droid</a>
 - Get Updates from Website <a href="https://github.com/ImranR98/Obtainium/releases" target="_blank" >Obtainium</a>
 ## Play Store
--  Live <a href="https://play.google.com/store/apps/details?id=io.wallpaperengine.weclient" target="_blank" >Wallpaper Engine</a>
--  PDF Annotation <a href="https://play.google.com/store/apps/details?id=com.orion.notein.global" target="_blank" >Notein</a>
--  PDF Viewer <a href="https://play.google.com/store/apps/details?id=com.xodo.pdf.reader" target="_blank" >Xodo</a>
+- Live <a href="https://play.google.com/store/apps/details?id=io.wallpaperengine.weclient" target="_blank" >Wallpaper Engine</a>
+- PDF Annotation <a href="https://play.google.com/store/apps/details?id=com.orion.notein.global" target="_blank" >Notein</a>
+- PDF Viewer <a href="https://play.google.com/store/apps/details?id=com.xodo.pdf.reader" target="_blank" >Xodo</a>
 - odt Viewer <a href="https://play.google.com/store/apps/details?id=com.collabora.libreoffice" target="_blank" >Collabora Office</a>
--  Stock <a href="https://play.google.com/store/apps/details?id=app.stockevents.android" target="_blank" >Widget</a>
--  iOS <a href="https://play.google.com/store/apps/details?id=com.inova.ios_14_iconpack" target="_blank" >Icon Pack</a>
--  File <a href="https://play.google.com/store/apps/details?id=com.alphainventor.filemanager" target="_blank" >Manager</a>
-
-> Use `Secure Folder`(Samsung App) for Privacy.
+- Stock <a href="https://play.google.com/store/apps/details?id=app.stockevents.android" target="_blank" >Widget</a>
+- iOS <a href="https://play.google.com/store/apps/details?id=com.inova.ios_14_iconpack" target="_blank" >Icon Pack</a>
+- File <a href="https://play.google.com/store/apps/details?id=com.alphainventor.filemanager" target="_blank" >Manager</a>
 
 ---
 
