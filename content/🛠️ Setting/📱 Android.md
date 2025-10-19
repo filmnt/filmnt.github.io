@@ -181,7 +181,6 @@ $('#linkshare').prop('selectedIndex',0);};
         ![[X11-1.png]]
         ![[X11-2.png]]
 ![[X11-3.png]]
-`Clipboard sharing` can cause problem on `LibreOffice`
 ![[X11-4.png]]
 - `Back` Key = `Keyboard`, `Ctrl + C` = `Cancel`, `exit` = exit
 - (Recommend) Fix Sound Error
