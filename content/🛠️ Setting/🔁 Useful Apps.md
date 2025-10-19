@@ -97,9 +97,7 @@ $('#linkshare').prop('selectedIndex',0);};
 - Run Windows on Mac
     - Expensive but high performance
     - Use `Windows Pro Key` and `Paralles Windows Image` [^1]
-    - <a href="https://github.com/kellwinr/galaxybook_mask" target="_blank" >Galaxybook Mask for Samsung Apps</a>
-- (Other Options) <a href="https://www.vmware.com/products/fusion.html" target="_blank" >VMware</a> [^2],  <a href="https://github.com/Whisky-App/Whisky" target="_blank" >Whisky</a>, <a href="https://www.codeweavers.com/crossover" target="_blank" >CrossOver</a>, QEMU, VirtualBox, … 
-
+  
 ## [Adguard](https://adguard.com/)
 - ad Blocker
 
