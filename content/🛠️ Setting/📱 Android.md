@@ -173,7 +173,7 @@ $('#linkshare').prop('selectedIndex',0);};
     ```shell
     curl -Lf https://raw.githubusercontent.com/sabamdarif/termux-desktop/main/setup-termux-desktop -o setup-termux-desktop && chmod +x setup-termux-desktop && ./setup-termux-desktop && pkg install -y fcitx5* && appstore --install v0.5.4
     ```
-  -  `Generic Recommend With Hardware Accleration`
+  -  `Generic (with hardware acceleration)`
   -  `XFCE` - `Stock`
   - `Username`
 
@@ -183,7 +183,6 @@ $('#linkshare').prop('selectedIndex',0);};
 ![[X11-3.png]]
 `Clipboard sharing` can cause problem on `LibreOffice`
 ![[X11-4.png]]
-![[X11-5.png]]
 - `Back` Key = `Keyboard`, `Ctrl + C` = `Cancel`, `exit` = exit
 - (Recommend) Fix Sound Error
     - Open `/data/data/com.termux/files/usr/etc/pulse/default.pa` and Modify `Last Line` as below
