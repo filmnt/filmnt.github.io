@@ -89,6 +89,7 @@ $('#linkshare').prop('selectedIndex',0);};
 - Firefox Alternatives <a href="https://f-droid.org/packages/org.mozilla.fennec_fdroid/" target="_blank" >Fennec</a>
 - 2FA <a href="https://github.com/beemdevelopment/Aegis/releases" target="_blank" >Aegis Authenticator</a>
 - Twitch Player <a href="https://github.com/crackededed/Xtra/releases" target="_blank" >Xtra</a>
+- CPDT <a href="https://maxim-saplin.github.io/cpdt_results/?download" target="_blank" >Benchmark</a>
 - Fake <a href="https://f-droid.org/packages/cl.coders.faketraveler/" target="_blank" >Traveler</a>
 - Mesh Network for SMB or Share <a href="https://tailscale.com/download/android" target="_blank" >Tailscale</a>
 - Revanced <a href="https://github.com/ReVanced/revanced-manager/releases/" target="_blank" >Manager</a>  
@@ -99,7 +100,6 @@ $('#linkshare').prop('selectedIndex',0);};
 - Live <a href="https://play.google.com/store/apps/details?id=io.wallpaperengine.weclient" target="_blank" >Wallpaper Engine</a>
 - PDF Annotation <a href="https://play.google.com/store/apps/details?id=com.orion.notein.global" target="_blank" >Notein</a>
 - PDF Viewer <a href="https://play.google.com/store/apps/details?id=com.xodo.pdf.reader" target="_blank" >Xodo</a>
-- CPDT <a href="https://maxim-saplin.github.io/cpdt_results/?download" target="_blank" >Benchmark</a>
 - Blackmagic <a href="https://play.google.com/store/apps/details?id=com.blackmagicdesign.android.blackmagiccam" target="_blank" >Camera</a>
 - odt Viewer <a href="https://play.google.com/store/apps/details?id=com.collabora.libreoffice" target="_blank" >Collabora Office</a>
 - Stock <a href="https://play.google.com/store/apps/details?id=app.stockevents.android" target="_blank" >Widget</a>
