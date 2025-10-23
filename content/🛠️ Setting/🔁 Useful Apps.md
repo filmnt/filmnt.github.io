@@ -110,7 +110,7 @@ $('#linkshare').prop('selectedIndex',0);};
 ## [Amphetamine](https://apps.apple.com/app/amphetamine/id937984704)
 - Keep-awake Utility
 
-## [Blackmagic Disk Speed Test](https://apps.apple.com/us/app/blackmagic-disk-speed-test/id425264550)
+## [CPDT Benchmark](https://maxim-saplin.github.io/cpdt_results/?download)
 - Diskmark
 
 ## [NeoHtop](https://github.com/Abdenasser/neohtop/releases)

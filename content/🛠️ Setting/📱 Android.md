@@ -99,6 +99,7 @@ $('#linkshare').prop('selectedIndex',0);};
 - Live <a href="https://play.google.com/store/apps/details?id=io.wallpaperengine.weclient" target="_blank" >Wallpaper Engine</a>
 - PDF Annotation <a href="https://play.google.com/store/apps/details?id=com.orion.notein.global" target="_blank" >Notein</a>
 - PDF Viewer <a href="https://play.google.com/store/apps/details?id=com.xodo.pdf.reader" target="_blank" >Xodo</a>
+- CPDT <a href="https://maxim-saplin.github.io/cpdt_results/?download" target="_blank" >Benchmark</a>
 - Blackmagic <a href="https://play.google.com/store/apps/details?id=com.blackmagicdesign.android.blackmagiccam" target="_blank" >Camera</a>
 - odt Viewer <a href="https://play.google.com/store/apps/details?id=com.collabora.libreoffice" target="_blank" >Collabora Office</a>
 - Stock <a href="https://play.google.com/store/apps/details?id=app.stockevents.android" target="_blank" >Widget</a>
