@@ -4,7 +4,7 @@ const tickerBaseURL = 'https://s.tradingview.com/embed-widget/ticker-tape/?local
 symbols: [
   { proName: 'NASDAQ:IXIC', title: 'Nasdaq' },
   { proName: 'NASDAQ:AAPL', title: 'Apple' },
-  { proName: 'OTC:SSNLF', title: 'Samsung Electronics' },
+  { proName: 'GETTEX:SSU', title: 'Samsung Electronics(GDR)' },
   { proName: 'NYSE:NET', title: 'Cloudflare' },
   { proName: 'NASDAQ:QCOM', title: 'Qualcomm' },
   { proName: 'NASDAQ:AMD', title: 'AMD' },
