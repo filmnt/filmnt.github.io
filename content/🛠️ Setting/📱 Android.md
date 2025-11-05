@@ -84,6 +84,7 @@ $('#linkshare').prop('selectedIndex',0);};
 - Note-taking <a href="https://github.com/obsidianmd/obsidian-releases/releases" target="_blank" >Obsidian</a>
     - See <button id=”Link” onclick="window.open('/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian', '_blank')" >💠&nbsp;Obsidian</button>
 - Notion Alternatives <a href="https://github.com/anyproto/anytype-kotlin/releases" target="_blank" >Anytype</a>
+- Cleaning Tool <a href="https://github.com/d4rken-org/sdmaid-se/releases" target="_blank" >SD Maid</a>
 - YouTube music player & downloader <a href="https://ymusic.io/" target="_blank" >YMusic</a>
 - Chrome Alternatives <a href="https://thorium.rocks/" target="_blank" >Thorium</a>
 - Firefox Alternatives <a href="https://f-droid.org/packages/org.mozilla.fennec_fdroid/" target="_blank" >Fennec</a>
