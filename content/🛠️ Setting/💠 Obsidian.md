@@ -76,7 +76,7 @@ $('#linkshare').prop('selectedIndex',0);};
 
 ## Sync (example)
 > [!note] <a href="https://syncthing.net/downloads/" target="_blank" >Syncthing (for Desktop)</a> 
-> - <a href="https://github.com/Catfriend1/syncthing-android/releases" target="_blank" >Syncthing-Fork (for Android)</a>
+> - <a href="https://github.com/researchxxl/syncthing-android/releases" target="_blank" >Syncthing-Fork (for Android)</a>
 > ![[syncthing.png]]
 
 ---
