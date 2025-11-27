@@ -22,13 +22,9 @@ function cameraon() {
     })
     .then((stream) => {
       videoElem.srcObject = stream;
-      videoContainer.style.position = "absolute";
-      videoContainer.style.top = "50px";
-      videoContainer.style.left = "0";
-      videoContainer.style.width = "320px";
       videoContainer.style.height = "240px";
       videoContainer.style.overflow = "hidden";
-      videoContainer.style.zIndex = "10";
+      videoContainer.style.transition = "height 0.3s ease";
       videoElem.style.display = "block";
       videoElem.style.width = "100%";
       videoElem.style.height = "100%";
@@ -59,12 +55,7 @@ function cameraoff() {
     videoElem.style.display = "none";
     videoElem.style.transform = "scale(1)";
     videoElem.srcObject = null;
-    videoContainer.style.position = "";
-    videoContainer.style.top = "";
-    videoContainer.style.left = "";
-    videoContainer.style.width = "";
-    videoContainer.style.height = "";
-    videoContainer.style.overflow = "";
-    videoContainer.style.zIndex = "";
+    videoContainer.style.height = "0";
+    videoContainer.style.overflow = "hidden";
   }
 }
