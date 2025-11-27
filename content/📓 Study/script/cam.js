@@ -31,6 +31,8 @@ function cameraon() {
       videoElem.style.objectFit = "cover";
       videoElem.style.transform = "scale(1.5)";
       videoElem.style.transformOrigin = "center";
+      videoElem.style.opacity = "1";
+      videoElem.style.pointerEvents = "auto";
       return videoElem.play();
     })
     .catch((err) => {
