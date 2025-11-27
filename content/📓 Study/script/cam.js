@@ -22,17 +22,17 @@ function cameraon() {
     })
     .then((stream) => {
       videoElem.srcObject = stream;
-      videoContainer.style.height = "260px";
+      videoContainer.style.height = "240px";
       videoContainer.style.overflow = "hidden";
       videoContainer.style.transition = "height 0.3s ease";
       videoElem.style.display = "block";
       videoElem.style.width = "100%";
       videoElem.style.height = "100%";
-      videoElem.style.objectFit = "contain";
-      videoElem.style.transform = "scale(1.35)";
+      videoElem.style.objectFit = "cover";
+      videoElem.style.transform = "scale(1.5)";
       videoElem.style.transformOrigin = "center";
-      videoElem.style.paddingBottom = "40px";
-      videoElem.style.boxSizing = "border-box";
+      videoElem.style.opacity = "1";
+      videoElem.style.pointerEvents = "auto";
       return videoElem.play();
     })
     .catch((err) => {
@@ -56,7 +56,6 @@ function cameraoff() {
     });
     videoElem.style.display = "none";
     videoElem.style.transform = "scale(1)";
-    videoElem.style.paddingBottom = "0";
     videoElem.srcObject = null;
     videoContainer.style.height = "0";
     videoContainer.style.overflow = "hidden";
