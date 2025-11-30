@@ -174,7 +174,7 @@ $('#linkshare').prop('selectedIndex',0);};
   - It takes 10-30 minutes…
   - For More Information, <a href="https://github.com/sabamdarif/termux-desktop" target="_blank" >Termux-Desktop</a>
     ```shell
-    curl -Lf https://raw.githubusercontent.com/sabamdarif/termux-desktop/main/setup-termux-desktop -o setup-termux-desktop && chmod +x setup-termux-desktop && ./setup-termux-desktop && pkg install -y fcitx5* && appstore --install v0.5.4
+    curl -Lf https://raw.githubusercontent.com/sabamdarif/termux-desktop/main/setup-termux-desktop -o setup-termux-desktop && chmod +x setup-termux-desktop && ./setup-termux-desktop && pkg install -y fcitx5* && wget https://raw.githubusercontent.com/sabamdarif/Termux-AppStore/refs/heads/src/appstore && chmod +x appstore && ./appstore --install
     ```
   -  `Generic (with hardware acceleration)`
   -  `XFCE` - `Stock`
