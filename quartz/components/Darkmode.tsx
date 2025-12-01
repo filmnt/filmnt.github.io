@@ -158,7 +158,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
 </div>
       <button onclick="closeGraph()" style="display:none;position:fixed;bottom:40px;left:calc(100% - 120px);width:40px;height:40px;opacity:0.3;z-index:20001"><i class="fa-solid fa-xmark fa-xl"></i></button>
       <div id="graph-dialog" style="display:none;position:fixed;top:0;right:0;width:100%;min-width:380px;height:100vh;background-color: var(--background);z-index:20000;overflow-y:hidden;opacity:1">
-            <iframe src="https://filmnt.github.io/simplegraph/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
+            <iframe src="https://www.desmos.com/calculator" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
 
       </div>
       <button onclick="closePreview()" style="display:none;position:fixed;bottom:40px;left:calc(100% - 120px);width:40px;height:40px;opacity:0.3;z-index:20001"><i class="fa-solid fa-xmark fa-xl"></i></button>
