@@ -110,7 +110,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
 
       <button onclick="closeSchedule()" style="display:none;position:fixed;bottom:40px;left:calc(100% - 120px);width:40px;height:40px;opacity:0.3;z-index:20001"><i class="fa-solid fa-xmark fa-xl"></i></button>
       <div id="schedule-dialog" style="display:none;position:fixed;top:0;right:0;width:100%;min-width:380px;height:100vh;background-color: var(--background);z-index:20000;overflow-y:hidden;opacity:1">
-          <iframe src="https://filmnt.github.io/scheduler/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=1&src=%23holiday%40group.v.calendar.google.com" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
       </div>
       <button onclick="closeStudy()" style="display:none;position:fixed;bottom:40px;left:calc(100% - 120px);width:40px;height:40px;opacity:0.3;z-index:20001"><i class="fa-solid fa-xmark fa-xl"></i></button>
       <div id="study-dialog" style="display:none;position:fixed;top:0;right:0;width:100%;max-width:380px;height:100vh;background-color: var(--background);z-index:20000;overflow-y:hidden;opacity:1">
