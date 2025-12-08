@@ -86,13 +86,15 @@ $('#linkshare').prop('selectedIndex',0);};
 - Notion Alternatives <a href="https://github.com/anyproto/anytype-kotlin/releases" target="_blank" >Anytype</a>
 - Cleaning Tool <a href="https://github.com/d4rken-org/sdmaid-se/releases" target="_blank" >SD Maid</a>
 - YouTube music player & downloader <a href="https://ymusic.io/" target="_blank" >YMusic</a>
-- Chrome Alternatives <a href="https://thorium.rocks/" target="_blank" >Thorium</a>
 - Firefox Alternatives <a href="https://f-droid.org/packages/org.mozilla.fennec_fdroid/" target="_blank" >Fennec</a>
 - 2FA <a href="https://github.com/beemdevelopment/Aegis/releases" target="_blank" >Aegis Authenticator</a>
 - Twitch Player <a href="https://github.com/crackededed/Xtra/releases" target="_blank" >Xtra</a>
 - CPDT <a href="https://maxim-saplin.github.io/cpdt_results/?download" target="_blank" >Benchmark</a>
-- Fake <a href="https://f-droid.org/packages/cl.coders.faketraveler/" target="_blank" >Traveler</a>
+- Fake <a href="https://github.com/mcastillof/FakeTraveler/releases" target="_blank" >Traveler</a>
 - Mesh Network for SMB or Share <a href="https://tailscale.com/download/android" target="_blank" >Tailscale</a>
+- DNS + Firewall + VPN <a href="https://github.com/celzero/rethink-app/releases" target="_blank" >Rethink</a>
+  - <a href="https://adguard-dns.io/kb/general/dns-providers/" target="_blank" >Known DNS Providers</a>
+  - <a href="https://ipleak.net/" target="_blank" >IP leak test</a>
 - Revanced <a href="https://github.com/ReVanced/revanced-manager/releases/" target="_blank" >Manager</a>  
 - VNC Client <a href="https://github.com/gujjwal00/avnc/releases" target="_blank" >AVNC</a>
 - FOSS <a href="https://github.com/f-droid/fdroidclient/releases" target="_blank" >F-Droid</a>
@@ -101,7 +103,6 @@ $('#linkshare').prop('selectedIndex',0);};
 - Live <a href="https://play.google.com/store/apps/details?id=io.wallpaperengine.weclient" target="_blank" >Wallpaper Engine</a>
 - PDF Annotation <a href="https://play.google.com/store/apps/details?id=com.orion.notein.global" target="_blank" >Notein</a>
 - PDF Viewer <a href="https://play.google.com/store/apps/details?id=com.xodo.pdf.reader" target="_blank" >Xodo</a>
-- Blackmagic <a href="https://play.google.com/store/apps/details?id=com.blackmagicdesign.android.blackmagiccam" target="_blank" >Camera</a>
 - odt Viewer <a href="https://play.google.com/store/apps/details?id=com.collabora.libreoffice" target="_blank" >Collabora Office</a>
 - Stock <a href="https://play.google.com/store/apps/details?id=app.stockevents.android" target="_blank" >Widget</a>
 - iOS <a href="https://play.google.com/store/apps/details?id=com.inova.ios_14_iconpack" target="_blank" >Icon Pack</a>
@@ -118,21 +119,12 @@ $('#linkshare').prop('selectedIndex',0);};
         - Create Folder if it doesn’t exist
     - `Settings`→ `Sounds and vibration`→ `Ringtone`/`Notification sound` → `Custom`
         - Default Ringtone: `Over the horizon`
-        - Default Notification Sound: `Spaceline`
+        - Default Notification Sound: `Spaceline(Brightline)`
 - `Developer options`
     - (Developer options) `Settings` → `About tablet` → `Software information` → Tap `Build number` several times→ Back to `Settings` 
     - `Window animation scale` → `.5x` 
     - `Transition animation scale` → `.5x`
     - `Animator duration scale` → `.5x`
-    - (Optional) Enable `Stay awake`
-        - Screen will never sleep while charging
-- `Advanced` - Connections (DNS-over-HTTPS)
-    - `Settings`→ `Connections`→ `More connection settings`→ `Private DNS` → `Private DNS provider hostname`
-        - Set `dns.adguard-dns.com` (example)
-        - There are many DNS providers…
-            - <a href="https://adguard-dns.io/kb/general/dns-providers/" target="_blank" >Known DNS Providers</a>
-            - <a href="https://ipleak.net/" target="_blank" >IP leak test</a>
-
 ---
 
 # Termux (Linux on Android)
@@ -186,6 +178,7 @@ $('#linkshare').prop('selectedIndex',0);};
 ![[X11-3.png]]
 ![[X11-4.png]]
 - `Back` Key = `Keyboard`, `Ctrl + C` = `Cancel`, `exit` = exit
+  - `tx11start` = Run termux-desktop
 - (Recommend) Fix Sound Error
     - Open `/data/data/com.termux/files/usr/etc/pulse/default.pa` and Modify `Last Line` as below
     ```shell
