@@ -80,6 +80,11 @@ $('#linkshare').prop('selectedIndex',0);};
     - <a href="https://mega.nz/file/LV9lAKJL#WJHIe4iPei38H7_mZ2De0G2a0GwZ7gjuMZYWtbzr4jE" target="_blank" >script file</a> (for Mac OS)
         - Modify script and Export as  `application`  and Move to `application folder` 
 
+## [macUSB](https://github.com/Kruszoneq/macUSB/releases)
+- Create bootable drives
+  - Download `Installer` with <a href="https://github.com/ninxsoft/Mist/releases" target="_blank" >Mist</a>
+
+
 ## [Syncthing](https://syncthing.net/downloads/)
 - Continuous file synchronization program (`free`)
     - Mac $\leftrightarrow$ Android $\leftrightarrow$ Win
