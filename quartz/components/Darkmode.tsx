@@ -66,6 +66,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
           <option value="https://screenfly.org/">Screenfly</option>
           <option value="https://www.flightradar24.com/">Flightradar</option>
           <option value="https://worldradiomap.com/">World Radio Map</option>
+          <option value="https://alternativeto.net/">AlternativeTo</option>
           <option value="https://szimek.github.io/signature_pad/">Signature Pad</option>
           <option value="https://redketchup.io/color-picker">RedKetchup</option>
           <option value="https://paintmaps.com/">Paint Maps</option>
