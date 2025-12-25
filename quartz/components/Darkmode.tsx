@@ -59,7 +59,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
         </form>
         <select id="links" style="width:50px;margin:0;height:29px;">
           <option value="">Link</option>
-          <option value="https://filmnt.github.io/scheduler/">Schedule</option>
+          <option value="https://lazygyu.github.io/roulette/">Marble Roulette</option>
           <option value="https://monkeytype.com/">Monkeytype</option>    
           <option value="https://itch.io/">itch.io</option>    
           <option value="https://date.nager.at/">Worldwide Public Holiday</option>
