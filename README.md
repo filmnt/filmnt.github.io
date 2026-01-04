@@ -1,11 +1,5 @@
 Readme: [Korean](README_ko.md) | [English](README.md)
-
-# Getting Started with Scratch
-See 💠[Obsidian](https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian)
-
 # Previews on Firefox
-- Mirror: [https://filmnt.pages.dev/](https://filmnt.pages.dev/) 
-
 ## Desktop
 | 4K-100%   | 
 | --------- | 

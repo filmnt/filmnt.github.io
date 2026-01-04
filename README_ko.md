@@ -1,11 +1,5 @@
 Readme: [Korean](README_ko.md) | [English](README.md)
-
-# 옵시디언 세팅하기
-💠[Obsidian](https://filmnt.github.io/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian)
-
 # 파이어폭스 미리보기
-- 대체 사이트(클라우드 플레어): [https://filmnt.pages.dev/](https://filmnt.pages.dev/) 
-
 ## 데스크톱 환경
 | 4K-100%   | 
 | --------- | 
