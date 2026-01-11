@@ -141,7 +141,7 @@ $('#linkshare').prop('selectedIndex',0);};
     <span></span>
     <button class="quick-button" onclick="location.href='/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%93%B1-Android'">📱 Android</button>
     <span></span>
-    <button class="quick-button" onclick="location.href='/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%81-Useful-Apps'">🔁 Useful Apps</button>
+    <button class="quick-button" onclick="location.href='/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%81-Mac-Apps'">🔁 Mac Apps</button>
     <span></span>
     <button class="quick-button" onclick="location.href='/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%94%A5-Firefox'">🔥 Firefox</button>
     <span></span>

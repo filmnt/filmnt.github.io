@@ -65,8 +65,7 @@ $('#linkshare').prop('selectedIndex',0);};
 
 
 
-# Mac Apps
-## [Scrcpy](https://github.com/Genymobile/scrcpy)
+# [Scrcpy](https://github.com/Genymobile/scrcpy)
 - Mirror `Android` devices on Desktop
     - USB 3.0 ⬆️
     - Enable `USB Debugging` in `Developer options` for use
@@ -80,110 +79,110 @@ $('#linkshare').prop('selectedIndex',0);};
     - <a href="https://mega.nz/file/LV9lAKJL#WJHIe4iPei38H7_mZ2De0G2a0GwZ7gjuMZYWtbzr4jE" target="_blank" >script file</a> (for Mac OS)
         - Modify script and Export as  `application`  and Move to `application folder` 
 
-## [macUSB](https://github.com/Kruszoneq/macUSB/releases)
+# [macUSB](https://github.com/Kruszoneq/macUSB/releases)
 - Create bootable drives
   - Download `Installer` with <a href="https://github.com/ninxsoft/Mist/releases" target="_blank" >Mist</a>
 
 
-## [Syncthing](https://syncthing.net/downloads/)
+# [Syncthing](https://syncthing.net/downloads/)
 - Continuous file synchronization program (`free`)
     - Mac $\leftrightarrow$ Android $\leftrightarrow$ Win
 
-## [Ferdium](https://github.com/ferdium/ferdium-app/releases)
+# [Ferdium](https://github.com/ferdium/ferdium-app/releases)
 - All your services in one place, built by the community
 
-## [DeskPad](https://github.com/Stengo/DeskPad/releases)
+# [DeskPad](https://github.com/Stengo/DeskPad/releases)
 - A virtual monitor for screen sharing
 
-## [Launchie](https://github.com/nick-friedrich/launchie-launchpad-replacement-mac-os/releases)
+# [Launchie](https://github.com/nick-friedrich/launchie-launchpad-replacement-mac-os/releases)
 - The Launchpad Replacement macOS 26 Deserves 
 
-## [Paralles Desktop](https://www.parallels.com/products/desktop/)
+# [Paralles Desktop](https://www.parallels.com/products/desktop/)
 - Run Windows on Mac
     - Expensive but high performance
     - Use `Windows Pro Key` and `Paralles Windows Image` [^1]
   
-## [Adguard](https://adguard.com/)
+# [Adguard](https://adguard.com/)
 - ad Blocker
 
-## [Annotate](https://github.com/epilande/Annotate/releases)
+# [Annotate](https://github.com/epilande/Annotate/releases)
 - Annotation tool for macOS 
 
-## [Tailscale](https://tailscale.com/download)
+# [Tailscale](https://tailscale.com/download)
 - Mesh Network for SMB or Share
 
-## [Amphetamine](https://apps.apple.com/app/amphetamine/id937984704)
+# [Amphetamine](https://apps.apple.com/app/amphetamine/id937984704)
 - Keep-awake Utility
 
-## [CPDT Benchmark](https://maxim-saplin.github.io/cpdt_results/?download)
+# [CPDT Benchmark](https://maxim-saplin.github.io/cpdt_results/?download)
 - Diskmark
 
-## [NeoHtop](https://github.com/Abdenasser/neohtop/releases)
+# [NeoHtop](https://github.com/Abdenasser/neohtop/releases)
 - System monitoring on steroids
 
-## [eqMac](https://eqmac.app/)
+# [eqMac](https://eqmac.app/)
 - System Audio processing
 - <a href="https://github.com/jaakkopasanen/AutoEq/blob/master/results/RANKING.md" target="_blank" >Ranking</a> - `Over-ear` and `In-ear` headphones 
 
-## [BudsManager](https://github.com/ThePBone/GalaxyBudsClient/releases)
+# [BudsManager](https://github.com/ThePBone/GalaxyBudsClient/releases)
 -  An unofficial manager for the Buds, Buds+, Buds Live and Buds Pro
 
-## [Krabiner](https://karabiner-elements.pqrs.org/)
+# [Krabiner](https://karabiner-elements.pqrs.org/)
 - A powerful and stable keyboard customizer
     - For `Paralles` and `VNC` language switcher
     - source: <a href="https://blog.naver.com/hankboy/221200885234" target="_blank" >blog.naver.com/hankboy/221200885234</a>
         - <a href="https://archive.is/yxigT" target="_blank" >mirror </a> (archive) 
 
-## [KeyboardCleanTool](https://folivora.ai/keyboardcleantool/)
+# [KeyboardCleanTool](https://folivora.ai/keyboardcleantool/)
 - Block all Keyboard and TouchBar input
 
-## [LinearMouse](https://linearmouse.app/)
+# [LinearMouse](https://linearmouse.app/)
 - Customize Mouse and Trackpad
 
 
-## [Pock](https://pock.app/) 
+# [Pock](https://pock.app/) 
 - Widgets manager for MacBook `Touch Bar`
 
 
-## [Runcat](https://kyome.io/runcat/index.html)
+# [Runcat](https://kyome.io/runcat/index.html)
 - System Info in menu bar
 
-## [Coconut Battery](https://coconut-flavour.com/coconutbattery/)
+# [Coconut Battery](https://coconut-flavour.com/coconutbattery/)
 - Battery Info
 
-## [Macs Fan Control](https://crystalidea.com/macs-fan-control/download)
+# [Macs Fan Control](https://crystalidea.com/macs-fan-control/download)
 -  Monitor and control fans `Not for Macbook Air`
 
 
-## [Monitor Control](https://github.com/MonitorControl/MonitorControl)
+# [Monitor Control](https://github.com/MonitorControl/MonitorControl)
 - Controls your external display brightness and volume and shows native OSD
 
-## [Rectangle](https://rectangleapp.com/)
+# [Rectangle](https://rectangleapp.com/)
 - Move and resize windows in macOS using keyboard shortcuts or snap areas
 
-## [CCleaner](https://www.ccleaner.com/ccleaner-mac/download)
+# [CCleaner](https://www.ccleaner.com/ccleaner-mac/download)
 - Clean up Software
 
-## [Appcleaner](https://www.macupdate.com/app/mac/25276/appcleaner)
+# [Appcleaner](https://www.macupdate.com/app/mac/25276/appcleaner)
 - Uninstall your apps easily
 
-## [MakeMKV](https://www.makemkv.com/download/)
+# [MakeMKV](https://www.makemkv.com/download/)
 - For Ripping Blu-ray or DVD to MKV
 
-## [Handbrake](https://handbrake.fr/)
+# [Handbrake](https://handbrake.fr/)
 - The open source video transcoder
     - Use this with MakeMKV
 
-## [Inkscape](https://inkscape.org/)
+# [Inkscape](https://inkscape.org/)
 - Converter for `.svg` → `.pdf`
 
-## [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+# [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 - A feature-rich command-line audio/video downloader 
 
-## [ExifTool](https://github.com/exiftool/exiftool)
+# [ExifTool](https://github.com/exiftool/exiftool)
 - ExifTool meta information reader/writer
 
-## [qpdf](https://github.com/qpdf/qpdf)
+# [qpdf](https://github.com/qpdf/qpdf)
 - A content-preserving PDF document transformer 
 
 
