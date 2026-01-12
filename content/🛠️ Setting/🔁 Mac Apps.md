@@ -108,6 +108,9 @@ $('#linkshare').prop('selectedIndex',0);};
 # [Annotate](https://github.com/epilande/Annotate/releases)
 - Annotation tool for macOS 
 
+# [Flameshot](https://github.com/flameshot-org/flameshot)
+- Powerful yet simple to use screenshot software
+
 # [Tailscale](https://tailscale.com/download)
 - Mesh Network for SMB or Share
 
