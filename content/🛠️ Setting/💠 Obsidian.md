@@ -30,7 +30,7 @@ var url = document.getElementById( 'linkshare' );
 url.onchange = function() {window.open( this.options[ this.selectedIndex ].value, '_blank');
 $('#linkshare').prop('selectedIndex',0);};
 </script>
-%% Translator script%%
+%% Translator script %%
 <script>window.ResetTranslate = () => jQuery('#\\:1\\.container').contents().find('#\\:1\\.restore').click();</script>
 <script>
     function googleTranslateElementInit() {

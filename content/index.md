@@ -22,7 +22,7 @@ function updateUI() {const percent = getCurrentProgress();
   const barItem = document.getElementsByClassName('bar')[0];barItem.style.width = `${percent}%`;
   const counterItem = document.getElementsByClassName('value')[0];
   if (percent>100){counterItem.textContent = `100%`}else{counterItem.textContent = `${percent}%`;}}
-setInterval(function() {updateUI();return arguments.callee;}(), 1000);
+updateUI();setInterval(updateUI, 1000);
 </script>
 
 %% Link %%
@@ -34,7 +34,7 @@ var url = document.getElementById( 'linkshare' );
 url.onchange = function() {window.open( this.options[ this.selectedIndex ].value, '_blank');
 $('#linkshare').prop('selectedIndex',0);};
 </script>
-%% Translator script%%
+%% Translator script %%
 <script>window.ResetTranslate = () => jQuery('#\\:1\\.container').contents().find('#\\:1\\.restore').click();</script>
 <script>
     function googleTranslateElementInit() {
@@ -62,7 +62,7 @@ $('#linkshare').prop('selectedIndex',0);};
 <script src="script/resize-dialog.js"></script>
 %% Stock Widget Script %%
 <script src="script/home-stock.js"></script>
-%% Stikcy Notes Script %%
+%% Sticky Notes Script %%
 <script src="script/sticky-script.js"></script>
 %% Calculator Script %%
 <script src="script/calc.js"></script>
