@@ -22,7 +22,7 @@ function updateUI() {const percent = getCurrentProgress();
   const barItem = document.getElementsByClassName('bar')[0];barItem.style.width = `${percent}%`;
   const counterItem = document.getElementsByClassName('value')[0];
   if (percent>100){counterItem.textContent = `100%`}else{counterItem.textContent = `${percent}%`;}}
-setInterval(function() {updateUI();return arguments.callee;}(), 1000);
+updateUI();setInterval(updateUI, 1000);
 </script>
 %% Links script %%
 <script type="text/javascript">
@@ -56,7 +56,7 @@ $('#linkshare').prop('selectedIndex',0);};
 %% Navigation bar Script %%
 <script src="script/navbar.js"></script>
 <script src="script/resize-dialog.js"></script>
-%% Stikcy Notes Script %%
+%% Sticky Notes Script %%
 <script src="script/sticky-script.js"></script>
 %% Calculator Script %%
 <script src="script/calc.js"></script>
@@ -130,7 +130,7 @@ $('#linkshare').prop('selectedIndex',0);};
 # [BudsManager](https://github.com/ThePBone/GalaxyBudsClient/releases)
 -  An unofficial manager for the Buds, Buds+, Buds Live and Buds Pro
 
-# [Krabiner](https://karabiner-elements.pqrs.org/)
+# [Karabiner](https://karabiner-elements.pqrs.org/)
 - A powerful and stable keyboard customizer
     - For `Paralles` and `VNC` language switcher
     - source: <a href="https://blog.naver.com/hankboy/221200885234" target="_blank" >blog.naver.com/hankboy/221200885234</a>

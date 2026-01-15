@@ -22,7 +22,7 @@ function updateUI() {const percent = getCurrentProgress();
   const barItem = document.getElementsByClassName('bar')[0];barItem.style.width = `${percent}%`;
   const counterItem = document.getElementsByClassName('value')[0];
   if (percent>100){counterItem.textContent = `100%`}else{counterItem.textContent = `${percent}%`;}}
-setInterval(function() {updateUI();return arguments.callee;}(), 1000);
+updateUI();setInterval(updateUI, 1000);
 </script>
 %% Links script %%
 <script type="text/javascript">
@@ -56,7 +56,7 @@ $('#linkshare').prop('selectedIndex',0);};
 %% Navigation bar Script %%
 <script src="script/navbar.js"></script>
 <script src="script/resize-dialog.js"></script>
-%% Stikcy Notes Script %%
+%% Sticky Notes Script %%
 <script src="script/sticky-script.js"></script>
 %% Calculator Script %%
 <script src="script/calc.js"></script>
@@ -413,4 +413,3 @@ export const defaultListPageLayout: PageLayout = {
 [^4]: Mac only
 [^5]: See https://quartz.jzhao.xyz/
 [^6]: Use `VS Code`
-
