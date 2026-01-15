@@ -67,19 +67,18 @@ $('#linkshare').prop('selectedIndex',0);};
 <span>
 <button id=”Link” onclick=" window.open('download/edu-prob.pdf','_blank')" >교육학 문제</button>
 <span></span>
-<button id=”Link” onclick=" window.open('download/edu-sol.pdf','_blank')" >교육학 해설</button>
-<span></span>
 <button id=”Link” onclick=" window.open('download/math-prob.pdf','_blank')" >내용학 문제</button>
 <span></span>
-<button id=”Link” onclick=" window.open('download/math-sol.pdf','_blank')" >내용학 해설</button>
-<br>
 <button id=”Link” onclick=" window.open('download/yby-prob.pdf','_blank')" >연도별 문제</button>
+<span></span>
+<br>
+<button id=”Link” onclick=" window.open('download/edu-sol.pdf','_blank')" >교육학 해설</button>
+<span></span>
+<button id=”Link” onclick=" window.open('download/math-sol.pdf','_blank')" >내용학 해설</button>
 <span></span>
 <button id=”Link” onclick=" window.open('download/yby-sol.pdf','_blank')" >연도별 해설</button>
 <span></span>
-<button id=”Link” onclick=" window.open('download/type-prob.pdf','_blank')" >유형화 문제</button>
-<span></span>
-<button id=”Link” onclick=" window.open('download/type-sol.pdf','_blank')" >유형화 해설</button>
+
 <br>
 <button id=”Link” onclick=" window.open('download/22curri.pdf','_blank')" >22교육과정</button>
 <span></span>
@@ -95,7 +94,7 @@ $('#linkshare').prop('selectedIndex',0);};
 # Templates (A3, 80 pages)
 %% link button %%
 <span>
-<button id=”Link” onclick=" window.open('download/note-1.pdf','_blank')" >Note 1</button>
+<button id=”Link” onclick=" window.open('download/note-1.pdf','_blank')" >Note 1</button>
 <span></span>
 <button id=”Link” onclick=" window.open('download/note-2.pdf','_blank')" >Note 2</button>
 <span></span>
