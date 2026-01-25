@@ -63,7 +63,7 @@ $('#linkshare').prop('selectedIndex',0);};
 
 ## Theme, Plugin (Starter Pack)
 
-> [!NOTE]  <a href="https://mega.nz/file/ucsHVRYL#5gX4pb15PjYt_j3FCrRqDFobh3t7rswJJ_BBXJsJHEU" target="_blank" >Backup file link</a> (8.6mb)
+> [!NOTE]  <a href="https://mega.nz/file/CE0HyA7K#-CvdgbD-XSe4eJr_WaZv19ghOe7_Im2XcKg1ijVacug" target="_blank" >Backup file link</a> (8.7mb)
 >> `.makemd`
 >> `.obsidian`
 >> `.space`
