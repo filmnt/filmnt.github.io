@@ -69,6 +69,15 @@ $('#linkshare').prop('selectedIndex',0);};
 
 ---
 
+# Notifications & Ringtones
+  - <a href="https://mega.nz/file/iQlGDAxZ#qrlApy8mFvFlcvTZzLwpvl9nK24UbgmMXcwG950-EdI" target="_blank" >Notifications</a> (162kb)
+  - <a href="https://mega.nz/file/GRtAGCrD#rrLpNI7pmk-uYPe5DTmHcD_bQGGVS3TvGYbwdhEZJu8" target="_blank" >Ringtones</a> (2.3mb)
+  - Move to `Notifications` & `Ringtones` Folder
+      - Create Folder if it doesn’t exist
+  - `Settings`→ `Sounds and vibration`→ `Ringtone`/`Notification sound` → `Custom`
+
+---
+
 # Apps
 ## Github or Website
 
@@ -104,7 +113,7 @@ $('#linkshare').prop('selectedIndex',0);};
 - Live <a href="https://play.google.com/store/apps/details?id=io.wallpaperengine.weclient" target="_blank" >Wallpaper Engine</a>
 - PDF Annotation <a href="https://play.google.com/store/apps/details?id=com.orion.notein.global" target="_blank" >Notein</a>
 - PDF Viewer <a href="https://play.google.com/store/apps/details?id=com.xodo.pdf.reader" target="_blank" >Xodo</a>
-- Mic <a href="https://play.google.com/store/apps/details?id=com.yd4011439.mic.to.speaker.and.bluetooth" target="_blank" >To Speaker & Bluetooth</a>
+- Mic To <a href="https://play.google.com/store/apps/details?id=com.yd4011439.mic.to.speaker.and.bluetooth" target="_blank" >Speaker & Bluetooth</a>
 - odt Viewer <a href="https://play.google.com/store/apps/details?id=com.collabora.libreoffice" target="_blank" >Collabora Office</a>
 - Stock <a href="https://play.google.com/store/apps/details?id=app.stockevents.android" target="_blank" >Widget</a>
 - iOS <a href="https://play.google.com/store/apps/details?id=com.inova.ios_14_iconpack" target="_blank" >Icon Pack</a>
@@ -112,30 +121,12 @@ $('#linkshare').prop('selectedIndex',0);};
 
 ---
 
-# Settings 
-- Notifications & Ringtones
-    - <a href="https://mega.nz/file/iQlGDAxZ#qrlApy8mFvFlcvTZzLwpvl9nK24UbgmMXcwG950-EdI" target="_blank" >Notifications</a> (162kb)
-    - <a href="https://mega.nz/file/GRtAGCrD#rrLpNI7pmk-uYPe5DTmHcD_bQGGVS3TvGYbwdhEZJu8" target="_blank" >Ringtones</a> (2.3mb)
-    - <a href="https://mega.nz/file/2clmGSgC#WERW4d4P5eeMGa7RD9BVeKTHC5ap_9YEJNHJzI4zXDk" target="_blank" >Wallpapers</a> (9.2mb)
-    - Move to `Notifications` & `Ringtones` Folder
-        - Create Folder if it doesn’t exist
-    - `Settings`→ `Sounds and vibration`→ `Ringtone`/`Notification sound` → `Custom`
-        - Default Ringtone: `Over the horizon`
-        - Default Notification Sound: `Spaceline(Brightline)`
-- `Developer options`
-    - (Developer options) `Settings` → `About tablet` → `Software information` → Tap `Build number` several times→ Back to `Settings` 
-    - `Window animation scale` → `.5x` 
-    - `Transition animation scale` → `.5x`
-    - `Animator duration scale` → `.5x`
----
-
 # Termux (Linux on Android)
 ![[Linux.png]]
 - Could be needed later...
-    - <a href="https://mega.nz/file/2clmGSgC#WERW4d4P5eeMGa7RD9BVeKTHC5ap_9YEJNHJzI4zXDk" target="_blank" >Wallpapers</a> (9.2mb)
     - <a href="https://www.xfce-look.org/s/XFCE/p/1403328/" target="_blank" >WhiteSur-Dark.tar.xz</a> (0.20mb)
     - <a href="https://www.xfce-look.org/p/1648124" target="_blank" >macOS-Monterey.tar.gz</a> (3.94mb)
-    - <a href="https://www.xfce-look.org/p/1400021/" target="_blank" >Mkos-Big-Sur.tar.xz</a> (20.96mb)
+    - <a href="https://www.xfce-look.org/p/1400021/" target="_blank" >Mkos-Big-Sur.tar.xz</a> (21.04mb)
 > `Dimensity` or `Exynos` could leave you in trouble…
 - (<font color="#ff0000">Not Optional</font>) `Error Solutions`:  Process completed (signal 9) - press Enter
     - Install `LADB` from <a href="https://github.com/hyperio546/ladb-builds/releases" target="_blank" >Here</a> (`app-debug.apk`)  
@@ -165,7 +156,7 @@ $('#linkshare').prop('selectedIndex',0);};
 - Install <a href="https://github.com/termux/termux-x11/releases" target="_blank" >X-11</a> 
     - Click `app-arm64-v8a-debug.apk`
 - Open `Termux` and Run the commands
-  - It takes 10-30 minutes…
+  - It takes 10-30 minutes (varies by speed)
   - For More Information, <a href="https://github.com/sabamdarif/termux-desktop" target="_blank" >Termux-Desktop</a>
     ```shell
     bash <(curl -Lf https://raw.githubusercontent.com/sabamdarif/termux-desktop/main/setup-termux-desktop) && pkg install -y fcitx5* && wget https://raw.githubusercontent.com/sabamdarif/Termux-AppStore/refs/heads/src/appstore && chmod +x appstore && ./appstore --install

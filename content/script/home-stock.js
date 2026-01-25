@@ -2,7 +2,7 @@
 const tickerBaseURL = 'https://s.tradingview.com/embed-widget/ticker-tape/?locale=en#';
   const tickerConfig = {
 symbols: [
-  { proName: 'NASDAQ:IXIC', title: 'Nasdaq' },
+  { proName: 'IG:NASDAQ', title: 'Nasdaq' },
   { proName: 'NASDAQ:AAPL', title: 'Apple' },
   { proName: 'GETTEX:SSU', title: 'Samsung Electronics(GDR)' },
   { proName: 'NYSE:NET', title: 'Cloudflare' },
