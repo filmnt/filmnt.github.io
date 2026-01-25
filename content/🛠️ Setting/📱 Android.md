@@ -87,8 +87,6 @@ $('#linkshare').prop('selectedIndex',0);};
         - <a href="https://addons.mozilla.org/en-US/android/addon/ublock-origin/" target="_blank" >uBlock Origin</a> (Ad-Block)
             - <a href="https://mega.nz/file/nJ8CSKBJ#hlmq-LlgwAKosmM5k0iWO2zWPQW7bIqi5E7w3H7zQ9U" target="_blank" >ublock-backup</a>
         - <a href="https://addons.mozilla.org/en-US/android/addon/video-background-play-fix/" target="_blank" >Video Background Play Fix</a> (Background Play)
-        - <a href="https://addons.mozilla.org/en-US/android/addon/random_user_agent" target="_blank" >Random User-Agent (Switcher)</a> (Desktop UI)
-          - Payment app may not work... 
 - File Sync <a href="https://github.com/researchxxl/syncthing-android/releases" target="_blank" >Syncthing (Fork)</a>
 - Note-taking <a href="https://github.com/obsidianmd/obsidian-releases/releases" target="_blank" >Obsidian</a>
     - See <button id=”Link” onclick="window.open('/%F0%9F%9B%A0%EF%B8%8F-Setting/%F0%9F%92%A0-Obsidian', '_blank')" >💠&nbsp;Obsidian</button>
