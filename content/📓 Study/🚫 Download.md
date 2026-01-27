@@ -71,17 +71,19 @@ $('#linkshare').prop('selectedIndex',0);};
 <span></span>
 <button id=”Link” onclick=" window.open('download/yby-prob.pdf','_blank')" >연도별 문제</button>
 <span></span>
-<br>
+<br><br>
 <button id=”Link” onclick=" window.open('download/edu-sol.pdf','_blank')" >교육학 해설</button>
 <span></span>
 <button id=”Link” onclick=" window.open('download/math-sol.pdf','_blank')" >내용학 해설</button>
 <span></span>
 <button id=”Link” onclick=" window.open('download/yby-sol.pdf','_blank')" >연도별 해설</button>
 <span></span>
-
-<br>
+<br><br>
 <button id=”Link” onclick=" window.open('download/22curri.pdf','_blank')" >22교육과정</button>
 <span></span>
+<button id=”Link” onclick=" window.open('download/int-prob.pdf','_blank')" >심층면접 문제</button>
+<span></span>
+<br><br>
 <button id=”Link” onclick=" window.open('download/omr-EDU.pdf','_blank')">교육학 OMR</button>
 <span></span>
 <button id=”Link” onclick=" window.open('download/omr-A.pdf','_blank')" >전공A OMR</button>
