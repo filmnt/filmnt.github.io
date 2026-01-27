@@ -62,6 +62,13 @@ $('#linkshare').prop('selectedIndex',0);};
 <script src="script/calc.js"></script>
 
 
+<button class="fullbtn" onclick="window.open('https://mega.nz/file/idVADAqI#9uYDjOjyRcEDimeK3b_nTGmJsyaPfNJINPJbmEjOHh8', '_blank')">All-in-One</button>
+
+<style>
+.fullbtn {float:right;height:30px;display:inline;background-color: #007BFF;color: #fff; border: none; border-radius: 5px;cursor: pointer;transition: background-color 0.3s;}  
+.fullbtn:hover {background-color: #0056b3;}
+</style>
+
 # 수학 (A3)
 %% link button %%
 <span>
