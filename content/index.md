@@ -1,5 +1,5 @@
 ---
-title: Home
+title: 𝐹𝑖𝑙𝑚𝑛𝑡
 tags:
   - contents
 ---
@@ -80,6 +80,14 @@ $('#linkshare').prop('selectedIndex',0);};
     <select id="switchLocation">
       <option value="" disabled selected>☀️</option>
       <option value="en/37d57126d98/seoul/">서울</option>
+      <option value="en/35d18129d08/busan/">부산</option>
+      <option value="en/35d87128d60/daegu/">대구</option>
+      <option value="en/37d46126d71/incheon/">인천</option>
+      <option value="en/35d16126d85/gwangju/">광주</option>
+      <option value="en/36d35127d38/daejeon/">대전</option>
+      <option value="en/35d54129d31/ulsan/">울산</option>
+      <option value="en/36d56127d26/sejong-si/">세종</option>
+      <option value="en/33d49126d50/jeju-do/">제주</option>
       <option value="ja/35d69139d69/tokyo/">東京</option>
       <option value="zh/39d90116d41/beijing/">北京</option>
       <option value="en/36d78n119d42/california/">California</option>
