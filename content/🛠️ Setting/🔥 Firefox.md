@@ -73,8 +73,6 @@ $('#linkshare').prop('selectedIndex',0);};
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/search_by_image" target="_blank" >Search by Image</a>
 - <a href="https://addons.mozilla.org/firefox/addon/web-marker-draw-on-websites/" target="_blank" >Web Marker</a>
 - <a href="https://addons.mozilla.org/firefox/addon/youtube-nonstop/" target="_blank" >YouTube NonStop</a>
-- <a href="https://addons.mozilla.org/en-US/firefox/addon/open-bookmarks-in-a-new-tab/" target="_blank" >Open bookmarks in a new tab</a>
-  - Or... `about:config` -> `browser.tabs.loadBookmarksInTabs` -> `true`
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/duckduckgo-for-firefox/" target="_blank" >Duckduckgo</a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/traduzir-paginas-web/" target="_blank" >TWP</a> 
     - <a href="https://mega.nz/file/SAEC2LCZ#zg6nFKiRhs8Hn2NWCMcp58mlaoQHTZLFLmHbcHYNaRQ" target="_blank" >twp-backup</a> (language: korean)
@@ -86,7 +84,10 @@ $('#linkshare').prop('selectedIndex',0);};
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/" target="_blank" >Bitwarden</a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/dcrefresher-reborn/" target="_blank" >DCRefresher Reborn</a>(For Korean)
 
-
+---
+## about:config
+- browser.tabs.loadBookmarksInTabs -> `true`
+- pdfjs.ignoreDestinationZoom -> `true`
 
 %% sticky notes %%
 <div id="sticky-container" class="sticky-container"></div>
