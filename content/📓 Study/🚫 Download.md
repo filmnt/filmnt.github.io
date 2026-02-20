@@ -62,7 +62,7 @@ $('#linkshare').prop('selectedIndex',0);};
 <script src="script/calc.js"></script>
 
 
-<button class="fullbtn" onclick="window.open('https://mega.nz/file/7VcCwSxb#IOA-KDf8vg0MIfOYAIdbSYLA1_L1HoMCOCztvu2S1SE', '_blank')">All-in-One</button>
+<button class="fullbtn" onclick="window.open('https://mega.nz/file/zYclVYAI#rZ9vhvspi7HBziPLl7lDeo1t8VsqQ2J3S4g1KH7A7Ws', '_blank')">All-in-One</button>
 
 <style>
 .fullbtn {float:right;height:30px;display:inline;background-color: #007BFF;color: #fff; border: none; border-radius: 5px;cursor: pointer;transition: background-color 0.3s;}  
