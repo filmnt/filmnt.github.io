@@ -54,8 +54,8 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
         <button onclick="openSchedule()" style="height:30px;margin:0;display:flex;align-items:center;gap:4px;">
           <i class="fa-regular fa-calendar-check"></i> Schedule
         </button>
-        <form action="https://duckduckgo.com/" method="post" target="_blank" onsubmit="this.submit(); this.reset(); return false;" novalidate>
-          <label><input style="width:200px" type="search" name="q" placeholder="Web Search🦆" /></label>
+        <form action="https://www.perplexity.ai/search" method="GET" target="_blank" onsubmit="this.submit(); this.reset(); return false;" novalidate>
+          <label><input style="width:200px" type="search" name="q" placeholder="Ask Perplexity✨" /></label>
         </form>
         <select id="links" style="width:50px;margin:0;height:29px;">
           <option value="">Link</option>
