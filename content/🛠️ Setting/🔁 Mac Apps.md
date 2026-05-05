@@ -86,7 +86,6 @@ $('#linkshare').prop('selectedIndex',0);};
 - Create bootable drives
   - Download `Installer` with <a href="https://github.com/ninxsoft/Mist/releases" target="_blank" >Mist</a>
 
-
 # [Syncthing](https://syncthing.net/downloads/)
 - Continuous file synchronization program (`free`)
     - Mac $\leftrightarrow$ Android $\leftrightarrow$ Win
@@ -188,10 +187,13 @@ $('#linkshare').prop('selectedIndex',0);};
 # [qpdf](https://github.com/qpdf/qpdf)
 - A content-preserving PDF document transformer 
 
+# [Recordly](https://github.com/webadderallorg/Recordly)
+- Create polished screen recordings without editing
+
 # [Deskreen](https://github.com/pavlobu/deskreen)
 - Deskreen turns any device with a web browser into a secondary screen for your computer
 
-# [Weylus](https://github.com/H-M-H/Weylus)
+# [Weylus](https://github.com/H-M-H/Weylus )
 - Use your tablet as graphic tablet/touch screen on your computer
 
 %% sticky notes %%
