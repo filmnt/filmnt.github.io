@@ -193,8 +193,11 @@ $('#linkshare').prop('selectedIndex',0);};
 # [Deskreen](https://github.com/pavlobu/deskreen)
 - Deskreen turns any device with a web browser into a secondary screen for your computer
 
-# [Weylus](https://github.com/H-M-H/Weylus )
+# [Weylus](https://github.com/H-M-H/Weylus)
 - Use your tablet as graphic tablet/touch screen on your computer
+
+# [Whatcable](https://github.com/darrylmorley/whatcable)
+- What can this USB-C cable actually do?
 
 %% sticky notes %%
 <div id="sticky-container" class="sticky-container"></div>
