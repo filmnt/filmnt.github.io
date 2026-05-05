@@ -190,6 +190,9 @@ $('#linkshare').prop('selectedIndex',0);};
 # [Recordly](https://github.com/webadderallorg/Recordly)
 - Create polished screen recordings without editing
 
+# [OBS Studio](https://github.com/obsproject/obs-studio)
+- Free and open source software for live streaming and screen recording
+
 # [Deskreen](https://github.com/pavlobu/deskreen)
 - Deskreen turns any device with a web browser into a secondary screen for your computer
 
