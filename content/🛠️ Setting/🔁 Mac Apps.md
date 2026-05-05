@@ -79,6 +79,9 @@ $('#linkshare').prop('selectedIndex',0);};
     - <a href="https://mega.nz/file/LV9lAKJL#WJHIe4iPei38H7_mZ2De0G2a0GwZ7gjuMZYWtbzr4jE" target="_blank" >script file</a> (for Mac OS)
         - Modify script and Export as  `application`  and Move to `application folder` 
 
+# [Scrcpy-GUI](https://github.com/GeorgeEnglezos/Scrcpy-GUI)
+- An unofficial beginner-friendly user interface for the Scrcpy Project 
+
 # [macUSB](https://github.com/Kruszoneq/macUSB/releases)
 - Create bootable drives
   - Download `Installer` with <a href="https://github.com/ninxsoft/Mist/releases" target="_blank" >Mist</a>
@@ -142,10 +145,8 @@ $('#linkshare').prop('selectedIndex',0);};
 # [LinearMouse](https://linearmouse.app/)
 - Customize Mouse and Trackpad
 
-
 # [Pock](https://pock.app/) 
 - Widgets manager for MacBook `Touch Bar`
-
 
 # [Runcat](https://kyome.io/runcat/index.html)
 - System Info in menu bar
@@ -155,7 +156,6 @@ $('#linkshare').prop('selectedIndex',0);};
 
 # [Macs Fan Control](https://crystalidea.com/macs-fan-control/download)
 -  Monitor and control fans `Not for Macbook Air`
-
 
 # [Monitor Control](https://github.com/MonitorControl/MonitorControl)
 - Controls your external display brightness and volume and shows native OSD
@@ -188,8 +188,11 @@ $('#linkshare').prop('selectedIndex',0);};
 # [qpdf](https://github.com/qpdf/qpdf)
 - A content-preserving PDF document transformer 
 
+# [Deskreen](https://github.com/pavlobu/deskreen)
+- Deskreen turns any device with a web browser into a secondary screen for your computer
 
-
+# [Weylus](https://github.com/H-M-H/Weylus)
+- Use your tablet as graphic tablet/touch screen on your computer
 
 %% sticky notes %%
 <div id="sticky-container" class="sticky-container"></div>
