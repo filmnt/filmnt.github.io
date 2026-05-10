@@ -60,6 +60,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
         <select id="links" style="width:50px;margin:0;height:29px;">
           <option value="">Link</option>
           <option value="https://filmnt.github.io/qrcode/">QR Code Generator</option>
+          <option value="https://huggingface.co/spaces/Supertone/supertonic-3">Supertonic 3 (TTS)</option>
           <option value="https://lazygyu.github.io/roulette/">Marble Roulette</option>
           <option value="https://monkeytype.com/">Monkeytype</option>    
           <option value="https://itch.io/">itch.io</option>    
