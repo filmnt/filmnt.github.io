@@ -82,10 +82,6 @@ $('#linkshare').prop('selectedIndex',0);};
 # [Scrcpy-GUI](https://github.com/GeorgeEnglezos/Scrcpy-GUI)
 - An unofficial beginner-friendly user interface for the Scrcpy Project 
 
-# [macUSB](https://github.com/Kruszoneq/macUSB/releases)
-- Create bootable drives
-  - Download `Installer` with <a href="https://github.com/ninxsoft/Mist/releases" target="_blank" >Mist</a>
-
 # [Syncthing](https://syncthing.net/downloads/)
 - Continuous file synchronization program (`free`)
     - Mac $\leftrightarrow$ Android $\leftrightarrow$ Win
