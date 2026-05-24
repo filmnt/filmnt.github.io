@@ -66,7 +66,7 @@ $('#linkshare').prop('selectedIndex',0);};
 
 ## Add-ons
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/" target="_blank" >Ublock-origin</a>
-    - <a href="https://mega.nz/file/nJ8CSKBJ#hlmq-LlgwAKosmM5k0iWO2zWPQW7bIqi5E7w3H7zQ9U" target="_blank" >ublock-backup</a>
+    - <a href="https://mega.nz/file/GAtkDZwB#wxwF5bA8NRhExS_J9bx0osS5dnkXgDy8IPJHw-u2y8I" target="_blank" >ublock-backup</a>
 - <a href="https://addons.mozilla.org/en-US/firefox/addon/gesturefy/" target="_blank" >Gesturefy</a>
     -  <a href="https://mega.nz/file/eZdmSJaL#47SP05Cs5ihQvZCk6rL1FfJij-9PskmYkBlyedQ0fYQ" target="_blank" >gesturefy-backup</a> 
     - Modify `Open custom URL`
