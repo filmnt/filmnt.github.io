@@ -108,7 +108,7 @@ const Darkmode: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) 
 <iframe 
   id="chat-iframe" 
   src="https://chat.filmnt.workers.dev/" 
-  style="width:100%;flex:1;min-height:0;border:0;margin-top:6px;display:block;"
+  style="width:100%;border:0;margin-top:6px;"
 ></iframe>
 </div>
 
