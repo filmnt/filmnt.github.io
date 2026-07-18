@@ -234,7 +234,7 @@ const homeContents = {
 
 const iframeSrcs = {
   left: 'https://www.youtube-nocookie.com/embed/gFRtAAmiFbE?vq=hd1080&rel=0&modestbranding=1&playsinline=1',
-  right: 'https://www.youtube-nocookie.com/embed/Lr-u3vIZ3KE?vq=hd1080&rel=0&modestbranding=1&playsinline=1'
+  right: 'https://www.youtube-nocookie.com/embed/jF8-FvIj4-E?vq=hd1080&rel=0&modestbranding=1&playsinline=1'
 };
 
 function createIframe(src) {
