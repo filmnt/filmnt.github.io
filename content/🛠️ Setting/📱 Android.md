@@ -122,7 +122,7 @@ $('#linkshare').prop('selectedIndex',0);};
 
 ---
 
-# Termux (Linux on Android)
+# Termux (Linux on Android) / Unmaintained...
 ![[Linux.png]]
 - Could be needed later...
     - <a href="https://www.xfce-look.org/s/XFCE/p/1403328/" target="_blank" >WhiteSur-Dark.tar.xz</a> (0.20mb)
